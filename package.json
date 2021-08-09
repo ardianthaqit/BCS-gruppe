@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "alpinejs": "^3.2.3",
-    "fullpage.js": "^3.1.2"
+    "fullpage.js": "^3.1.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",

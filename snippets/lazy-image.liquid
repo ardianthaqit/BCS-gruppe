@@ -1,0 +1,19 @@
+{%- assign default_size = default_size | default: '10x' -%}
+{%- if fade_in == false %}
+  {%- assign fade_in = false -%}
+{%- else -%}
+  {%- assign fade_in = true -%}
+{%- endif -%}
+{%- assign img_url = image | img_url: '1x' | replace: '_1x.', '_{width}x@2x.' -%}
+<img
+  src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+  data-src="{{ img_url }}" 
+  data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048, 4096]"
+  data-aspectratio="{{ image.aspect_ratio }}"
+  data-sizes="auto"
+  alt="{{ image.alt | escape }}"
+  class="img {% if fade_in %} fade-in {% endif %} lazyload {{ class }}"
+  style="{{ style | default: '' }}"
+  {% if image_id != blank %}    id="{{ image_id }}" {% else %} id="img-{{ image.id }}"     {% endif %}
+  {% if index != blank %}       data-index="{{ index }}"  {% endif %}
+/>
