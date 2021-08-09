@@ -1,0 +1,30 @@
+<div class="w-full  mx-auto">
+    <div class="w-3/4">
+    </div>
+    <div class="w-1/4 ">
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Configurator",
+  "class": "front-page-configurator",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-banner.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "t:sections.image-banner.settings.image_2.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Configurator",
+      "category":"text"
+    }
+  ]
+}
+{% endschema %}

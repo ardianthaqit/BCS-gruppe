@@ -1,0 +1,21 @@
+{
+  "name": "bcs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/application.css -o assets/style.css",
+    "start": "npm run build-css  && theme watch --allow-live"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alpinejs": "^3.2.3",
+    "fullpage.js": "^3.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}
