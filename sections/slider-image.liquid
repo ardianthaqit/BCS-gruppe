@@ -1,102 +1,94 @@
-<div class="max-h-1081 h-1081 w-full flex" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
-    <div class="flex items-center mx-auto">
-    <div class="w-1/5">
-        <div> 
-             {% if section.settings.header != blank %}
-            {{ section.settings.header }}
-            {% endif %}
-        </div>
-        <div>
-            {% if section.settings.desc != blank %}
-            {{ section.settings.desc }}
-            {% endif %}
-        </div>
-        <div>
-            {%- if block.settings.button_label != blank -%}
-            <a 
-            {% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-              {{ block.settings.button_label | escape }}
-            </a>
-            {%- endif -%}
-        </div>
-
-    </div>
-    <div class="flex items-center  justify-between">
+<div class=" max-h-1081 h-1081 w-full flex" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+  <div class="mx-auto mr-14 w-10 items-center flex">
+  <div class="flex  mx-auto" id="rd">
+      <div class="w-10 swiper-container mySwiper">
+          <div class="swiper-wrapper">
     {% for block in section.blocks %}
-    <div class="w-1/5">
-        {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}}
+    <div class="swiper-slide">
+    <div class=" mr-8 bg-cardsbg relative mx-auto text-center
+      flex items-center
+        rounded-md overflow-hidden
+        md:w-full xl:h-full
+        h-auto
+        pt-7 sm:pt-0
+        cursor-pointer sm:space-x-1.5 space-y-1.5
+        lg:space-x-0 lg:space-y-0
+        space-x-0 lg:space-y-0
+        shadow-cardssh border border-border"
+        >
+          <div class="block">
+          <div class="flex justify-center items-center"> {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>
+          </div>
     </div>
+  </div>
     {% endfor %}
-    </div>
 </div>
 </div>
-
+</div>
+</div>
+</div>
 {% schema %}
 {
-    "name": "Hero", 
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "background_image",
-        "label": "Background image"
-      }, 
-      {
-        "type": "image_picker",
-        "id": "mobile_background_image",
-        "label": "Mobile Background image"
-      }, 
-      {
-        "type": "richtext",
-        "id": "header",
-        "label": "Heading"
-      }, 
-      {
-        "type": "richtext",
-        "id": "desc",
-        "label": "Desc"
-      }, 
-      {
-        "type": "url",
-        "id": "button_link",
-        "label": "btnlink"
-      },
-      {
-        "type": "text",
-        "id": "button_label",
-        "label": "Button text"
-      }
-    ],
-    "blocks": [
-    {
-      "type": "card",
-      "name": "Card",  
-      "settings": [
-      {
-          "type": "image_picker",
-          "id": "background_image",
-          "label": "Background Image"
-        },
-      {
-          "type": "richtext",
-          "id": "title",
-          "label": "Title"
-        },
-      {
-          "type": "richtext",
-          "id": "subheading",
-          "label": "Subheading"
-        }, 
-      {
-        "type": "richtext",
-        "id": "description",
-        "label": "Description"
-      }
-      ]
-    }
-  ],
-    "presets": [{
-      "name": "Hero",
-      "category": "Content"
-    }]
+"name": "Cards",
+"max_blocks": 4,
+"settings": [ 
+{
+"type": "image_picker",
+"id": "background_image",
+"label": "Background image"
+}, 
+{
+"type": "image_picker",
+"id": "mobile_background_image",
+"label": "Mobile Background image"
+},
+{
+"type": "richtext",
+"id": "title",
+"label": "Heading"
+}, 
+{
+"type": "text",
+"id": "subheading",
+"label": "Subheading"
+}
+],
+"blocks": [
+{
+  "type": "card",
+  "name": "Card",  
+  "settings": [
+  {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+  {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+  {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    }, 
+  {
+    "type": "richtext",
+    "id": "description",
+    "label": "Description"
   }
-{% endschema %}
+  ]
+}
+],
+"presets": [{
+"name": "Testimonial Slider",
+"category": "Content",
+"blocks": [{
+"type": "card"
+},{
+"type": "card"
+}]
+}]
+}
+{% endschema %} 
