@@ -2112,3 +2112,76 @@ details-disclosure > details {
   color: rgb(var(--color-foreground));
   word-break: break-word;
 }
+.headline-config{
+  font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 56px;
+line-height: 72px;
+letter-spacing: 0.2px;
+color: #1C1C1C;
+}
+.desc-config{
+  font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.3px;
+color: #706F6F;
+}
+.button-config{
+background: #8B2533;
+border: 1px solid #8B2533;
+box-sizing: border-box;
+border-radius: 3px;
+width: auto;
+align-items: center;
+padding: 15px 30px;
+}
+.button-config-text{
+  font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.3px;
+color: #FFFFFF;
+}
+.font-slider{
+  font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 44px;
+line-height: 56px;
+letter-spacing: 0.2px;
+color: #262626;
+
+}
+.border-hover{
+  border: 3px solid #FFFFFF;
+  width: 250px;
+  height: 400px;
+}
+.cards-text{
+  font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 32px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+}
+.swiper-button-next{
+  display: block!important;
+}
+.swiper-button-prev{
+  display: block!important;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  letter-spacing: unset;
+} 

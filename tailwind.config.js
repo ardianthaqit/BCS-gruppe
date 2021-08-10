@@ -18,6 +18,7 @@ module.exports = {
         cardsbg:'#FAF9F8',
         border:'#EFEFEF',
         lightgrey:'#CBCBCB',
+        lightwhite:'rgba(255, 255, 255, 0.9)',
       },
       width: {
         '1/7': '14.2857143%',
@@ -27,6 +28,8 @@ module.exports = {
         '5/7': '71.4285714%',
         '6/7': '85.7142857%',
         '10':'1320px',
+         '290px':'290px',
+         '590px':'590px',
       },
       maxHeight: {
         '6': '1.5rem',
@@ -83,8 +86,13 @@ module.exports = {
      '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
-      cardssh:'0px 4px 44px rgba(0, 0, 0, 0.05)'
-    }
+      cardssh:'0px 4px 44px rgba(0, 0, 0, 0.05)',
+      
+    },
+    inset: {
+      '-16': '-4rem',
+      '60':'60%',
+     },
     },
   },
   variants: {

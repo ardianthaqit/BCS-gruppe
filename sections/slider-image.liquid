@@ -1,28 +1,63 @@
-<div class=" max-h-1081 h-1081 w-full flex" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
-  <div class="mx-auto mr-14 w-10 items-center flex">
+<div class=" max-h-1081 h-1081 w-full flex bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+  <div class="mx-auto w-10 items-center flex">
+    <div class="">
+      {% if section.settings.heading != blank %}
+      <div class="font-slider w-290px	">
+        {{ section.settings.heading }}
+      </div>
+  {% endif %}
+  {% if section.settings.desc != blank %}
+      <div class="desc-config ">
+        {{ section.settings.desc }}
+      </div>
+  {% endif %}
+  {% if section.settings.button_text != blank %}
+      <a href="{{ section.settings.button_url }}"
+        class="button-config-text"
+        aria-label="{{ ariaLabel }}">
+          <div class="button-config">
+            {{- section.settings.button_text | escape -}}
+          </div>
+      </a>
+    {% endif %}
+    </div>
   <div class="flex  mx-auto" id="rd">
       <div class="w-10 swiper-container mySwiper">
           <div class="swiper-wrapper">
     {% for block in section.blocks %}
     <div class="swiper-slide">
-    <div class=" mr-8 bg-cardsbg relative mx-auto text-center
+    <div class=" mr-8 relative mx-auto text-center
       flex items-center
         rounded-md overflow-hidden
         md:w-full xl:h-full
         h-auto
         pt-7 sm:pt-0
-        cursor-pointer sm:space-x-1.5 space-y-1.5
-        lg:space-x-0 lg:space-y-0
-        space-x-0 lg:space-y-0
-        shadow-cardssh border border-border"
+        cursor-pointer"
+        x-data="{open: false }" @mouseover="open = true" @mouseout="open = false" @click="open = !open"
         >
           <div class="block">
           <div class="flex justify-center items-center"> {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>
+          </div>
+          <div class="absolute left-1/2  transform -translate-x-1/2  z-2 text-white"
+          x-show.transition.opacity.duration.750="open"> 
+          <div class="border-hover"> </div>
+        </div>
+          <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 bottom-5 z-2 text-white"> 
+            <div class="ucards-text">
+              {{ block.settings.stll}}
+            </div>
+          </div>
+          <div class="absolute left-1/2 top-60 transform -translate-x-1/2 bottom-5 z-2 text-white"  x-show.transition.opacity.duration.750="open"> 
+            <div class="">
+              {% include 'icon_arrow-right-circle' %}
+            </div>
           </div>
     </div>
   </div>
     {% endfor %}
 </div>
+<div class="swiper-button-next">{% include 'icon_right-slider' %}</div>
+<div class="swiper-button-prev">{% include 'icon_left-slider' %}</div>
 </div>
 </div>
 </div>
@@ -43,15 +78,25 @@
 "label": "Mobile Background image"
 },
 {
-"type": "richtext",
-"id": "title",
-"label": "Heading"
-}, 
-{
-"type": "text",
-"id": "subheading",
-"label": "Subheading"
-}
+  "type": "richtext",
+  "id": "heading",
+  "label": "Heading"
+  }, 
+  {
+  "type": "richtext",
+  "id": "desc",
+  "label": "Description"
+  },
+  {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button text"
+  },
+  {
+    "type": "url",
+    "id": "button_url",
+    "label": "Button url"
+  }
 ],
 "blocks": [
 {
@@ -65,12 +110,12 @@
     },
   {
       "type": "richtext",
-      "id": "title",
+      "id": "stll",
       "label": "Title"
     },
   {
       "type": "richtext",
-      "id": "subheading",
+      "id": "stlll",
       "label": "Subheading"
     }, 
   {
