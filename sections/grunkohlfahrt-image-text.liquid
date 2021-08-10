@@ -1,0 +1,107 @@
+<div class="max-h-1081 h-1081 w-full flex" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+        <div class="w-1/2 flex items-center justify-around	">
+            <div class="block w-590px">
+            {% if section.settings.smtext != blank %}
+                <div class="smtext">
+                  {{ section.settings.smtext }}
+                </div>
+            {% endif %}
+                {% if section.settings.heading != blank %}
+                <div class="font-slider">
+                  {{ section.settings.heading }}
+                </div>
+            {% endif %}
+            {% if section.settings.desc != blank %}
+                <div class="desc-config pt-10 ">
+                  {{ section.settings.desc }}
+                </div>
+            {% endif %}
+                <div class="flex ">
+                    {% if section.settings.button_text != blank %}
+                    <a href="{{ section.settings.button_url }}"
+                      class="button-config-text pt-14	"
+                      aria-label="{{ ariaLabel }}">
+                        <div class="greenbutton ">
+                          {{- section.settings.button_text | escape -}}
+                        </div>
+                    </a>
+                {% endif %}
+                {% if section.settings.button_text != blank %}
+                <a href="{{ section.settings.secondbutton_url }}"
+                  class="button-config-text pt-14 pl-5	"
+                  aria-label="{{ ariaLabel }}">
+                    <div class="buttontext">
+                      {{- section.settings.secondbutton_text | escape -}}
+                    </div>
+                </a>
+            {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 flex">
+            <div class="flex items-center">
+                    {{ section.settings.image| img_url: 'master'| img_tag: block.settings.icon.alt}}
+            </div>
+        </div> 
+</div>
+{% schema %}
+{
+"name": "Grunkohlfahrt img txt",
+"settings": [ 
+{
+"type": "image_picker",
+"id": "background_image",
+"label": "Background image"
+}, 
+{
+"type": "image_picker",
+"id": "mobile_background_image",
+"label": "Mobile Background image"
+},
+{
+    "type": "image_picker",
+    "id": "image",
+    "label": " image"
+    },
+    {
+        "type": "richtext",
+        "id": "smtext",
+        "label": "Small Text"
+     },  
+    {
+  "type": "richtext",
+  "id": "heading",
+  "label": "Heading"
+  }, 
+  {
+  "type": "richtext",
+  "id": "desc",
+  "label": "Description"
+  },
+  {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button text"
+  },
+  {
+    "type": "url",
+    "id": "button_url",
+    "label": "Button url"
+  },
+  {
+    "type": "text",
+    "id": "secondbutton_text",
+    "label": "Button text"
+  },
+  {
+    "type": "url",
+    "id": "secondbutton_url",
+    "label": "Button url"
+  }
+],
+"presets": [{
+"name": "Grunkohlfahrt img txt",
+"category": "Content"
+}]
+}
+{% endschema %} 

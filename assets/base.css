@@ -2114,14 +2114,44 @@ details-disclosure > details {
 }
 .headline-config{
   font-family: Lato;
-font-style: normal;
-font-weight: 300;
-font-size: 56px;
-line-height: 72px;
-letter-spacing: 0.2px;
-color: #1C1C1C;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: 0.2px;
+  color: #1C1C1C;
 }
 .desc-config{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #706F6F;
+}
+.button-config{
+  background: #8B2533;
+  border: 1px solid #8B2533;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: auto;
+  align-items: center;
+  padding: 15px 30px;
+}
+.button-config-text{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+}
+.buttontext{
   font-family: Lato;
 font-style: normal;
 font-weight: normal;
@@ -2130,35 +2160,22 @@ line-height: 22px;
 letter-spacing: 0.3px;
 color: #706F6F;
 }
-.button-config{
-background: #8B2533;
-border: 1px solid #8B2533;
-box-sizing: border-box;
-border-radius: 3px;
-width: auto;
-align-items: center;
-padding: 15px 30px;
-}
-.button-config-text{
-  font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.3px;
-color: #FFFFFF;
+.greenbutton{
+  background: #38664C;
+  border: 1px solid #38664C;
+  box-sizing: border-box;
+  border-radius: 3px;
+  align-items: center;
+  padding: 15px 30px;
 }
 .font-slider{
   font-family: Lato;
-font-style: normal;
-font-weight: 300;
-font-size: 44px;
-line-height: 56px;
-letter-spacing: 0.2px;
-color: #262626;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  color: #262626;
 
 }
 .border-hover{
@@ -2168,13 +2185,22 @@ color: #262626;
 }
 .cards-text{
   font-family: Lato;
-font-style: normal;
-font-weight: 300;
-font-size: 26px;
-line-height: 32px;
-text-align: center;
-letter-spacing: 0.2px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+.smtext{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #262626;
 }
 .swiper-button-next{
   display: block!important;
