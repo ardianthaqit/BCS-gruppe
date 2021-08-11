@@ -475,14 +475,15 @@
             </svg>
           </div>
         </div>
-
+        <p class="collection-product-count light">
+          {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+        </p>
         <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
-          grid grid--2-col negative-margin product-grid
-          {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-          {% endif %}">
+        grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+        gap-x-2 md:gap-x-5
+        gap-y-10 md:gap-y-10">
           {%- for product in collection.products -%}
-            <li class="grid__item">
+            <li class="product__item flex flex-col ">
               {% render 'product-card', product_card_product: product, media_size: section.settings.image_ratio, show_secondary_image: section.settings.show_secondary_image, add_image_padding: section.settings.add_image_padding, show_vendor: section.settings.show_vendor, show_image_outline: section.settings.show_image_outline %}
             </li>
           {%- endfor -%}

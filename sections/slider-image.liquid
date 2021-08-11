@@ -1,5 +1,5 @@
-<div class=" max-h-1081 h-1081 w-full flex bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
-  <div class="mx-auto w-10 items-center flex">
+<div id="slider-height-auto" class=" max-h-screen h-screen w-full flex bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+  <div class="mx-auto w-10 items-center flex" id="slider-2-height-auto">
     <div class="">
       {% if section.settings.heading != blank %}
       <div class="font-slider w-290px	">
@@ -22,7 +22,7 @@
     {% endif %}
     </div>
   <div class="flex  mx-auto" id="rd">
-      <div class="w-10 swiper-container mySwiper">
+      <div class="w-10 swiper-container mySwiper" id="rd-2">
           <div class="swiper-wrapper">
     {% for block in section.blocks %}
     <div class="sm:swiper-slide">

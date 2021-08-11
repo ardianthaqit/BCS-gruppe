@@ -77,6 +77,7 @@ module.exports = {
         '100vh': '100vh',
         '1081':'1081px',
         '95px':'95px',
+        '308px':'308px',
     },
     boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',

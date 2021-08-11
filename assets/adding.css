@@ -1,0 +1,397 @@
+.headline-config{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: 0.2px;
+    color: #1C1C1C;
+  }
+  .desc-config{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .button-config{
+    background: #8B2533;
+    border: 1px solid #8B2533;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: auto;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  .button-config-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+  }
+  .buttontext{
+    font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #706F6F;
+  }
+  .greenbutton{
+    background: #38664C;
+    border: 1px solid #38664C;
+    box-sizing: border-box;
+    border-radius: 3px;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  .font-slider{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #262626;
+  
+  }
+  .border-hover{
+    border: 3px solid #FFFFFF;
+    width: 250px;
+    height: 400px;
+  }
+  .cards-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+  }
+  .smtext{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #262626;
+  }
+  .swiper-button-next{
+    display: block!important;
+  }
+  .swiper-button-prev{
+    display: block!important;
+  }
+  .swiper-button-prev:after, .swiper-button-next:after {
+    letter-spacing: unset;
+  } 
+  .blocks{
+    background: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .font-block{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #262626;
+  }
+  .font-block-light{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .title-menu-footer{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #262626;
+  }
+  .link-menu-footer{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .rich-text-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+  }
+  .rich-text-para{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+  }
+  #collection-hero {
+    padding: 100px 0;
+    background: #FAF9F8;
+}
+#collection-hero .collection-hero__title {
+    margin: 0;
+}
+#main-collection-product-grid .grid__item .card-wrapper,
+.featured-collection_container .card-wrapper {
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Testiomnail slider  */
+.bg-cardsbg {
+    padding: 60px 20px;
+}
+.bg-cardsbg .block {
+    height: 100%;
+    width: 100%;
+}
+#review-card_image {
+    padding-bottom: 16px;
+}
+#review-card_job-title {
+    margin: 0;
+    padding-bottom: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#review-card_job-title::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    display: block;
+    background-color: #CBCBCB;
+    position: absolute;
+    bottom: 0;
+}
+#review-card_description {
+    padding: 0;
+}
+
+/* Testimonail slider end  */
+
+
+/* Featured collections */
+#height-feature {
+    display: flex;
+    align-items: center;
+    background: #FAF9F8;
+}
+.featured-collection_container {
+    width: 100%;
+}
+.collection .button {
+    background: transparent;
+    color: #262626;
+    box-shadow: none;
+    border-top: 1px solid #262626;
+    padding: 0;
+    display: inline-block;
+}
+.featured-collection_container .card-wrapper {
+    background: white;
+}
+
+@media (min-width: 750px) {
+    .featured-collection_container #product-grid .grid__item {
+        padding-left: 30px;
+    }
+}
+  
+  /* @media (min-width: 320px) and (max-width: 480px) {
+    
+    .mobile-image-bg{ display: block;}
+    .desktop-image-bg{display: none;}
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .desktop-image-bg{display: none;}
+    
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  
+    
+  }
+  @media (min-width: 769px) {
+    .desktop-image-bg{display: block;}
+    .mobile-image-bg{ display: none;}
+    } */
+
+
+    /* Andi CSS  */
+    @media only screen and (min-width: 768px) and (max-width:1024px) {
+        #rd-2{
+            width: 100%;
+        }
+        #rd-sld{
+            flex-wrap: wrap;
+        }
+        #slider-2-height-auto{
+            flex-direction: column;
+        }
+        #slider-height-auto{
+            height: auto;
+            max-height: auto;
+        }
+        #title-sm-footer{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.3px;
+            color: #262626;
+        }
+        #theHeader{
+            display: grid;
+            grid-template-areas: 'left-icon heading icons';
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        #header-logo{
+            display: none;
+        }
+        #product-grid{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            padding: 0;
+        }
+        #theImage{
+            width: 100%;
+            height: 329px;
+        }
+        #image-text{
+            flex-direction: column;
+            height: auto;
+        }
+        #text-width{
+            width: 100%;
+            display: block;
+        }
+        #text-title{
+            width: 100%;
+        }
+        #btn-config{
+            margin-bottom: 40px;
+        }
+        #feat-col{
+            padding: 0;
+        }
+        #height-feature{
+            max-height: 100%;
+            height: 100%;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        #img-replace{
+            background-size: cover;
+            width: 100%;
+            height: 455px;
+        }
+        .flex.justify-center.items-center img{
+            width: 162px;
+            height: 177px;
+        }
+        #rd-2{
+            width: 100%;
+        }
+        #rd-sld{
+            flex-wrap: wrap;
+        }
+        #slider-2-height-auto{
+            flex-direction: column;
+        }
+        #slider-height-auto{
+            height: auto;
+            max-height: auto;
+        }
+        #img-replace{
+            background-repeat:no-repeat!important;
+        }
+        #theImage{
+            width: 100%;
+            height: 329px;
+        }
+        #image-text{
+            flex-direction: column;
+            height: auto;
+        }
+        #text-width{
+            width: 100%;
+            display: block;
+        }
+        #text-title{
+            width: 100%;
+        }
+        #btn-config{
+            margin-bottom: 40px;
+        }
+        #product-grid{
+            flex-wrap: wrap;
+        }
+        #height-feature{
+            height: auto;
+        }
+        #image-text-section{
+            flex-direction: column;
+        }
+        #first-grid, #second-grid{
+            max-width: 100%;
+            width: 100%;
+        }
+        #slider-height-auto{
+            height: auto;
+        }
+        /* #footer{
+            flex-direction: column;
+        }
+        .footer .accordion .list-menu__item--link {
+            justify-content: left;
+            text-align: left;
+        } */
+    
+        #theHeader{
+            display: grid;
+            grid-template-areas: 'left-icon heading icons';
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        #header-logo{
+            display: none;
+        }
+    }
+    /* END ANDI  */
