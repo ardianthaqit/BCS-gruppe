@@ -2211,3 +2211,45 @@ color: #706F6F;
 .swiper-button-prev:after, .swiper-button-next:after {
   letter-spacing: unset;
 } 
+.blocks{
+  background: #FFFFFF;
+  border: 1px solid #CBCBCB;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.font-block{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #262626;
+}
+.font-block-light{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #706F6F;
+}
+.title-menu-footer{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #262626;
+}
+.link-menu-footer{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #706F6F;
+}

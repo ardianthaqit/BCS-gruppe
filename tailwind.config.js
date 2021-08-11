@@ -30,6 +30,7 @@ module.exports = {
         '10':'1320px',
          '290px':'290px',
          '590px':'590px',
+         '920px':'920px',
       },
       maxHeight: {
         '6': '1.5rem',
@@ -75,6 +76,7 @@ module.exports = {
         '85vh': '85vh',
         '100vh': '100vh',
         '1081':'1081px',
+        '95px':'95px',
     },
     boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',

@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
+<div class="rich-text{% if section.settings.full_width %} rich-text--full-width{% endif %} flex items-center " style="background-color: {{ section.settings.bgcolor }}">
+  <div class="rich-text__blocks">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'heading' -%}
+          <h2 class="text-white {{ block.settings.heading_size }} " {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+        {%- when 'text' -%}
+          <div class="rich-text__text rte text-white" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+        {%- when 'button' -%}
+          <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+            {{ block.settings.button_label | escape }}
+          </a>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+<div class="max-h-1081 h-1081 w-full block">
+    <div class="w-10 mx-auto">
+        <div class="pt-20">
+            {% for block in section.blocks %}
+            <div class="flex blocks mb-7 h-95px	 w-920px mx-auto items-center">
+                <div class="w-1/2">
+                    <div class="flex items-center justify-around">
+                        <div class="block">
+                            <div class="font-block">{{ block.settings.title}}</div>
+                            <div class="font-block-light"> {{ block.settings.subheading}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="items-center flex justify-around"> {% include 'icon_block-arrow' %} </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "Blocks",
+"max_blocks": 4,
+"settings": [ 
+{
+  "type": "image_picker",
+  "id": "background_image",
+  "label": "Background image"
+}, 
+{
+  "type": "image_picker",
+  "id": "mobile_background_image",
+  "label": "Mobile Background image"
+},
+{
+  "type": "richtext",
+  "id": "title",
+  "label": "Heading"
+}, 
+{
+  "type": "text",
+  "id": "subheading",
+  "label": "Subheading"
+}
+],
+"blocks": [
+  {
+    "type": "card",
+    "name": "Card",  
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+    {
+        "type": "richtext",
+        "id": "title",
+        "label": "Title"
+      },
+    {
+        "type": "richtext",
+        "id": "subheading",
+        "label": "Subheading"
+      }, 
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    }
+    ]
+  }
+],
+"presets": [{
+"name": "Blocks",
+"category": "Content",
+"blocks": [{
+  "type": "card"
+},{
+  "type": "card"
+}]
+}]
+}
+{% endschema %} 
