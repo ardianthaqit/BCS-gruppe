@@ -98,6 +98,7 @@
         }
       }
     {% endstyle %}
+    {{ 'external.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />

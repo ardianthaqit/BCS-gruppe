@@ -1,4 +1,7 @@
 <div class="max-h-1081 h-1081 w-full flex ">
+    <div class="w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+
+    </div>
     <div class="w-1/2 flex items-center justify-center ">
         <div class="block">
             <div class="w-590px">
@@ -25,13 +28,11 @@
      
         </div>
     </div>
-    <div class="w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
 
-    </div>
   </div>
 {% schema %}
 {
-"name": "Front-page image and text",
+"name": "Karriere image and text",
 "settings": [ 
 {
 "type": "image_picker",
@@ -82,7 +83,7 @@
   }
 ],
 "presets": [{
-"name": "Front-page image and text",
+"name": "Karriere image and text",
 "category": "Content"
 }]
 }
