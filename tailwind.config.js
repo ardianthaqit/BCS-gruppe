@@ -19,6 +19,7 @@ module.exports = {
         border:'#EFEFEF',
         lightgrey:'#CBCBCB',
         lightwhite:'rgba(255, 255, 255, 0.9)',
+        redlight:'#8B2533',
       },
       width: {
         '1/7': '14.2857143%',

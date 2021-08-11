@@ -1,3 +1,12 @@
+.headline-mobile{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
 .headline-config{
     font-family: Lato;
     font-style: normal;
@@ -318,10 +327,14 @@
         }
     }
     @media only screen and (max-width: 767px) {
+        a.link.link--text.list-menu__item.list-menu__item--link{
+            justify-content: left;
+            text-align: left;
+        }
         #img-replace{
             background-size: cover;
             width: 100%;
-            height: 455px;
+            
         }
         .flex.justify-center.items-center img{
             width: 162px;
@@ -377,13 +390,6 @@
         #slider-height-auto{
             height: auto;
         }
-        /* #footer{
-            flex-direction: column;
-        }
-        .footer .accordion .list-menu__item--link {
-            justify-content: left;
-            text-align: left;
-        } */
     
         #theHeader{
             display: grid;
@@ -392,6 +398,10 @@
         }
         #header-logo{
             display: none;
+        }
+        #swiper-wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
     /* END ANDI  */

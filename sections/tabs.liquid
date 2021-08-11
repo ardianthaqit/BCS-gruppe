@@ -1,0 +1,232 @@
+<style>
+    ul.tabs {
+      border-bottom: 1px solid #DDDDDD;
+      display: block;
+      margin: 0 0 20px;
+      padding: 0;
+    }
+    ul.tabs li {
+      display: block;
+      float: left;
+      height: 30px;
+      margin-bottom: 0;
+      padding: 0;
+      width: auto;
+    }
+    ul.tabs li a {
+      -moz-border-bottom-colors: none;
+      -moz-border-image: none;
+      -moz-border-left-colors: none;
+      -moz-border-right-colors: none;
+      -moz-border-top-colors: none;
+      background: none repeat scroll 0 0 #F5F5F5;
+      border-color: #DDDDDD !important;
+      border-style: solid;
+      border-width: 1px 1px 0 1px;
+      display: block;
+      font-size: 13px;
+      height: 29px;
+      line-height: 30px;
+      margin: 0;
+      padding: 0 20px;
+      text-decoration: none;
+      width: auto;
+      color: #303030;
+      border-bottom:none !important;
+    }
+    ul.tabs li a.active {
+      background: none repeat scroll 0 0 #FFFFFF;
+      border-left-width: 1px;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      color: #111111;
+      height: 30px;
+      margin: 0 0 0 -1px;
+      padding-top: 4px;
+      position: relative;
+      top: -4px;
+    }
+    ul.tabs li:first-child a.active {
+      margin-left: 0;
+    }
+    ul.tabs li:first-child a {
+      border-top-left-radius: 2px;
+      border-width: 1px 1px 0;
+    }
+    ul.tabs li:last-child a {
+      border-top-right-radius: 2px;
+    }
+    ul.tabs:before, ul.tabs:after {
+      content: " ";
+      display: block;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+    }
+    ul.tabs:after {
+      clear: both;
+    }
+    </style>
+<div class="w-full max-h-screen h-screen flex">
+    <div class="w-10 mx-auto flex">
+        <div class="w-1/2">
+            <div class="block">
+                {% if section.settings.smallheading != blank %}
+                <div>
+                    {{ section.settings.smallheading }}
+                </div>
+                {% endif %}
+                {% if section.settings.heading != blank %}
+                <div>
+                    {{ section.block.heading }}
+                </div>
+                {% endif %}
+                {% if section.settings.desc != blank %}
+                <div>
+                    {{ section.settings.desc }}
+                </div>
+                {% endif %}
+                {% if section.settings.image %}
+                <div class="flex justify-center items-center">
+                {{ section.settings.image | img_url: 'master'| img_tag: block.settings.icon.alt}} 
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="w-1/2">
+            <div>
+                <ul class="tabs">
+                  <li><a href="#tab-1">{{section.settings.firsttab}}</a></li>
+                  <li><a href="#tab-2">{{section.settings.secondtab}}</a></li>
+                  <li><a href="#tab-3">{{section.settings.thirdtab}}</a></li>
+                </ul>
+                <div id="tab-1">
+                    <table>
+                        <tr>
+                          <th>Company</th>
+                          <th>Contact</th>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Futterkiste</td>
+                          <td>Maria Anders</td>
+                        </tr>
+                        <tr>
+                          <td>Centro comercial Moctezuma</td>
+                          <td>Francisco Chang</td>
+                        </tr>
+                        <tr>
+                          <td>Ernst Handel</td>
+                          <td>Roland Mendel</td>
+                        </tr>
+                        <tr>
+                          <td>Island Trading</td>
+                          <td>Helen Bennett</td>
+                        </tr>
+                        <tr>
+                          <td>Laughing Bacchus Winecellars</td>
+                          <td>Yoshi Tannamuri</td>
+                        </tr>
+                      
+                      </table>
+                </div>
+                <div id="tab-2">
+                test2
+                </div>
+                <div id="tab-3">
+                test3
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+  {% schema %}
+{
+"name": "tabs",
+"max_blocks": 4,
+"settings": [ 
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background image"
+    }, 
+    {
+        "type": "richtext",
+        "id": "smallheading",
+        "label": "Small Heading"
+      }, 
+    {
+    "type": "richtext",
+    "id": "heading",
+    "label": "Heading"
+  }, 
+  {
+    "type": "richtext",
+    "id": "desc",
+    "label": "Description"
+  },
+  {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button text"
+  },
+  {
+    "type": "url",
+    "id": "button_url",
+    "label": "Button url"
+  },
+  {
+    "type": "richtext",
+    "id": "firsttab",
+    "label": "Tab 1"
+  },
+  {
+    "type": "richtext",
+    "id": "secondtab",
+    "label": "Tab 2"
+  }, 
+  {
+    "type": "richtext",
+    "id": "thirdtab",
+    "label": "Tab 3"
+  }  
+],
+"blocks": [
+{
+  "type": "card",
+  "name": "Card",  
+  "settings": [
+  {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+  {
+      "type": "richtext",
+      "id": "stll",
+      "label": "Title"
+    },
+  {
+      "type": "richtext",
+      "id": "stlll",
+      "label": "Subheading"
+    }, 
+  {
+    "type": "richtext",
+    "id": "description",
+    "label": "Description"
+  }
+  ]
+}
+],
+"presets": [{
+"name": "tabs",
+"category": "Content",
+"blocks": [{
+"type": "card"
+},{
+"type": "card"
+}]
+}]
+}
+{% endschema %} 
