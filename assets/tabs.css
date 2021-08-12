@@ -1,0 +1,64 @@
+    ul.tabs {
+      display: flex;
+    }
+    ul.tabs li {
+      display: block;
+      height: 30px;
+      margin-bottom: 0;
+      padding: 0;
+      width: auto;
+    }
+    ul.tabs li a {
+      display: block;
+      font-size: 13px;
+      height: 29px;
+      line-height: 30px;
+      margin: 0;
+      padding: 0 20px;
+      text-decoration: none;
+      width: auto;
+      color: #303030;
+      border-bottom:none !important;
+    }
+    ul.tabs li a.active {
+        text-decoration: underline;
+    }
+    ul.tabs li:last-child a {
+      border-top-right-radius: 2px;
+    }
+    /* ul.tabs:before, ul.tabs:after {
+      content: " ";
+      display: block;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+    } */
+    ul.tabs:after {
+      clear: both;
+    }
+    tr:nth-child(even) {
+        background-color: #F5F5F5;
+    }
+    table:not([class]) td, table:not([class]) th{
+        border: none!important;
+    }
+    .head-tabs-title{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #262626;
+    }
+    .field-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+    }

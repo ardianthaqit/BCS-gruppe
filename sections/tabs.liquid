@@ -1,140 +1,196 @@
-<style>
-    ul.tabs {
-      border-bottom: 1px solid #DDDDDD;
-      display: block;
-      margin: 0 0 20px;
-      padding: 0;
-    }
-    ul.tabs li {
-      display: block;
-      float: left;
-      height: 30px;
-      margin-bottom: 0;
-      padding: 0;
-      width: auto;
-    }
-    ul.tabs li a {
-      -moz-border-bottom-colors: none;
-      -moz-border-image: none;
-      -moz-border-left-colors: none;
-      -moz-border-right-colors: none;
-      -moz-border-top-colors: none;
-      background: none repeat scroll 0 0 #F5F5F5;
-      border-color: #DDDDDD !important;
-      border-style: solid;
-      border-width: 1px 1px 0 1px;
-      display: block;
-      font-size: 13px;
-      height: 29px;
-      line-height: 30px;
-      margin: 0;
-      padding: 0 20px;
-      text-decoration: none;
-      width: auto;
-      color: #303030;
-      border-bottom:none !important;
-    }
-    ul.tabs li a.active {
-      background: none repeat scroll 0 0 #FFFFFF;
-      border-left-width: 1px;
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
-      color: #111111;
-      height: 30px;
-      margin: 0 0 0 -1px;
-      padding-top: 4px;
-      position: relative;
-      top: -4px;
-    }
-    ul.tabs li:first-child a.active {
-      margin-left: 0;
-    }
-    ul.tabs li:first-child a {
-      border-top-left-radius: 2px;
-      border-width: 1px 1px 0;
-    }
-    ul.tabs li:last-child a {
-      border-top-right-radius: 2px;
-    }
-    ul.tabs:before, ul.tabs:after {
-      content: " ";
-      display: block;
-      height: 0;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-    }
-    ul.tabs:after {
-      clear: both;
-    }
-    </style>
-<div class="w-full max-h-screen h-screen flex">
+{{ 'tabs.css' | asset_url | stylesheet_tag }}
+<div class="w-full max-h-screen h-screen flex pt-20">
     <div class="w-10 mx-auto flex">
-        <div class="w-1/2">
+        <div class="w-1/2 relative">
             <div class="block">
-                {% if section.settings.smallheading != blank %}
-                <div>
-                    {{ section.settings.smallheading }}
-                </div>
+              <div class="block">
+                {% if section.settings.smtext != blank %}
+                    <div class="smtext">
+                      {{ section.settings.smtext }}
+                    </div>
                 {% endif %}
-                {% if section.settings.heading != blank %}
-                <div>
-                    {{ section.block.heading }}
-                </div>
+                    {% if section.settings.heading != blank %}
+                    <div class="font-slider">
+                      {% render 'green-text', text: section.settings.heading %}
+                    
+                    </div>
                 {% endif %}
                 {% if section.settings.desc != blank %}
-                <div>
-                    {{ section.settings.desc }}
-                </div>
+                    <div class="desc-config pt-10 ">
+                      {{ section.settings.desc }}
+                    </div>
                 {% endif %}
-                {% if section.settings.image %}
-                <div class="flex justify-center items-center">
-                {{ section.settings.image | img_url: 'master'| img_tag: block.settings.icon.alt}} 
-                </div>
+                    <div class="flex ">
+                        {% if section.settings.button_text != blank %}
+                        <a href="{{ section.settings.button_url }}"
+                          class="button-config-text pt-14	"
+                          aria-label="{{ ariaLabel }}">
+                            <div class="greenbutton ">
+                              {{- section.settings.button_text | escape -}}
+                            </div>
+                        </a>
+                    {% endif %}
+                    {% if section.settings.button_text != blank %}
+                    <a href="{{ section.settings.secondbutton_url }}"
+                      class="button-config-text pt-14 pl-5	"
+                      aria-label="{{ ariaLabel }}">
+                        <div class="buttontext">
+                          {{- section.settings.secondbutton_text | escape -}}
+                        </div>
+                    </a>
                 {% endif %}
+                    </div>
+                </div>
             </div>
+            <div class="absolute right-0 w-920px">
+              {{ section.settings.image | img_url: 'master'| img_tag: block.settings.icon.alt}} 
+              </div>
         </div>
-        <div class="w-1/2">
-            <div>
-                <ul class="tabs">
-                  <li><a href="#tab-1">{{section.settings.firsttab}}</a></li>
-                  <li><a href="#tab-2">{{section.settings.secondtab}}</a></li>
-                  <li><a href="#tab-3">{{section.settings.thirdtab}}</a></li>
+
+        <div class="w-1/2 flex justify-center">
+            <div class="w-9/12	">
+                <ul class="tabs w-full flex justify-between	">
+                  <li><a href="#tab-1"><div class="head-tabs-title">{{section.settings.firsttab}}</div></a></li>
+                  <li><a href="#tab-2"><div class="head-tabs-title">{{section.settings.secondtab}}</div></a></li>
+                  <li><a href="#tab-3"><div class="head-tabs-title">{{section.settings.thirdtab}}</div></a></li>
                 </ul>
-                <div id="tab-1">
+                <div id="tab-1" class="">
+                  <div class="mt-10">
                     <table>
-                        <tr>
-                          <th>Company</th>
-                          <th>Contact</th>
-                        </tr>
-                        <tr>
-                          <td>Alfreds Futterkiste</td>
+                        <tr class="h-91px">
+                          <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
                           <td>Maria Anders</td>
                         </tr>
-                        <tr>
+                        <tr class="h-91px">
                           <td>Centro comercial Moctezuma</td>
                           <td>Francisco Chang</td>
-                        </tr>
-                        <tr>
+                        </tr >
+                        <tr class="h-91px">
                           <td>Ernst Handel</td>
                           <td>Roland Mendel</td>
-                        </tr>
-                        <tr>
+                        </tr ">
+                        <tr class="h-91px">
                           <td>Island Trading</td>
                           <td>Helen Bennett</td>
                         </tr>
-                        <tr>
+                        <tr class="h-91px">
                           <td>Laughing Bacchus Winecellars</td>
                           <td>Yoshi Tannamuri</td>
                         </tr>
-                      
+                        <tr class="h-91px">
+                          <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
+                          <td>Maria Anders</td>
+                        </tr>
+                        <tr class="h-91px">
+                          <td>Centro comercial Moctezuma</td>
+                          <td>Francisco Chang</td>
+                        </tr >
+                        <tr class="h-91px">
+                          <td>Ernst Handel</td>
+                          <td>Roland Mendel</td>
+                        </tr ">
+                        <tr class="h-91px">
+                          <td>Island Trading</td>
+                          <td>Helen Bennett</td>
+                        </tr>
+                        <tr class="h-91px">
+                          <td>Laughing Bacchus Winecellars</td>
+                          <td>Yoshi Tannamuri</td>
+                        </tr>
                       </table>
+                    </div>
                 </div>
-                <div id="tab-2">
-                test2
+                <div id="tab-2" class="">
+                  <div class="mt-10">
+                  <table>
+                    <tr class="h-91px">
+                      <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
+                      <td>Maria Anders</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td>Centro comercial Moctezuma</td>
+                      <td>Francisco Chang</td>
+                    </tr >
+                    <tr class="h-91px">
+                      <td>Ernst Handel</td>
+                      <td>Roland Mendel</td>
+                    </tr ">
+                    <tr class="h-91px">
+                      <td>Island Trading</td>
+                      <td>Helen Bennett</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td>Laughing Bacchus Winecellars</td>
+                      <td>Yoshi Tannamuri</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
+                      <td>Maria Anders</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td>Centro comercial Moctezuma</td>
+                      <td>Francisco Chang</td>
+                    </tr >
+                    <tr class="h-91px">
+                      <td>Ernst Handel</td>
+                      <td>Roland Mendel</td>
+                    </tr ">
+                    <tr class="h-91px">
+                      <td>Island Trading</td>
+                      <td>Helen Bennett</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td>Laughing Bacchus Winecellars</td>
+                      <td>Yoshi Tannamuri</td>
+                    </tr>
+                  </table>
+                  </div>
                 </div>
-                <div id="tab-3">
-                test3
+                <div id="tab-3" class="">
+                  <div class="mt-10">
+                  <table>
+                    <tr class="h-91px">
+                      <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
+                      <td>Maria Anders</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td>Centro comercial Moctezuma</td>
+                      <td>Francisco Chang</td>
+                    </tr >
+                    <tr class="h-91px">
+                      <td>Ernst Handel</td>
+                      <td>Roland Mendel</td>
+                    </tr ">
+                    <tr class="h-91px">
+                      <td>Island Trading</td>
+                      <td>Helen Bennett</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td>Laughing Bacchus Winecellars</td>
+                      <td>Yoshi Tannamuri</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
+                      <td>Maria Anders</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td>Centro comercial Moctezuma</td>
+                      <td>Francisco Chang</td>
+                    </tr >
+                    <tr class="h-91px">
+                      <td>Ernst Handel</td>
+                      <td>Roland Mendel</td>
+                    </tr ">
+                    <tr class="h-91px">
+                      <td>Island Trading</td>
+                      <td>Helen Bennett</td>
+                    </tr>
+                    <tr class="h-91px">
+                      <td>Laughing Bacchus Winecellars</td>
+                      <td>Yoshi Tannamuri</td>
+                    </tr>
+                  </table>
+                </div>
                 </div>
               </div>
         </div>
@@ -143,7 +199,6 @@
   {% schema %}
 {
 "name": "tabs",
-"max_blocks": 4,
 "settings": [ 
     {
         "type": "image_picker",
@@ -152,7 +207,7 @@
     }, 
     {
         "type": "richtext",
-        "id": "smallheading",
+        "id": "smtext",
         "label": "Small Heading"
       }, 
     {
@@ -176,57 +231,25 @@
     "label": "Button url"
   },
   {
-    "type": "richtext",
+    "type": "text",
     "id": "firsttab",
     "label": "Tab 1"
   },
   {
-    "type": "richtext",
+    "type": "text",
     "id": "secondtab",
     "label": "Tab 2"
   }, 
   {
-    "type": "richtext",
+    "type": "text",
     "id": "thirdtab",
     "label": "Tab 3"
-  }  
-],
-"blocks": [
-{
-  "type": "card",
-  "name": "Card",  
-  "settings": [
-  {
-      "type": "image_picker",
-      "id": "background_image",
-      "label": "Background Image"
-    },
-  {
-      "type": "richtext",
-      "id": "stll",
-      "label": "Title"
-    },
-  {
-      "type": "richtext",
-      "id": "stlll",
-      "label": "Subheading"
-    }, 
-  {
-    "type": "richtext",
-    "id": "description",
-    "label": "Description"
   }
-  ]
-}
+  
 ],
 "presets": [{
 "name": "tabs",
-"category": "Content",
-"blocks": [{
-"type": "card"
-},{
-"type": "card"
-}]
+"category": "Content"
 }]
 }
 {% endschema %} 
