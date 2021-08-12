@@ -17,9 +17,9 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<section class="page-width h-screen">
-  <div class="product grid-d grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper">
+<section class="page-width h-auto">
+  <div class="product block  md:grid-d grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class=" w-full  lg:w-full xl:w-1/2">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
@@ -65,7 +65,7 @@
         </button>
       {%- endif -%}
     </div>
-    <div class="product__info-wrapper grid__item">
+    <div class=" w-full  lg:w-full xl:w-1/2 xl:px-60 lg:px-20 px-0 h-full pt-5">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container relative top-1/4{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -81,7 +81,7 @@
             <h1 class="product-title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
-          {%- when 'price' -%}
+            {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
@@ -91,12 +91,14 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
-          {%- when 'description' -%}
+
+            {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
                 {{ product.description }}
               </div>
             {%- endif -%}
+   
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}

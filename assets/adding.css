@@ -1,3 +1,12 @@
+.price-font{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #38664C;
+}
 .product-title{
     font-family: Lato;
     font-style: normal;
@@ -28,15 +37,7 @@
     letter-spacing: 0.3px;
     color: #706F6F;
 }
-.headline-mobile{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: 0.1px;
-    color: #FFFFFF;
-}
+
 .headline-config{
     font-family: Lato;
     font-style: normal;
@@ -70,9 +71,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.3px;
     color: #FFFFFF;
   }
@@ -93,16 +91,7 @@
     align-items: center;
     padding: 15px 30px;
   }
-  .font-slider{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 44px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    color: #262626;
-  
-  }
+ 
   .border-hover{
     border: 3px solid #FFFFFF;
     width: 250px;
@@ -266,22 +255,25 @@
 }
 
 @media (min-width: 750px) {
+
     .featured-collection_container #product-grid .grid__item {
         padding-left: 30px;
     }
 }
-.green-text{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 44px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    color: #38664C;
-}
+    .green-text{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 56px;
+        letter-spacing: 0.2px;
+        color: #38664C;
+    }
   .show-mobile{display: none;}
   @media (min-width: 320px) and (max-width: 480px) {
-    
+    .bg-remove-mobile{
+        background: none;
+    }
   }
   @media (max-width: 767px) {
     #hero__left-container {
@@ -335,11 +327,32 @@
 
     
   }
+  .font-slider{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #262626;
+  }
+
+  /* @media only screen and (min-width : 1025px) {
+    .tablet-responsive {
+       justify-content: unset;
+       display: unset;
+       align-items: unset;
+    }
+}
   @media (min-width: 768px) and (max-width: 1024px) {
-    
+    .tablet-responsive {
+        justify-content: unset;
+        display: unset;
+        align-items: unset;
+     }
   
     
-  }
+  } */
   @media (min-width: 769px) {
     
     } 
@@ -347,8 +360,8 @@
 
     /* Andi CSS  */
     @media only screen and (min-width: 768px) and (max-width:1024px) {
-        .hidde-mobile{display: none}
-        .show-mobile{display: block}
+        .hidde-mobile{display: block}
+        .show-mobile{display: none}
         #rd-2{
             width: 100%;
         }
@@ -411,8 +424,18 @@
         }
     }
     @media only screen and (max-width: 767px) {
+
         .hidde-mobile{display: none;}
         .show-mobile{display: block}
+        .headline-mobile{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.1px;
+            color: #FFFFFF;
+        }
         a.link.link--text.list-menu__item.list-menu__item--link{
             justify-content: left;
             text-align: left;
@@ -766,9 +789,10 @@
             color: #706F6F;
             margin-bottom: 10px;
         }
-        .button-config-text{
-            justify-content: center;
-        }
+         .button-config-text{
+            justify-content: left;
+            display:flex;
+        } 
         #btn-cnfg{
             border: 1px solid #262626;
             box-sizing: border-box;
@@ -784,7 +808,7 @@
         }
         #slider-height-auto{
             position: relative;
-            height: 100vh;
+            /* height: 100vh; */
         }
         #swiper-wrapper{
             position: absolute;

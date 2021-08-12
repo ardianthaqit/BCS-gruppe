@@ -1,4 +1,4 @@
-<div class="max-h-screen h-screen w-full flex bg-right bg-no-repeat	bg-contain	" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+<div class=" h-auto md:h-screen w-full block md:flex bg-right bg-no-repeat	bg-contain	bg-remove-mobile" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
         <div id="hero__left-container" class="w-1/2 flex items-center justify-around	">
             <div id="hero__left-content" class="block w-590px">
             {% if section.settings.smtext != blank %}
@@ -16,7 +16,7 @@
                   {{ section.settings.desc }}
                 </div>
             {% endif %}
-                <div class="flex ">
+                <div class=" block md:flex ">
                     {% if section.settings.button_text != blank %}
                     <a href="{{ section.settings.button_url }}"
                       class="button-config-text pt-14	"
