@@ -1,5 +1,5 @@
 <div class="max-h-screen h-screen">
-{% if section.settings.background_image != blank %}<div id="img-replace" class=" max-h-screen sm:h-screen	h-50vh w-full  bg-no-repeat flex"  style="background-image: url({{ section.settings.background_image | img_url: 'master' }})"  >{% endif %}
+{% if section.settings.background_image != blank %}<div id="img-replace" class=" max-h-screen sm:h-screen	h-50vh w-full  bg-no-repeat bg-contain flex"  style="background-image: url({{ section.settings.background_image | img_url: 'master' }})"  >{% endif %}
     <div class="mx-auto mr-14 w-10 items-center flex sm:h-screen h-50vh relative ">
     <div class="flex  mx-auto sm:relative absolute sm:top-0 top-1/2" id="rd">
         <div class="w-10 swiper-container mySwiper ">

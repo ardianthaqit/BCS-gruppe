@@ -1,6 +1,6 @@
-<div id="slider-height-auto" class=" max-h-screen h-screen w-full flex bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+<div id="slider-height-auto" class=" max-h-screen h-screen w-full flex bg-contain bg-no-repeat  bg-bottom sm:bg-right overflow-hidden" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
   <div class="mx-auto w-10 items-center flex" id="slider-2-height-auto">
-    <div class="">
+    <div class="h-50vh sm:h-auto">
       {% if section.settings.heading != blank %}
       <div class="font-slider w-290px	">
         {{ section.settings.heading }}
@@ -22,7 +22,7 @@
     {% endif %}
     </div>
   <div class="flex  mx-auto" id="rd">
-      <div class="w-10 swiper-container TheSwiper" id="rd-2">
+      <div class="w-10 swiper-container mySwiper hidde-mobile" id="rd-2">
           <div class="swiper-wrapper" id="swiper-wrapper">
     {% for block in section.blocks %}
     <div class="swiper-slide" id="removeslider">
@@ -59,6 +59,32 @@
 <div class="swiper-button-next">{% include 'icon_right-slider' %}</div>
 <div class="swiper-button-prev">{% include 'icon_left-slider' %}</div>
 </div>
+  <!-- FOR MOBILE  -->
+<div class="w-10 show-mobile" id="rd-2" >
+    <div id="swiper-wrapper">
+{% for block in section.blocks %}
+<div class=" mr-0 sm:mr-8 relative mx-auto text-center
+sm:flex inline-block items-center
+  rounded-md overflow-hidden
+  md:w-full xl:h-full
+  h-auto
+  pt-7 sm:pt-0
+  cursor-pointer"
+  x-data="{open: false }" @mouseover="open = true" @mouseout="open = false" @click="open = !open"
+  >
+    <div class="block">
+    <div class="flex justify-center items-center"> {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>
+    </div>
+    <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 bottom-5 z-2 text-white"> 
+      <div class="ucards-text">
+        {{ block.settings.stll}}
+      </div>
+    </div>
+</div>
+{% endfor %}
+</div> 
+</div>
+  <!-- END MOBILE  -->
 </div>
 </div>
 </div>

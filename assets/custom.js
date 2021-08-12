@@ -20,29 +20,7 @@ var swiper = new Swiper(".mySwiper", {
 // END SLIDER FOR TESTOMNAILS
 
 // START SLIDER IMAGE
-var swiper= Swiper;
-var init = false;
-function swiperMode() { let mobile = window.matchMedia('(min-width: 0px) and (max-width: 768px)');
-if(mobile.matches) {
-  if (!init) {
-      init = true;
- swiper = new Swiper(".TheSwiper", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  keyboard: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-}); 
+
 // END SLIDER IMAGE 
 
 
