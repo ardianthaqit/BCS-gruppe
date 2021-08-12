@@ -10,20 +10,20 @@
               <div class="rich-text-para">{{ section.settings.subheading }}</div>
       </div>
     </div>
-    <div class="w-10 mx-auto">
+    <div id="blocks__jobs__container" class="w-full lg:w-10 mx-auto">
         <div class="pt-20">
             {% for block in section.blocks %}
-            <div class="flex blocks mb-7 h-95px	 w-920px mx-auto items-center">
+            <div class="flex blocks mb-7 h-95px	 w-full lg:w-920px mx-auto items-center">
                 <div class="w-1/2">
                     <div class="flex items-center justify-around">
-                        <div class="block">
+                        <div id="blocks__content" class="block">
                             <div class="font-block">{{ block.settings.title}}</div>
                             <div class="font-block-light"> {{ block.settings.subheading}}</div>
                         </div>
                     </div>
                 </div>
                 <div class="w-1/2">
-                    <div class="items-center flex justify-around"> {% include 'icon_block-arrow' %} </div>
+                    <div id="blocks__content__svg-icon" class="items-center flex justify-around"> {% include 'icon_block-arrow' %} </div>
                 </div>
             </div>
         {% endfor %}

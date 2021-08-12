@@ -73,7 +73,7 @@ sm:flex inline-block items-center
   x-data="{open: false }" @mouseover="open = true" @mouseout="open = false" @click="open = !open"
   >
     <div class="block">
-    <div class="flex justify-center items-center"> {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>
+    {% if block.settings.mobile_background_image != blank %}<div class="flex justify-center items-center"> {{ block.settings.mobile_background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>{% endif %}
     </div>
     <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 bottom-5 z-2 text-white"> 
       <div class="ucards-text">
@@ -91,7 +91,7 @@ sm:flex inline-block items-center
 {% schema %}
 {
 "name": "Cards",
-"max_blocks": 4,
+"max_blocks": 10,
 "settings": [ 
 {
 "type": "image_picker",
@@ -132,7 +132,12 @@ sm:flex inline-block items-center
   {
       "type": "image_picker",
       "id": "background_image",
-      "label": "Background Image"
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_background_image",
+      "label": "Mobile Image"
     },
   {
       "type": "richtext",

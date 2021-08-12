@@ -1,8 +1,8 @@
 <div class="max-h-screen h-screen w-full flex bg-right bg-no-repeat	bg-contain	" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
-        <div class="w-1/2 flex items-center justify-around	">
-            <div class="block w-590px">
+        <div id="hero__left-container" class="w-1/2 flex items-center justify-around	">
+            <div id="hero__left-content" class="block w-590px">
             {% if section.settings.smtext != blank %}
-                <div class="smtext">
+                <div id="hero__second-title" class="smtext">
                   {{ section.settings.smtext }}
                 </div>
             {% endif %}
@@ -12,7 +12,7 @@
                 </div>
             {% endif %}
             {% if section.settings.desc != blank %}
-                <div class="desc-config pt-10 ">
+                <div id="hero__description" class="desc-config pt-10 ">
                   {{ section.settings.desc }}
                 </div>
             {% endif %}
@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-1/2 flex">
+        <div id="hero__right-container" class="w-1/2 flex">
             <div class="flex items-center">
                     {{ section.settings.image| img_url: 'master'| img_tag: block.settings.icon.alt}}
             </div>

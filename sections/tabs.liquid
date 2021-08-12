@@ -1,7 +1,7 @@
 {{ 'tabs.css' | asset_url | stylesheet_tag }}
 <div class="w-full max-h-screen h-screen flex pt-20">
     <div class="w-10 mx-auto flex">
-        <div class="w-1/2 relative">
+        <div class="w-1/2 relative" id="width-fl-tabs">
             <div class="block">
               <div class="block">
                 {% if section.settings.smtext != blank %}
@@ -42,13 +42,13 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute right-0 w-920px">
+            <div class="absolute right-0 w-920px" id="position-image">
               {{ section.settings.image | img_url: 'master'| img_tag: block.settings.icon.alt}} 
               </div>
         </div>
 
-        <div class="w-1/2 flex justify-center">
-            <div class="w-9/12	">
+        <div class="w-1/2 flex justify-center" id="flex-tab">
+            <div class="w-9/12" id="w-ful-tab-1">
                 <ul class="tabs w-full flex justify-between	">
                   <li><a href="#tab-1"><div class="head-tabs-title">{{section.settings.firsttab}}</div></a></li>
                   <li><a href="#tab-2"><div class="head-tabs-title">{{section.settings.secondtab}}</div></a></li>
