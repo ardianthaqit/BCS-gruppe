@@ -1,0 +1,138 @@
+<div class="w-full bg-green py-8 relative">
+    <div class="max-w-5xl mx-auto px-2 xl:px-0">
+      {% for block in section.blocks %}
+        {% assign show_tab = false %}
+        {% assign tab_content = blank %}
+        {% if block.settings.enabled %}
+          {% assign show_tab = true %}
+          {% capture tab_content %}
+            <div x-data="{open: false}" class="rounded-md bg-white shadow-md mb-3 relative"
+              {% if block.settings.anchor != blank %} id="{{block.settings.anchor|handle }}" data-anchor="{{ block.settings.anchor_text | default: block.settings.title }}" data-position="{{ block.settings.anchor_position }}" {% endif %}
+              >  
+              <div class="px-5 py-3 xl:py-3 w-full relative cursor-pointer" @click="open = !open">
+                <h2 class="text-sm md:text-base xl:text-lg text-grey-dark font-normal uppercase my-0 py-0">{{ block.settings.title }}</h2> 
+                <div x-show="open === false ">
+                    <!-- ICon  -->
+                </div>
+                <div x-show="open === true">
+                    <!-- ICOn  -->
+                </div>
+              </div>
+              <div x-show="open === true" 
+                class="px-5 pt-2 pb-5"
+                x-transition:enter="transition ease-out duration-250"
+                x-transition:enter-start="opacity-0 transform scale-90"
+                x-transition:enter-end="opacity-100 transform scale-100"
+                x-transition:leave="transition ease-in duration-250"
+                x-transition:leave-start="opacity-100 transform scale-100"
+                x-transition:leave-end="opacity-0 transform scale-90">
+                {% assign namespace = block.settings.metafield_namespace %}
+                {% assign key = block.settings.metafield_key %}
+  
+                {% if block.settings.use_metafield %}
+                  {% assign value = product.metafields.tabs[key] %}
+                  {% if value != blank %}
+                    {{ value }}
+                  {% else %}
+                    {% if block.settings.only_if_available %}
+                      {% assign show_tab = false%}
+                    {% endif %}
+                    {{ block.settings.default_content }}
+                  {% endif %}
+                {% else %}
+                  {{ block.settings.default_content }}
+                {% endif %}
+              </div>
+            </div>
+          {% endcapture %}
+  
+        {% endif %}
+  
+        {% if show_tab %}
+          {{ tab_content }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  
+  {% schema %}
+  {
+    "name":"Accordion",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_left",
+        "label": "Image left"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_right",
+        "label": "Image right"
+      }
+    ],
+    "blocks": [
+      {
+        "name": 			"Tab",
+        "type": 			"tab",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show Tab",
+            "default": true
+          },
+          {
+            "label":	"Title",
+            "type": 	"text",
+            "id": 		"title"
+          },
+          {
+            "type": "richtext",
+            "id": "default_content",
+            "label": "Default content"
+          },
+          {
+            "type": "checkbox",
+            "id": "use_metafield",
+            "label": "Use metafield",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "only_if_available",
+            "label": "Show metafield only if available",
+            "default": false
+          },
+          {
+            "label":	"Metafield Key",
+            "type": 	"text",
+            "id": 		"metafield_key"
+          },
+          {
+            "type": "header",
+            "content": "Anchor"
+          },
+          {
+            "type": "text",
+            "id": "anchor",
+            "label": "Anchor ID"
+          },
+          {
+            "type": "text",
+            "id": "anchor_text",
+            "label": "Anchor Text"
+          },
+          {
+            "type": "text",
+            "id": "anchor_position",
+            "label": "Anchor Position"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+        "name": "Accordion",
+        "category": "Content"
+        }]
+  }
+  {% endschema %}

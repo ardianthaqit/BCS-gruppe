@@ -47,15 +47,7 @@
     letter-spacing: 0.2px;
     color: #1C1C1C;
   }
-  .desc-config{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.3px;
-    color: #706F6F;
-  }
+
   .button-config{
     background: #8B2533;
     border: 1px solid #8B2533;
@@ -107,15 +99,7 @@
     letter-spacing: 0.2px;
     color: #FFFFFF;
   }
-  .smtext{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    color: #262626;
-  }
+
   .swiper-button-next{
     display: block!important;
   }
@@ -327,15 +311,7 @@
 
     
   }
-  .font-slider{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 44px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    color: #262626;
-  }
+
 
   /* @media only screen and (min-width : 1025px) {
     .tablet-responsive {
@@ -343,18 +319,21 @@
        display: unset;
        align-items: unset;
     }
-}
+}*/
   @media (min-width: 768px) and (max-width: 1024px) {
-    .tablet-responsive {
-        justify-content: unset;
-        display: unset;
-        align-items: unset;
-     }
-  
-    
-  } */
-  @media (min-width: 769px) {
-    
+.tablet-responsive{height: 300px;}
+
+  } 
+  @media only screen and (min-width: 768px) and (max-width:1366px) {
+    .xl-responsive-slider{
+        width: 100%!important;
+    }  
+    .xl-wrapper-slider{
+        width: 25%!important;
+    } 
+  }
+  @media (min-width: 1024px) {
+
     } 
 
 
@@ -817,3 +796,5 @@
         }
     }
     /* END ANDI  */
+
+ 

@@ -1,5 +1,6 @@
-<div class=" h-auto md:h-screen w-full block md:flex bg-right bg-no-repeat	bg-contain	bg-remove-mobile" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
-        <div id="hero__left-container" class="w-1/2 flex items-center justify-around	">
+<div class=" h-auto xl:h-screen w-full flex bg-right bg-no-repeat	bg-cover xl:bg-contain	bg-remove-mobile" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+  <div class="w-10 mx-auto block lg:flex">
+   <div id="hero__left-container" class="w-full xl:w-1/2 flex items-center ">
             <div id="hero__left-content" class="block w-590px">
             {% if section.settings.smtext != blank %}
                 <div id="hero__second-title" class="smtext">
@@ -12,14 +13,14 @@
                 </div>
             {% endif %}
             {% if section.settings.desc != blank %}
-                <div id="hero__description" class="desc-config pt-10 ">
+                <div id="hero__description" class="desc-config pt-10 items-center">
                   {{ section.settings.desc }}
                 </div>
             {% endif %}
                 <div class=" block md:flex ">
                     {% if section.settings.button_text != blank %}
                     <a href="{{ section.settings.button_url }}"
-                      class="button-config-text pt-14	"
+                      class="button-config-text pt-14	items-center"
                       aria-label="{{ ariaLabel }}">
                         <div class="greenbutton ">
                           {{- section.settings.button_text | escape -}}
@@ -28,7 +29,7 @@
                 {% endif %}
                 {% if section.settings.button_text != blank %}
                 <a href="{{ section.settings.secondbutton_url }}"
-                  class="button-config-text pt-14 pl-5	"
+                  class="button-config-text pt-14 pl-5 flex items-center	"
                   aria-label="{{ ariaLabel }}">
                     <div class="buttontext">
                       {{- section.settings.secondbutton_text | escape -}}
@@ -38,12 +39,13 @@
                 </div>
             </div>
         </div>
-        <div id="hero__right-container" class="w-1/2 flex">
-            <div class="flex items-center">
+        <div id="hero__right-container" class="w-full xl:w-1/2 flex items-center ">
+            <div class="block lg:flex items-center justify-center w-full">
                     {{ section.settings.image| img_url: 'master'| img_tag: block.settings.icon.alt}}
             </div>
         </div> 
-        {% render 'pages.custom_fields' %}
+      </div>      
+        
 </div>
 {% schema %}
 {

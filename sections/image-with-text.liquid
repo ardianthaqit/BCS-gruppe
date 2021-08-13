@@ -1,5 +1,5 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-<div  id="image-with-text_container"  class="mt-40 w-full lg:w-10 mx-auto{% if section.settings.full_width %}image-with-text--full-width{% else %}{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+<div  id="image-with-text_container"  class="mt-40 w-full xl:w-10 mx-auto xl:flex block {% if section.settings.full_width %}image-with-text--full-width{% else %}{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   <div id="image-text-section" class="image-with-text__grid color-{{ section.settings.color_scheme }}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} flex ">
     <div class="grid__item" id="second-grid">
       <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
@@ -34,10 +34,10 @@
                 {{ block.settings.heading | escape }}
               </h2>
             {%- when 'text' -%}
-              <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div class="image-with-text__text rte font-text-img" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
+                <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="font-btn-img {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}

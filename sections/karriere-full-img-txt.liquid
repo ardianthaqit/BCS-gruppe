@@ -1,8 +1,8 @@
-<div class=" h-screen w-full block lg:flex ">
-    <div class="md:h-screen h-50vh lg:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+<div class="h-auto xl:h-screen w-full block xl:flex ">
+    <div class="md:h-screen h-50vh w-full xl:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
 
     </div>
-    <div class="w-full lg:w-1/2 lg:flex items-center justify-center ">
+    <div class="w-full xl:w-1/2 lg:flex items-center justify-center ">
         <div class="block">
             <div class="md:px-0 px-8 w-full lg:w-590px">
                 {% if section.settings.heading != blank %}
@@ -11,7 +11,7 @@
                 </div>
             {% endif %}
             {% if section.settings.desc != blank %}
-                <div class="desc-config pt-10 ">
+                <div class="desc-config  pt-10 ">
                   {{ section.settings.desc }}
                 </div>
             {% endif %}

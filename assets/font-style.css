@@ -1,0 +1,141 @@
+@media only screen and (max-width: 1024px) { 
+    .font-slider{
+        color: #ffffff!important;
+      }
+      .smtext{
+        color: #ffffff!important;
+      } 
+      .desc-config{
+        color: #ffffff;
+      }
+ }
+ .tab-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #262626;
+ }
+ .tab-description{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+ }
+
+ .desc-config{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .font-slider{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #262626;
+  }
+  
+.smtext{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #262626;
+  }
+  /* andi css  */
+  .font-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: 0.2px;
+    color: #1C1C1C;
+  }
+  .font-h{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .font-title-sm{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+    color: #262626;
+  }
+  .font-title-cart{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+    color: #262626;
+    margin: 15px 0;
+  }
+  .font-description-cart{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+    margin-bottom: 12px;
+  }
+  .font-link-cart{
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.3px;
+      color: #262626;
+  }
+  .font-text-img{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .font-btn-img{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    background: #8B2533;
+    border-radius: 5px;
+    padding: 15px 30px;
+  }
+  /* andi css  */

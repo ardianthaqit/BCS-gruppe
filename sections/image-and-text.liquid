@@ -3,12 +3,12 @@
         <div class="block">
             <div class="w-590px " id="text-title">
                 {% if section.settings.heading != blank %}
-                <div class="font-slider headline-mobile bg-redlight sm:bg-transparent sm:p-0 	p-5">
+                <div class="font-title headline-mobile bg-redlight sm:bg-transparent sm:p-0 	p-5">
                   {{ section.settings.heading }}
                 </div>
             {% endif %}
             {% if section.settings.desc != blank %}
-                <div class="desc-config pt-10 sm:px-0	px-5 py-10">
+                <div class="font-h pt-10 sm:px-0	px-5 py-10">
                   {{ section.settings.desc }}
                 </div>
             {% endif %}
@@ -25,8 +25,7 @@
      
         </div>
     </div>
-    <div class="w-1/2 bg-no-repeat bg-cover" id="theImage" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
-
+    <div class="xl:h-screen h-50vh w-full xl:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
     </div>
   </div>
 {% schema %}
