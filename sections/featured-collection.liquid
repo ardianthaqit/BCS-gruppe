@@ -16,9 +16,9 @@
     assign more_in_collection = true
   endif
 -%}
-<div id="height=feature" class=" ">
+<div id="height=feature" class="bg-cardsbg">
 <div class=" h-full w-full relative flex items-center">
-<div id="feat-col" class="w-10 mx-auto{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
+<div id="feat-col" class="xl:my-28 lg:my-10 my-5	w-10 mx-auto{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
   <div class="{% if section.settings.show_view_all and section.settings.swipe_on_mobile %}title-wrapper-with-link{% endif %}{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
     {% if section.settings.title != blank %} <div class="text-center featured-title">{{ section.settings.title | escape }}</div>{% endif %}
     {% if section.settings.subtitle != blank %}
@@ -82,7 +82,6 @@
 {
   "name": "t:sections.featured-collection.name",
   "tag": "section",
-  "class": "spaced-section",
   "settings": [
     {
       "type": "text",

@@ -1,6 +1,6 @@
-<div id="slider-height-auto" class="  md:h-screen h-auto w-full block xl:flex bg-cover xl:bg-contain bg-no-repeat  bg-bottom sm:bg-right overflow-hidden" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+<div id="slider-height-auto" class="  md:h-screen h-auto w-full block xl:flex xl:bg-contain bg-cover bg-no-repeat  bg-bottom sm:bg-right overflow-hidden" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
   <div class="mx-auto w-full xl:w-10 items-center flex" id="slider-2-height-auto">
-    <div class="xl:h-50vh h-auto sm:h-auto p-5 md:p-0 xl:w-full w-1/2 xl:text-left text-center">
+    <div class="xl:h-50vh h-auto sm:h-auto p-5 md:p-0 xl:w-full md:w-1/2 w-full xl:text-left text-center">
       {% if section.settings.heading != blank %}
       <div class="font-slider w-full xl:w-290px	">
         {{ section.settings.heading }}
@@ -13,7 +13,7 @@
   {% endif %}
   {% if section.settings.button_text != blank %}
       <a href="{{ section.settings.button_url }}"
-        class="button-config-text"
+        class="flex justify-center lg:button-config-text"
         aria-label="{{ ariaLabel }}">
           <div class="button-config">
             {{- section.settings.button_text | escape -}}
@@ -21,7 +21,7 @@
       </a>
     {% endif %}
     </div>
-  <div class="flex  mx-auto" id="rd">
+  <div class="flex  mx-auto sm:w-full w-7/7" id="rd">
       <div class="w-10 swiper-container mySwiper hidde-mobile xl:mb-0 mb-10" id="rd-2">
           <div class="swiper-wrapper xl-wrapper-slider" id="swiper-wrapper">
     {% for block in section.blocks %}
@@ -61,14 +61,14 @@
     <div class="swiper-button-prev">{% include 'icon_left-slider' %}</div>
 </div>
   <!-- FOR MOBILE  -->
-<div class="w-10 show-mobile" id="rd-2" >
+<div class="w-10 show-mobile sm:mb-0 mb-7	" id="rd-2" >
 {% for block in section.blocks %}
 <div class=" mr-0 sm:mr-8 relative mx-auto text-center
 sm:flex inline-block items-center
   rounded-md overflow-hidden
   md:w-full xl:h-full
   h-auto
-  pt-7 sm:pt-0
+   sm:pt-0
   cursor-pointer"
   x-data="{open: false }" @mouseover="open = true" @mouseout="open = false" @click="open = !open"
   >
