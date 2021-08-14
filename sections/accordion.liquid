@@ -1,31 +1,37 @@
 <div class="w-full bg-green py-8 relative">
-    <div class="max-w-5xl mx-auto px-2 xl:px-0">
+    <div class="xl:w-1/2 w-11/12 mx-auto px-2 xl:px-0">
+      {% if section.settings.heading != blank %}
+      <div class="heading-accordion mb-20 mt-24">
+        {{ section.settings.heading }}
+      </div>
+      {% endif %}
       {% for block in section.blocks %}
         {% assign show_tab = false %}
         {% assign tab_content = blank %}
         {% if block.settings.enabled %}
           {% assign show_tab = true %}
           {% capture tab_content %}
-            <div x-data="{open: false}" class="rounded-md bg-white shadow-md mb-3 relative"
+            <div x-data="{open: false}" class="rounded-md bg-white border-b	border-lightgrey mb-6 relative"
               {% if block.settings.anchor != blank %} id="{{block.settings.anchor|handle }}" data-anchor="{{ block.settings.anchor_text | default: block.settings.title }}" data-position="{{ block.settings.anchor_position }}" {% endif %}
               >  
-              <div class="px-5 py-3 xl:py-3 w-full relative cursor-pointer" @click="open = !open">
-                <h2 class="text-sm md:text-base xl:text-lg text-grey-dark font-normal uppercase my-0 py-0">{{ block.settings.title }}</h2> 
+              <div class="px-5 py-3 xl:py-3 w-full relative cursor-pointer  flex justify-between mb-6" @click="open = !open">
+                <h2 class="title-accordion my-0 py-0">{{ block.settings.title }}</h2> 
                 <div x-show="open === false ">
-                    <!-- ICon  -->
+                  {% include 'icon_plus' %}
                 </div>
                 <div x-show="open === true">
-                    <!-- ICOn  -->
-                </div>
+                  {% include 'icon_minus' %}
+               </div>
               </div>
               <div x-show="open === true" 
-                class="px-5 pt-2 pb-5"
+                class="px-5 pt-2 pb-5 flex justify-between"
                 x-transition:enter="transition ease-out duration-250"
                 x-transition:enter-start="opacity-0 transform scale-90"
                 x-transition:enter-end="opacity-100 transform scale-100"
                 x-transition:leave="transition ease-in duration-250"
                 x-transition:leave-start="opacity-100 transform scale-100"
                 x-transition:leave-end="opacity-0 transform scale-90">
+
                 {% assign namespace = block.settings.metafield_namespace %}
                 {% assign key = block.settings.metafield_key %}
   
@@ -37,10 +43,14 @@
                     {% if block.settings.only_if_available %}
                       {% assign show_tab = false%}
                     {% endif %}
-                    {{ block.settings.default_content }}
+                    <div class="content-accordion my-5">
+                      {{ block.settings.default_content }}
+                    </div>
                   {% endif %}
                 {% else %}
+                <div class="content-accordion my-5">
                   {{ block.settings.default_content }}
+                </div>
                 {% endif %}
               </div>
             </div>
@@ -59,16 +69,11 @@
   {
     "name":"Accordion",
     "settings": [
-      {
-        "type": "image_picker",
-        "id": "image_left",
-        "label": "Image left"
-      },
-      {
-        "type": "image_picker",
-        "id": "image_right",
-        "label": "Image right"
-      }
+    {
+      "label":	"Title",
+      "type": 	"richtext",
+      "id": 		"heading"
+    }
     ],
     "blocks": [
       {
@@ -83,7 +88,7 @@
           },
           {
             "label":	"Title",
-            "type": 	"text",
+            "type": 	"richtext",
             "id": 		"title"
           },
           {

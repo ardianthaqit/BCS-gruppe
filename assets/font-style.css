@@ -199,3 +199,123 @@
     letter-spacing: 0.3px;
     color: #706F6F;
   }
+
+  .font-cards{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #8B2533;
+  }
+  .heading-cards{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #262626;
+  }
+  .subheading-cards{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .cards-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #262626;
+  }
+  .cards-subheading{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #8B2533;
+  }
+  .heading-accordion{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #262626;
+  }
+  .title-accordion{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #262626;
+  }
+  .content-accordion{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .miniheading-fullimage{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #706F6F;
+  }
+  .minititle-contact{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #CBCBCB;
+  }
+  .title-contact{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+  }
+  .decs-contact{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #CBCBCB;
+  }

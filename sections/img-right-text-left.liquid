@@ -1,0 +1,100 @@
+<div class="h-auto xl:h-screen w-full block xl:flex ">
+
+    <div class="w-full xl:w-1/2 lg:flex items-center justify-center ">
+        <div class="block">
+            <div class="md:px-0 px-8 w-full lg:w-590px">
+            {% if section.settings.miniheading != blank %}
+              <div class="miniheading-fullimage text-left">
+                {{ section.settings.miniheading }}
+              </div>
+          {% endif %}
+              {% if section.settings.heading != blank %}
+                <div class="font-slider">
+                  {{ section.settings.heading }}
+                </div>
+            {% endif %}
+            {% if section.settings.desc != blank %}
+                <div class="desc-config  pt-10 ">
+                  {{ section.settings.desc }}
+                </div>
+            {% endif %}
+            {% if section.settings.button_text != blank %}
+                <a href="{{ section.settings.button_url }}"
+                  class="button-config-text flex  pt-14	"
+                  aria-label="{{ ariaLabel }}">
+                    <div class="button-config ">
+                      {{- section.settings.button_text | escape -}}
+                    </div>
+                </a>
+              {% endif %}
+              </div>
+     
+        </div>
+    </div>
+    <div class="md:h-screen h-50vh w-full xl:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+
+    </div>
+  </div>
+{% schema %}
+{
+"name": "Full Image with Text",
+"settings": [ 
+{
+"type": "image_picker",
+"id": "background_image",
+"label": "Background image"
+},
+{
+  "type": "select",
+  "id": "layout",
+  "options": [
+    {
+      "value": "image_first",
+      "label": "t:sections.image-with-text.settings.layout.options__1.label"
+    },
+    {
+      "value": "text_first",
+      "label": "t:sections.image-with-text.settings.layout.options__2.label"
+    }
+  ],
+  "default": "image_first",
+  "label": "t:sections.image-with-text.settings.layout.label",
+  "info": "t:sections.image-with-text.settings.layout.info"
+},
+{
+"type": "image_picker",
+"id": "mobile_background_image",
+"label": "Mobile Background image"
+},
+{
+  "type": "richtext",
+  "id": "miniheading",
+  "label": "Small Heading"
+  }, 
+{
+  "type": "richtext",
+  "id": "heading",
+  "label": "Heading"
+  }, 
+  {
+  "type": "richtext",
+  "id": "desc",
+  "label": "Description"
+  },
+  {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button text"
+  },
+  {
+    "type": "url",
+    "id": "button_url",
+    "label": "Button url"
+  }
+],
+"presets": [{
+"name": "Full Image with Text",
+"category": "Content"
+}]
+}
+{% endschema %} 

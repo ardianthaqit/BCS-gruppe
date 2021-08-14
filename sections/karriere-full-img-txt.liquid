@@ -5,6 +5,11 @@
     <div class="w-full xl:w-1/2 lg:flex items-center justify-center ">
         <div class="block">
             <div class="md:px-0 px-8 w-full lg:w-590px">
+              {% if section.settings.miniheading != blank %}
+              <div class="miniheading-fullimagetext-left">
+                {{ section.settings.miniheading }}
+              </div>
+              {% endif %}
                 {% if section.settings.heading != blank %}
                 <div class="font-slider">
                   {{ section.settings.heading }}
@@ -17,7 +22,7 @@
             {% endif %}
             {% if section.settings.button_text != blank %}
                 <a href="{{ section.settings.button_url }}"
-                  class="button-config-text flex  md:justify-center  justify-left pt-14	"
+                  class="button-config-text flex  pt-14	"
                   aria-label="{{ ariaLabel }}">
                     <div class="button-config ">
                       {{- section.settings.button_text | escape -}}
@@ -61,6 +66,11 @@
 "id": "mobile_background_image",
 "label": "Mobile Background image"
 },
+{
+  "type": "richtext",
+  "id": "miniheading",
+  "label": "Small Heading"
+  }, 
 {
   "type": "richtext",
   "id": "heading",

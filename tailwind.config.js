@@ -103,6 +103,7 @@ module.exports = {
       '-16': '-4rem',
       '60':'60%',
       '15':'15%',
+      '30':'30px',
      },
      lineHeight: {
       'extra-loose': '2.5',
