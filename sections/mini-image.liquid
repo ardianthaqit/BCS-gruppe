@@ -1,0 +1,19 @@
+<div class=" w-full ">
+        {{ section.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt }}
+</div>
+{% schema %}
+{
+"name": "Mini Image",
+"settings": [ 
+{
+"type": "image_picker",
+"id": "background_image",
+"label": "Background Image"
+}
+],
+"presets": [{
+"name": "Mini Image",
+"category": "Image"
+}]
+}
+{% endschema %}  

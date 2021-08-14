@@ -1,0 +1,78 @@
+<div class="w-full flex h-auto md:h-50vh">
+    <div class="xl:w-10 w-11/12 mx-auto md:flex block items-center">
+    <div class="md:w-1/2  w-full flex items-center">
+        <div class="block">
+            {% if section.settings.minitext != blank %}
+            <div class="minitext-banner">
+                {{ section.settings.minitext }}
+            </div>
+            {% endif %}
+            {% if section.settings.heading != blank %}
+            <div class="heading-banner pt-5">
+                {{ section.settings.heading }}
+            </div>
+            {% endif %}
+            {% if section.settings.desc != blank %}
+            <div class="desc-banner pt-5">
+                {{ section.settings.desc }}
+            </div>
+            {% endif %}
+            {% if section.settings.button_text != blank %}
+            <a href="{{ section.settings.button_url }}"
+              class="button-config-text flex  pt-14	"
+              aria-label="{{ ariaLabel }}">
+                <div class="button-config ">
+                  {{- section.settings.button_text | escape -}}
+                </div>
+            </a>
+          {% endif %}
+        </div>
+    </div>
+    <div class="md:w-1/2  w-full ">
+        <div class="flex justify-center md:justify-end items-center">
+            {{ section.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt }}
+        </div>
+    </div>
+</div>
+</div>
+{% schema %}
+{
+  "name": "Mini Banner",
+  "settings": [ 
+  {
+    "type": "image_picker",
+    "id": "background_image",
+    "label": "Background Image"
+  },
+  {
+    "type": "richtext",
+    "id": "minitext",
+    "label": "Small Text"
+  }, 
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    }, 
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Subheading"
+    },
+    {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button url"
+      }
+    ],
+  "presets": [{
+    "name": "Mini Banner",
+    "category": "Content"
+  }]
+}
+{% endschema %}  
