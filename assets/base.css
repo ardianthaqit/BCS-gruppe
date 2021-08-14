@@ -836,14 +836,14 @@ summary::-webkit-details-marker {
   padding: 0;
   list-style: none;
 }
-.grid {
+/* .grid {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2rem;
   margin-left: -0.5rem;
   padding: 0;
   list-style: none;
-}
+} */
 
 @media screen and (min-width: 750px) {
   .grid {
@@ -1245,7 +1245,7 @@ deferred-media {
   color: rgb(var(--color-foreground));
   font-size: 1.6rem;
   width: 100%;
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55);
+  border-bottom: 2px solid #262626;
   height: 4.5rem;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
@@ -1334,7 +1334,6 @@ deferred-media {
 .field__label,
 .customer .field label {
   font-size: 1.6rem;
-  left: 1.5rem;
   top: 1rem;
   margin-bottom: 0;
   pointer-events: none;

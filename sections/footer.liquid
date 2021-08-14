@@ -16,7 +16,7 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
-<footer class="footer color-{{ section.settings.color_scheme }} pt-20">
+<footer class="footer color-{{ section.settings.color_scheme }}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -29,7 +29,7 @@
             assign footer_grid_class = 'grid--3-col-tablet'
           endif
         -%}
-        <div class="footer__blocks-wrapper md:flex  block  grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
+        <div class="footer__blocks-wrapper xl:flex   grid grid-flow-col grid-cols-3 grid-rows-2 gap-4">
           {%- for block in section.blocks -%}
             {%- if block.type == 'link_list' and block.settings.heading != blank -%}
               <div class="accordion" {{ block.shopify_attributes }}>
@@ -50,7 +50,7 @@
               </div>
             {%- endif -%}
 
-            <div class="footer-block w-full md:w-2/12	{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block w-full xl:w-2/12	{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}

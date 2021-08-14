@@ -1,22 +1,25 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
-<div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }}">
+<div class="w-full flex items-center h-auto lg:h-220px bg-whitegrey">
+  <div class="xl:w-10 block lg:flex mx-auto sm:pt-0 pt-9 sm:pb-0 pb-5">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
           {% render block %}
+          
         {%- when 'heading' -%}
-          <h2 class="h1" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+        <div class="block w-full lg:w-3/5	">
+          <div class="font-light text-navlink  sm:text-44px text-sm23 sm:leading-56 leading-40	 sm:text-left text-center" >{{ block.settings.heading | escape }}</div>
         {%- when 'paragraph' -%}
-          <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.paragraph }}</div>
+          <div class="paragraph-newsletter pt-5 lg:text-left text-center sm:w-full w-10/12	mx-auto" >{{ block.settings.paragraph }}</div>
+        </div>
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }}>
+          <div  class="lg:w-2/5	 sm:w-full  w-11/12	 flex items-center mx-auto">
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
-                <div class="field">
+                <div class="field lg:my-0 my-10">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
@@ -37,17 +40,19 @@
                     placeholder="{{ 'newsletter.label' | t }}"
                     required
                   >
-                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  <label class="field__label input-newsletter" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
                   </label>
+                  <button type="submit" class="relative right-9	" name="commit">
+                    {% include 'icon_arrow-right-newsletter' %}
+                  </button>
                 </div>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                 {%- endif -%}
+      
               </div>
-              <button type="submit" class="newsletter__button button" name="commit">
-                {{ 'newsletter.button_label' | t }}
-              </button>
+
               {%- if form.posted_successfully? -%}
                 <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
               {%- endif -%}

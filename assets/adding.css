@@ -676,11 +676,11 @@
         .flex.items-center{
             width: 100%;
         }
-        .flex.items-center img{
+        /* .flex.items-center img{
             width: 100%;
             height: 550px;
         }
-        
+         */
         #product-grid{
             flex-direction: row!important;
             flex-wrap: wrap!important;

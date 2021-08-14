@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) { 
+@media only screen and (min-width: 1024px) { 
     .font-slider{
         color: #ffffff!important;
       }
@@ -169,6 +169,33 @@
     font-size: 16px;
     line-height: 22px;
     text-align: center;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+  .input-newsletter{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #706F6F;
+  }
+  .heading-newsletter{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #262626;
+  }
+  .paragraph-newsletter{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
     letter-spacing: 0.3px;
     color: #706F6F;
   }
