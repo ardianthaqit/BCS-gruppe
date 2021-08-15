@@ -435,9 +435,9 @@ footer details[open] summary ~ * {
   margin-bottom: 4rem;
 }
 
-.footer-block__details-content li:first-child .link {
+/* .footer-block__details-content li:first-child .link {
   padding-top: 3rem;
-}
+} */
 
 @media screen and (min-width: 750px) {
   .footer-block__details-content {
@@ -487,11 +487,11 @@ footer details[open] summary ~ * {
 }
 
 @media screen and (max-width: 989px) {
-  .footer-block__details-content .list-menu__item--link {
+  /* .footer-block__details-content .list-menu__item--link {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 0.5rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 750px) {

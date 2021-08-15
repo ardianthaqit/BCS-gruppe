@@ -34,7 +34,7 @@
             {%- if block.type == 'link_list' and block.settings.heading != blank -%}
               <div class="accordion" {{ block.shopify_attributes }}>
                 <div>
-                  <summary><h2 class="h4 accordion__title">{{ block.settings.heading | escape }}</h2></summary>
+                  <summary><h2 class="title-footer">{{ block.settings.heading | escape }}</h2></summary>
                   {%- if block.settings.menu != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}

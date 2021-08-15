@@ -1,20 +1,20 @@
 <div class="h-auto xl:h-screen w-full block xl:flex ">
-
-    <div class="w-full xl:w-1/2 lg:flex items-center justify-center ">
+<!-- <div class="xl:flex-row	 flex-col-reverse flex w-full"> -->
+    <div class="w-full xl:w-1/2 lg:flex items-center justify-center py-20">
         <div class="block">
-            <div class="md:px-0 px-8 w-full lg:w-590px">
+            <div class="md:px-0 px-8 w-11/12 lg:w-full lg:w-590px mx-auto">
             {% if section.settings.miniheading != blank %}
-              <div class="miniheading-fullimage text-left">
+              <div class="text-full-image text-left">
                 {{ section.settings.miniheading }}
               </div>
           {% endif %}
               {% if section.settings.heading != blank %}
-                <div class="font-slider">
+                <div class="text-title-full-image">
                   {{ section.settings.heading }}
                 </div>
             {% endif %}
             {% if section.settings.desc != blank %}
-                <div class="desc-config  pt-10 ">
+                <div class="text-desc-full-image  pt-10 ">
                   {{ section.settings.desc }}
                 </div>
             {% endif %}
@@ -28,12 +28,12 @@
                 </a>
               {% endif %}
               </div>
-     
         </div>
     </div>
     <div class="md:h-screen h-50vh w-full xl:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
 
     </div>
+  <!-- </div> -->
   </div>
 {% schema %}
 {

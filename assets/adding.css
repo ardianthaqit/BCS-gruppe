@@ -810,3 +810,16 @@
  .img-xl img {
      width: 100%;
  }
+ .swiper-button-next{
+    top: -15%!important;
+    left: 77%!important;
+    position:absolute;
+ }
+ .swiper-button-prev{
+    top: -15%!important;
+    left: 72%!important;
+    position:absolute;
+ }
+ .swiper-button-next:after, .swiper-button-prev:after{
+    letter-spacing:unset!important;
+ }
