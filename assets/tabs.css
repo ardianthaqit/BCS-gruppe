@@ -62,3 +62,9 @@
     letter-spacing: 0.3px;
     color: #706F6F;
     }
+   @media (min-width: 320px) and (max-width: 680px)  { 
+      
+      ul.tabs li a {
+        padding: 0;
+      }
+    }

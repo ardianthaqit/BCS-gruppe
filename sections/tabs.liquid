@@ -1,9 +1,9 @@
 {{ 'tabs.css' | asset_url | stylesheet_tag }}
-<div class="w-full  h-full block xl:flex pt-20 ">
+<div class="w-full  h-full block xl:flex pt-20 mb-20">
     <div class="w-full xl:w-10 mx-auto block xl:flex">
         <div class="w-1/2 relative w-full" id="width-fl-tabs">
-            <div class="flex xl:block xl:w-auto w-full">
-              <div class="xl:w-full w-1/2 block ">
+            <div class="block xl:w-auto w-11/12 mx-auto mb-20">
+              <div class="w-full  block ">
                 {% if section.settings.smtext != blank %}
                     <div class="tab-description">
                       {{ section.settings.smtext }}
@@ -41,16 +41,16 @@
                 {% endif %}
                     </div>
                 </div>
-                <div class=" relative xl:absolute right-0 w-1/2 xl:w-920px" id="position-image">
+                <div class=" relative xl:absolute right-0 w-full xl:w-920px" id="position-image">
                   {{ section.settings.image | img_url: 'master'| img_tag: block.settings.icon.alt}} 
                   </div>
             </div>
 
         </div>
 
-        <div class="w-full xl:w-1/2 flex justify-center" id="flex-tab">
-            <div class="w-9/12" id="w-ful-tab-1">
-                <ul class="tabs w-full flex xl:justify-between justify-start	">
+        <div class="w-full flex xl:justify-end justify-center" id="flex-tab">
+            <div class="w-full sm:w-9/12" id="w-ful-tab-1">
+                <ul class="tabs w-full flex xl:justify-between sm:justify-start	justify-between sm:px-0 px-10	">
                   <li><a href="#tab-1"><div class="head-tabs-title">{{section.settings.firsttab}}</div></a></li>
                   <li><a href="#tab-2"><div class="head-tabs-title">{{section.settings.secondtab}}</div></a></li>
                   <li><a href="#tab-3"><div class="head-tabs-title">{{section.settings.thirdtab}}</div></a></li>
@@ -60,7 +60,7 @@
                     <table>
                         <tr class="h-91px">
                           <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
-                          <td>Maria Anders</td>
+                          <td>{{ page.metafields.global.tab2 }}</td>
                         </tr>
                         <tr class="h-91px">
                           <td>Centro comercial Moctezuma</td>

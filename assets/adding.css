@@ -66,23 +66,8 @@
     letter-spacing: 0.3px;
     color: #FFFFFF;
   }
-  .buttontext{
-    font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.3px;
-  color: #706F6F;
-  }
-  .greenbutton{
-    background: #38664C;
-    border: 1px solid #38664C;
-    box-sizing: border-box;
-    border-radius: 3px;
-    align-items: center;
-    padding: 15px 30px;
-  }
+
+
  
   .border-hover{
     border: 3px solid #FFFFFF;
@@ -278,7 +263,6 @@
     }
     #hero__description {
         width: 100%;
-        text-align: center;
     }
     #hero__right-container {
         width: 100%;

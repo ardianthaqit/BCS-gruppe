@@ -18,7 +18,7 @@
 {%- endif -%}
 
 <section class="page-width h-auto">
-  <div class="product block  md:grid-d grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product lg:flex block  md:grid-d grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class=" w-full  lg:w-full xl:w-1/2">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
@@ -65,7 +65,7 @@
         </button>
       {%- endif -%}
     </div>
-    <div class=" w-full  lg:w-full xl:w-1/2 xl:px-60 lg:px-20 px-0 h-full pt-5">
+    <div class=" w-full  lg:w-full xl:w-1/2 xl:px-60 lg:px-20 px-0 h-full pt-5 h-auto">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container relative top-1/4{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -182,6 +182,16 @@
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            <div class="footer__payment">
+              <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+              <ul class=" flex justify-start " role="list">
+                {%- for type in shop.enabled_payment_types -%}
+                  <li class="list-payment__item">
+                    {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}

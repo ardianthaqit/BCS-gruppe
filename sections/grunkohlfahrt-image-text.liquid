@@ -1,6 +1,6 @@
 <div class=" h-auto xl:h-screen w-full flex bg-right bg-no-repeat	bg-cover xl:bg-contain	bg-remove-mobile" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
   <div class="w-10 mx-auto block lg:flex">
-   <div id="hero__left-container" class="w-full xl:w-1/2 flex items-center ">
+   <div id="hero__left-container" class="w-full xl:w-1/2 flex items-center xl:my-0 my-20">
             <div id="hero__left-content" class="block xl:w-590px w-4/5	mx-auto">
             {% if section.settings.smtext != blank %}
                 <div class="karriere-minitext xl:text-navlink text-white">
@@ -13,16 +13,16 @@
                 </div>
             {% endif %}
             {% if section.settings.desc != blank %}
-                <div id="hero__description" class="karriere-desc xl:text-navlink text-white pt-10 items-center">
+                <div id="hero__description" class="karriere-desc xl:text-navlink text-white pt-10 items-center text-left">
                   {{ section.settings.desc }}
                 </div>
             {% endif %}
                 <div class=" block md:flex ">
                     {% if section.settings.button_text != blank %}
                     <a href="{{ section.settings.button_url }}"
-                      class="button-config-text pt-14	items-center"
+                      class=" button-config-text pt-14	items-center "
                       aria-label="{{ ariaLabel }}">
-                        <div class="greenbutton ">
+                        <div class="{% if section.settings.layout == 'greenbutton' %}  button-karriere  border-solid sm:border-white border-current border {% endif %} greenbutton border-solid sm:border-white border-current border">
                           {{- section.settings.button_text | escape -}}
                         </div>
                     </a>
@@ -31,7 +31,7 @@
                 <a href="{{ section.settings.secondbutton_url }}"
                   class="button-config-text pt-14 pl-5 flex items-center	"
                   aria-label="{{ ariaLabel }}">
-                    <div class="buttontext">
+                    <div class="{% if section.settings.layout == 'greenbutton' %} buttontext xl:text-darkgrey text-white {% endif %} redbuttontext xl:text-darkgrey text-white">
                       {{- section.settings.secondbutton_text | escape -}}
                     </div>
                 </a>
@@ -100,6 +100,23 @@
     "type": "url",
     "id": "secondbutton_url",
     "label": "Button url"
+  },
+  {
+    "type": "select",
+    "id": "layout",
+    "options": [
+      {
+        "value": "greenbutton",
+        "label": "Red Button"
+      },
+      {
+        "value": "redbutton",
+        "label": "Green Button"
+      }
+    ],
+    "default": "greenbutton",
+    "label": "Layout Button",
+    "info": "Change color of button"
   }
 ],
 "presets": [{
