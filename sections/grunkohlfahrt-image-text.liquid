@@ -1,19 +1,19 @@
 <div class=" h-auto xl:h-screen w-full flex bg-right bg-no-repeat	bg-cover xl:bg-contain	bg-remove-mobile" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
   <div class="w-10 mx-auto block lg:flex">
    <div id="hero__left-container" class="w-full xl:w-1/2 flex items-center ">
-            <div id="hero__left-content" class="block w-590px">
+            <div id="hero__left-content" class="block xl:w-590px w-4/5	mx-auto">
             {% if section.settings.smtext != blank %}
-                <div id="hero__second-title" class="smtext">
+                <div class="karriere-minitext xl:text-navlink text-white">
                   {{ section.settings.smtext }}
                 </div>
             {% endif %}
                 {% if section.settings.heading != blank %}
-                <div class="font-slider">
+                <div class="karriere-title xl:text-navlink text-white">
                   {{ section.settings.heading }}
                 </div>
             {% endif %}
             {% if section.settings.desc != blank %}
-                <div id="hero__description" class="desc-config pt-10 items-center">
+                <div id="hero__description" class="karriere-desc xl:text-navlink text-white pt-10 items-center">
                   {{ section.settings.desc }}
                 </div>
             {% endif %}
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div id="hero__right-container" class="w-full xl:w-1/2 flex items-center ">
-            <div class="block lg:flex items-center justify-center w-full">
+            <div class="block lg:flex items-center  w-full img-xl">
                     {{ section.settings.image| img_url: 'master'| img_tag: block.settings.icon.alt}}
             </div>
         </div> 

@@ -105,6 +105,8 @@ module.exports = {
       '60':'60%',
       '15':'15%',
       '30':'30px',
+      '3':'3px',
+      '5':'5px',
      },
      lineHeight: {
       'extra-loose': '2.5',

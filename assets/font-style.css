@@ -389,3 +389,43 @@
     align-items: center;
     padding: 15px 30px;
   }
+  .text--image{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    color: #262626;
+  }
+  .desc-text--image{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #706F6F;
+  }
+.karriere-minitext{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.karriere-title{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+}
+.karriere-desc{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}

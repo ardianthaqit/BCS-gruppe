@@ -1,5 +1,5 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-<div  id="image-with-text_container"  class="mt-40 w-11/12 mx-auto sm:w-full xl:w-10 mx-auto xl:flex block {% if section.settings.full_width %}image-with-text--full-width{% else %}{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+<div  id="image-with-text_container"  class="mt-40  mx-auto  xl:w-10 sm:w-11/12 w-full mx-auto xl:flex block {% if section.settings.full_width %}image-with-text--full-width{% else %}{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   <div id="image-text-section" class="image-with-text__grid color-{{ section.settings.color_scheme }}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} flex ">
     <div class="grid__item" id="second-grid">
       <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
@@ -30,9 +30,9 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
-                {{ block.settings.heading | escape }}
-              </h2>
+              <div class="image-with-text__heading text--image xl:text-44px text-sm23 xl:leading-56 leading-40">
+                {{ block.settings.heading }}
+              </div>
             {%- when 'text' -%}
               <div class="image-with-text__text rte font-text-img" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
@@ -131,9 +131,8 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "heading",
-          "default": "Image with text",
           "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
         }
       ]

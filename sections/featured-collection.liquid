@@ -66,12 +66,16 @@
   </slider-component>
 
   {%- if section.settings.show_view_all and more_in_collection -%}
-    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+    <div class="flex justify-center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
       <a href="{{ section.settings.collection.url }}"
-        class="button"
+        class="border-t-2	 border-navlink	flex "
         aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
       >
         {{ 'sections.featured_collection.view_all' | t }}
+        <div class="top-5 left-3 relative">
+          {% include 'icon_arrow-collection' %}
+        </div>
+        
       </a>
     </div>
   {%- endif -%}
