@@ -39,7 +39,7 @@
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
-                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                          <a href="{{ link.url }}" class="links-footer link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
                             {{ link.title }}
                           </a>
                         </li>
@@ -50,9 +50,9 @@
               </div>
             {%- endif -%}
 
-            <div class="footer-block w-full xl:w-2/12	{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block w-full xl:w-1/5	{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+                <div class="title-footer">{{- block.settings.heading | escape -}}</div>
               {%- endif -%}
 
               {%- case block.type -%}
@@ -73,7 +73,7 @@
                     </ul>
                   {%- endif -%}
                 {%- when 'image' -%}
-                  <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                  <div class="footer-block__details-content footer-block-image  {{ block.settings.alignment }}">
                     {%- if block.settings.image != blank -%}
                       {%- assign image_size = block.settings.image_width | append: 'x' -%}
                       <img
@@ -84,12 +84,13 @@
                         width="{{ block.settings.image.width }}"
                         height="{{ block.settings.image.height }}"
                         style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                        class="pb-12"
                       >
                     {%- else -%}
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                     {%- endif -%}
                     {% if block.settings.desc != blank %}
-                    <div class="text-left">
+                    <div class="text-left pr-20">
                       {{ block.settings.desc }}
                     </div>
                     {% endif %}

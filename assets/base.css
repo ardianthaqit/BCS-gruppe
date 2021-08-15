@@ -1774,10 +1774,10 @@ input[type='checkbox'] {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.header__heading-logo {
+/* .header__heading-logo {
   height: auto;
   width: 100%;
-}
+} */
 
 @media screen and (min-width: 990px) {
   .header__heading-link {
