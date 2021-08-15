@@ -50,7 +50,7 @@
 
   .button-config{
     background: #8B2533;
-    border: 1px solid #8B2533;
+    /* border: 1px solid #8B2533; */
     box-sizing: border-box;
     border-radius: 3px;
     width: auto;

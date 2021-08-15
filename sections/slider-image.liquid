@@ -1,21 +1,21 @@
-<div id="slider-height-auto" class="  md:h-screen h-auto w-full block xl:flex xl:bg-contain bg-cover bg-no-repeat  bg-bottom sm:bg-right overflow-hidden" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+<div id="slider-height-auto" class="  md:h-screen h-auto w-full block xl:flex xl:bg-contain sm:bg-cover bg-contain bg-no-repeat  bg-bottom sm:bg-right overflow-hidden" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
   <div class="mx-auto w-full xl:w-10 items-center flex" id="slider-2-height-auto">
-    <div class="xl:h-50vh h-auto sm:h-auto p-5 md:p-0 xl:w-full md:w-1/2 w-full xl:text-left text-center">
+    <div class="xl:h-40vh h-auto sm:h-auto p-5 md:p-0 xl:w-full md:w-1/2 w-full xl:text-left text-center xl:my-0 my-20">
       {% if section.settings.heading != blank %}
-      <div class="font-slider w-full xl:w-290px	">
+      <div class="xl:text-navlink sm:text-white text-navlink text-sm23 font-light leading-40 w-full xl:w-290px	">
         {{ section.settings.heading }}
       </div>
   {% endif %}
   {% if section.settings.desc != blank %}
-      <div class="desc-config ">
+      <div class="desc-slider-img xl:text-darkgrey sm:text-white text-darkgrey e py-8	">
         {{ section.settings.desc }}
       </div>
   {% endif %}
   {% if section.settings.button_text != blank %}
       <a href="{{ section.settings.button_url }}"
-        class="flex justify-center lg:button-config-text"
+        class="flex xl:justify-left justify-center lg:button-config-text"
         aria-label="{{ ariaLabel }}">
-          <div class="button-config">
+          <div class="btn-slider sm:bg-colorprimary bg-white sm:text-white text-dark 	border	 border-solid sm:border-white border-current border">
             {{- section.settings.button_text | escape -}}
           </div>
       </a>

@@ -374,3 +374,18 @@
     letter-spacing: 0.3px!important;
     color: #262626!important;
   }
+  .desc-slider-img{
+    font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  }
+  .btn-slider{
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: auto;
+    align-items: center;
+    padding: 15px 30px;
+  }

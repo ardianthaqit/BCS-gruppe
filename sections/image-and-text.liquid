@@ -1,7 +1,7 @@
 <div class=" h-screen w-full flex " id="image-text">
     <div class="w-1/2 flex items-center justify-center " id="text-width">
-        <div class="block">
-            <div class="w-590px " id="text-title">
+        <div class="block mx-auto  sm:w-11/12   xl:w-1/2 w-full xl:my-0">
+            <div class="xl:w-590px " id="text-title">
                 {% if section.settings.heading != blank %}
                 <div class="xl:font-56 font-32px font-light	md:text-blacklight text-white xl:text-56 text-sm23 bg-redlight sm:bg-transparent sm:p-0 	p-5">
                   {{ section.settings.heading }}
@@ -16,8 +16,11 @@
                 <a href="{{ section.settings.button_url }}"
                   class="button-config-text md:pt-14	sm:p-0 	p-5 flex"
                   aria-label="{{ ariaLabel }}">
-                    <div class="button-config" id="btn-config">
+                    <div class="button-config flex" id="btn-config">
                       {{- section.settings.button_text | escape -}}
+                      <div class="relative top-1 left-1">
+                        {% include 'icon_chevron-right.liquid' %}
+                      </div>
                     </div>
                 </a>
               {% endif %}
@@ -25,7 +28,7 @@
      
         </div>
     </div>
-    <div class="xl:h-screen h-50vh w-full xl:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+    <div class="xl:h-screen lg:h-80vh h-50vh w-full xl:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
     </div>
   </div>
 {% schema %}

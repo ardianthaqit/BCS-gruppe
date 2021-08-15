@@ -22,6 +22,7 @@ module.exports = {
         redlight:'#8B2533',
         blacklight:'#1C1C1C',
         whitegrey:'#F5F5F5',
+        darkgrey:'#706F6F',
       },
       width: {
         '1/7': '14.2857143%',
@@ -56,7 +57,7 @@ module.exports = {
       height: {
         '6': '1.5rem',
         '8': '2rem',
-        '10': '2.5rem',
+        '10': '2.5rem', 
         '12': '3rem',
         '16': '4rem',
         '20': '5rem',
