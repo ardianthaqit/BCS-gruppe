@@ -81,10 +81,18 @@
             <h1 class="product-title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
+
             {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
+            {%- when 'description' -%}
+            {%- if product.description != blank -%}
+              <div class="product__description rte">
+                {{ product.description }}
+              </div>
+            {%- endif -%}
+
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -92,12 +100,6 @@
               {%- endform -%}
             </div>
 
-            {%- when 'description' -%}
-            {%- if product.description != blank -%}
-              <div class="product__description rte">
-                {{ product.description }}
-              </div>
-            {%- endif -%}
    
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
@@ -119,6 +121,8 @@
                 </div>
               </details>
             </div>
+
+            
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -192,6 +196,7 @@
                 {%- endfor -%}
               </ul>
             </div>
+            {% include 'widget-social-sharing' %}
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
