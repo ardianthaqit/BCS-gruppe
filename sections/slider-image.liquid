@@ -13,7 +13,7 @@
   {% endif %}
   {% if section.settings.button_text != blank %}
       <a href="{{ section.settings.button_url }}"
-        class="flex xl:justify-left justify-center lg:button-config-text"
+        class="flex xl:justify-start justify-center lg:button-config-text"
         aria-label="{{ ariaLabel }}">
           <div class="btn-slider sm:bg-colorprimary bg-white sm:text-white text-dark 	border	 border-solid sm:border-white border-current border">
             {{- section.settings.button_text | escape -}}
@@ -22,7 +22,7 @@
     {% endif %}
     </div>
   <div class="flex  mx-auto sm:w-full w-7/7 relative" id="rd">
-    <div class="swiper-button-next absolute top-15 left-77">{% include 'icon_right-slider' %}</div>
+    <div class="swiper-button-next absolute top-15 left-77">{% include 'icon_right-slider', class: 'fill-current' %}</div>
     <div class="swiper-button-prev absolute top-15 left-72">{% include 'icon_left-slider' %}</div>
     
       <div class="w-10 swiper-container mySwiper hidde-mobile xl:mb-0 mb-10" id="rd-2">
@@ -48,8 +48,8 @@
           x-show.transition.opacity.duration.750="open"> 
           <div class="border-hover"> </div>
         </div>
-          <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 bottom-5 z-2 text-white"> 
-            <div class="ucards-text">
+          <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 bottom-5 z-2 text-white w-full"> 
+            <div class="ucards-text text-4.5xl">
               {{ block.settings.stll}}
             </div>
           </div>

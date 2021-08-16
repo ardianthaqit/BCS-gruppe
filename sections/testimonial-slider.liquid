@@ -2,28 +2,33 @@
 {% if section.settings.background_image != blank %}<div id="img-replace" class=" max-h-screen sm:h-screen	h-50vh w-full  bg-no-repeat bg-contain flex"  style="background-image: url({{ section.settings.background_image | img_url: 'master' }})"  >{% endif %}
     <div class="mx-auto mr-14 w-10 items-center flex sm:h-screen h-50vh relative ">
     <div class="flex  mx-auto sm:relative absolute sm:top-0 top-1/2" id="rd">
-        <div class="w-10 swiper-container mySwiper ">
-            <div class="swiper-wrapper">
-      {% for block in section.blocks %}
-      <div class="swiper-slide">
-      <div class=" mr-8 bg-cardsbg py-20	px-5	relative mx-auto text-center
-        flex items-center
-          rounded-md overflow-hidden
-          md:w-full xl:h-full
-          cursor-pointer sm:space-x-1.5 space-y-1.5
-          lg:space-x-0 lg:space-y-0
-          space-x-0 lg:space-y-0
-          shadow-cardssh border border-border"
-          >
-            <div  class="block">
-            <div  class="flex justify-center items-center pb-10"> {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>
-            <div  class="flex justify-center items-center name-testimonial  pb-5">{{ block.settings.title}}</div>
-            <div  class="flex justify-center items-center  position-testimonial  b-5">{{ block.settings.subheading}}</div>
-            <div class="pt-10 mx-7	description-testimonial">{{ block.settings.description }}</div>
-            </div>
+      <div class="relative">
+          <div class="swiper-button-next absolute top-15 left-77">{% include 'icon_right-slider' %}</div>
+          <div class="swiper-button-prev absolute top-15 left-72">{% include 'icon_left-slider' %}</div>
       </div>
-    </div>
-      {% endfor %}
+        <div class="w-10 swiper-container mySwiper">
+        
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+              <div class="swiper-slide">
+                <div class=" mr-8 bg-cardsbg hover:bg-white hover:shadow-default py-20	px-5	relative mx-auto text-center
+                  flex items-center
+                    rounded-md overflow-hidden
+                    md:w-full xl:h-full
+                    cursor-pointer sm:space-x-1.5 space-y-1.5
+                    lg:space-x-0 lg:space-y-0
+                    space-x-0 lg:space-y-0
+                    shadow-cardssh border border-border"
+                    >
+                      <div  class="block">
+                      <div  class="flex justify-center items-center pb-10"> {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>
+                      <div  class="flex justify-center items-center name-testimonial  pb-5">{{ block.settings.title}}</div>
+                      <div  class="flex justify-center items-center  position-testimonial  b-5">{{ block.settings.subheading}}</div>
+                      <div class="pt-10 mx-7	description-testimonial">{{ block.settings.description }}</div>
+                      </div>
+                </div>
+              </div>
+              {% endfor %}
   </div>
 </div>
 </div>
@@ -33,6 +38,7 @@
 {% schema %}
 {
 "name": "Testimonial Slider",
+"class": "spaced-section",
 "max_blocks": 4,
 "settings": [ 
 {

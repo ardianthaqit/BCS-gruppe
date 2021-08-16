@@ -12,10 +12,10 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
     },
     keyboard: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
   });
 // END SLIDER FOR TESTOMNAILS
 

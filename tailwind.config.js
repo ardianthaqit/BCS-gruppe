@@ -23,6 +23,7 @@ module.exports = {
         blacklight:'#1C1C1C',
         whitegrey:'#F5F5F5',
         darkgrey:'#706F6F',
+        Killarney:'#38664C',
       },
       width: {
         '1/7': '14.2857143%',
@@ -129,6 +130,7 @@ module.exports = {
        '2xl': '1.5rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
+      '4.5xl': '2.55rem',
        '5xl': '3rem',
        '6xl': '4rem',
       '7xl': '5rem',
@@ -150,6 +152,9 @@ module.exports = {
        black: 900,
      },
     },
+  },
+  boxShadow: {
+    default: '0px 4px 44px rgba(0, 0, 0, 0.05)',
   },
   variants: {
     extend: {},

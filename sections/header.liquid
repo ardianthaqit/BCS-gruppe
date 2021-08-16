@@ -339,7 +339,7 @@
                 </details-disclosure>
               {%- else -%}
                 <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                  <span  class="{%- if link.current %}header__active-menu-item{% endif %} text-navlink">{{ link.title | escape }}</span>
+                  <span  class="{%- if link.current %}header__active-menu-item{% endif %} text-navlink hover:text-colorprimary {% if link.title contains 'Grünkohlfahrt' %}text-Killarney{% endif %}">{{ link.title | escape }}</span>
                 </a>
               {%- endif -%}
             </li>
