@@ -9,7 +9,8 @@
             {% endif %}
                 {% if section.settings.heading != blank %}
                 <div class="karriere-title xl:text-navlink text-white">
-                  {{ section.settings.heading }}
+                  {% comment %} {{ section.settings.heading }} {% endcomment %}
+                  {% render 'green-text', text: section.settings.heading %}
                 </div>
             {% endif %}
             {% if section.settings.desc != blank %}

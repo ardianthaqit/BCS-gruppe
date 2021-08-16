@@ -1,10 +1,10 @@
-<div class=" h-screen overflow-hidden	">
+<div class="md:h-screen h-80vh overflow-hidden	">
 {% if section.settings.background_image != blank %}<div id="img-replace" class=" max-h-screen sm:h-screen	h-50vh w-full  bg-no-repeat bg-contain flex"  style="background-image: url({{ section.settings.background_image | img_url: 'master' }})"  >{% endif %}
     <div class="mx-auto mr-14 w-10 items-center flex sm:h-screen h-50vh relative ">
-    <div class="flex  mx-auto sm:relative absolute sm:top-0 top-1/2" id="rd">
-      <div class="relative">
-          <div class="swiper-button-next absolute top-15 left-77">{% include 'icon_right-slider' %}</div>
-          <div class="swiper-button-prev absolute top-15 left-72">{% include 'icon_left-slider' %}</div>
+    <div class="block mx-auto sm:relative absolute sm:top-0 top-1/2" id="rd">
+      <div class="absolute xl:-top-20 top-auto xl:bottom-auto -bottom-28 h-full w-full xl:ml-auto ml-16">
+          <div class="swiper-button-next absolute xl:top-15 xl:left-77 top-auto left-0">{% include 'icon_right-slider-black' %}</div>
+          <div class="swiper-button-prev absolute xl:top-15 xl:left-72">{% include 'icon_left-slider-black' %}</div>
       </div>
         <div class="w-10 swiper-container mySwiper">
         

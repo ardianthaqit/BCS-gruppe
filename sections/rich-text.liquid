@@ -3,16 +3,16 @@
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
-<div class="rich-text{% if section.settings.full_width %} rich-text--full-width{% endif %} flex items-center " style="background-color: {{ section.settings.bgcolor }}">
+<div class="rich-text{% if section.settings.full_width %} rich-text--full-width{% endif %} flex items-center{% if template contains 'collection' %} collection-heading-space{% endif %}" style="background-color: {{ section.settings.bgcolor }}">
   <div class="rich-text__blocks">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
-          <h2 class="text-white {{ block.settings.heading_size }} " {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+          <h2 style="color: {{ section.settings.text_color }}" class="text-white {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
-          <div class="rich-text__text rte text-white" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div style="color: {{ section.settings.text_color }}" class="rich-text__text rte text-white" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
-          <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+          <a {% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
             {{ block.settings.button_label | escape }}
           </a>
       {%- endcase -%}
@@ -64,6 +64,12 @@
       "type": "color",
       "id": "bgcolor",
       "label": "choose color"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#fff"
     }
   ],
   "blocks": [

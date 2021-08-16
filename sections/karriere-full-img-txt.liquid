@@ -1,4 +1,4 @@
-<div class="h-auto xl:h-screen w-full block xl:flex ">
+<div class="h-auto xl:h-screen w-full block xl:flex">
   <div class="xl:flex-row	 flex-col-reverse flex w-full">
     <div class="md:h-screen h-50vh w-full xl:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
 
@@ -42,6 +42,7 @@
 {% schema %}
 {
 "name": "Karriere image and text",
+"class": "spaced-section",
 "settings": [ 
 {
 "type": "image_picker",

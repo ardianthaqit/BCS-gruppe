@@ -152,10 +152,12 @@ module.exports = {
        black: 900,
      },
     },
+    
   },
   boxShadow: {
     default: '0px 4px 44px rgba(0, 0, 0, 0.05)',
   },
+  
   variants: {
     extend: {},
   },

@@ -36,6 +36,10 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.collection-heading-space {
+  padding-top: 1rem !important;
+  padding-bottom: 100px !important;
+}
 
 @media screen and (min-width: 750px) {
   .rich-text {

@@ -6,7 +6,7 @@
       height: 30px;
       margin-bottom: 0;
       padding: 0;
-      width: auto;
+      width: 33.33333%;
     }
     ul.tabs li a {
       display: block;
@@ -22,6 +22,7 @@
     }
     ul.tabs li a.active {
         text-decoration: underline;
+        padding: 0;
     }
     ul.tabs li:last-child a {
       border-top-right-radius: 2px;
@@ -37,7 +38,7 @@
     ul.tabs:after {
       clear: both;
     }
-    tr:nth-child(even) {
+    tr:nth-child(odd) {
         background-color: #F5F5F5;
     }
     table:not([class]) td, table:not([class]) th{

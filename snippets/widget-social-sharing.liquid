@@ -1,5 +1,8 @@
 <style>
-    li.social{display:inline-flex}
+    li.social{
+      display:inline-flex;
+      align-items:center;
+    }
     .inline-social{
       display:inline-flex;
        position: relative;
@@ -25,7 +28,7 @@
                     <path d="M6.27984 15.68V8.64001H8.51984L8.83984 6.08001H6.27984V4.48001C6.27984 3.84001 6.59984 3.20001 7.55984 3.20001H8.83984V0.640015H6.59984C4.67984 0.640015 3.07984 1.92001 3.07984 4.16001V6.08001H0.839844V8.64001H3.07984V15.68H6.27984Z" fill="#262626"/>
                     </svg>                    
               </a>
-            <div class="inline-social social-font relative -top-px	pl-2">Share</div>
+            <div class="inline-social social-font relative -top-px	pl-4">Share</div>
           </li>
           <li class="social mrs20">
               <a class="twitter" target="_blank" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_link }}" title="Share">
@@ -34,7 +37,7 @@
                     </svg>
                     
               </a>
-            <div class="inline-social social-font relative -top-px	pl-2">Tweet</div>
+            <div class="inline-social social-font relative -top-px	pl-4">Tweet</div>
           </li>
           <li class="social mrs20">
               <a class="pinterest" target="_blank" href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_link }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}" title="Share">
@@ -42,6 +45,6 @@
                     <path d="M11.7601 4.79999C11.4401 1.91999 8.56006 0.639987 5.36006 0.959987C3.12006 1.27999 0.560059 3.19999 0.560059 6.07999C0.560059 7.67999 0.880059 8.95999 2.48006 9.27999C3.12006 7.99999 2.16006 7.67999 2.16006 7.03999C1.52006 3.51999 6.32006 0.959987 8.88006 3.51999C10.4801 5.43999 9.52006 10.56 6.64006 10.24C4.08006 9.59999 7.92006 5.43999 5.68006 4.47999C4.08006 3.83999 3.12006 6.71999 3.76006 7.99999C3.12006 10.24 2.16006 12.48 2.80006 15.68C4.08006 14.72 4.72006 12.8 5.04006 10.88C5.68006 11.2 6.00006 11.84 6.96006 11.84C10.1601 11.52 12.0801 7.99999 11.7601 4.79999Z" fill="#262626"/>
                     </svg>                    
               </a>
-            <div class="inline-social social-font relative -top-px	pl-2">Pin it</div>
+            <div class="inline-social social-font relative -top-px	pl-4">Pin it</div>
           </li>
   </ul>

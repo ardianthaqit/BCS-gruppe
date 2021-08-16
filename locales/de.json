@@ -54,7 +54,7 @@
     "month_year": "%B %Y"
   },
   "newsletter": {
-    "label": "Deine E-Mail-Adresse",
+    "label": "E-Mail",
     "success": "Danke für deine Anmeldung",
     "button_label": "Abonnieren"
   },
