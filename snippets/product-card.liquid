@@ -13,6 +13,9 @@
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
+{%- assign variant = product.selected_or_first_available_variant -%}
+
+
 <div class="card-wrapper bg-white sm:w-full w-11/12	mx-auto">
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
@@ -28,7 +31,7 @@
             endif
           -%}
 
-          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
+          <div {% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
             <div class="media media--transparent media--{{ media_size }} media--hover-effect"
               {% if media_size == 'adapt' and product_card_product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
             >
@@ -94,10 +97,28 @@
           </span>
         {%- endif -%}
 
+        <div class="text-darkgrey w-full md:w-3/5 date-on-collection">
+        {% unless product.has_only_default_variant %}
+        {% for option in product_card_product.options_with_values limit:1 %}
+              {% for value in option.values %}
+                {{ value }}
+              {% endfor %}
+              {% endfor %}
+        {% endunless %}
+        </div>
+
+        <div class="flex justify-start items-baseline font-medium">
+          Book it now 
+          <svg class="ml-3" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 9L5 5L1 1" stroke="#262626" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </div>
+ 
         {% comment %} TODO: metafield {% endcomment %}
         <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
-        {% render 'price', product: product_card_product, price_class: '' %}
+        {% comment %} {% render 'price', product: product_card_product, price_class: '' %} {% endcomment %}
       </div>
     </div>
   </a>

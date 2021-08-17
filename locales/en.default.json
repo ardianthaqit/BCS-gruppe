@@ -126,6 +126,7 @@
         "unavailable": "Couldn't load pickup availability",
         "refresh": "Refresh"
       },
+      "privacy": "Inkl. 7% Mwst. und 10% VVK Gebühr", 
       "price": {
         "from_price_html": "From {{ price }}",
         "regular_price": "Regular price",

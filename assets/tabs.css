@@ -38,8 +38,11 @@
     ul.tabs:after {
       clear: both;
     }
-    tr:nth-child(odd) {
+    .items-of-events:nth-child(odd) {
         background-color: #F5F5F5;
+    }
+    .location-event-title {
+      font-size: 18px;
     }
     table:not([class]) td, table:not([class]) th{
         border: none!important;

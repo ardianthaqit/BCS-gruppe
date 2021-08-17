@@ -65,7 +65,7 @@
         </button>
       {%- endif -%}
     </div>
-    <div class=" w-full  lg:w-full xl:w-1/2 xl:px-60 lg:px-20 px-0 h-full pt-5 h-auto">
+    <div class=" w-full  lg:w-full xl:w-1/2 xl:px-40 lg:px-20 px-0 h-full pt-5 h-auto">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container relative top-1/4{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -124,8 +124,8 @@
 
             
           {%- when 'quantity_selector' -%}
-            <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-              <label class="form__label" for="Quantity-{{ section.id }}">
+            <div class="product-form__input product-form__quantity flex items-center" {{ block.shopify_attributes }}>
+              <label class="form__label mr-4" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
               <quantity-input class="quantity">
@@ -153,13 +153,13 @@
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.link_label }}</a>
           {%- when 'share' -%}
-            <share-button class="share-button" {{ block.shopify_attributes }}>
+            {% comment %} <share-button class="share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button button button--tertiary hidden">
                 {% render 'icon-share' %}
                 {{ 'general.share.share' | t }}
               </button>
               <details>
-                <summary class="share-button__button button button--tertiary">
+                <summary class="share-button__button button button--tertiary hidden">
                   {% render 'icon-share' %}
                   {{ 'general.share.share' | t }}
                 </summary>
@@ -184,7 +184,8 @@
                   </span>
                 </div>
               </details>
-            </share-button>
+            </share-button> {% endcomment %}
+            <p class="privacy-on-product">{{ 'products.product.privacy' | t }}</p>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
             <div class="footer__payment">
               <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
@@ -228,9 +229,9 @@
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                         {{ option.name }}
                       </label>
-                      <div class="select">
+                      <div class="select style-of-product-page">
                         <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
-                          class="select__select"
+                          class="select__select border-green"
                           name="options[{{ option.name | escape }}]"
                           form="product-form-{{ section.id }}"
                         >
@@ -256,7 +257,7 @@
               <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
                 <label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
                 <div class="select">
-                  <select name="id" id="Variants-{{ section.id }}" class="select__select" form="product-form">
+                  <select name="id" id="Variants-{{ section.id }}" class="select__select border-green" form="product-form">
                     {%- for variant in product.variants -%}
                       <option
                         {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
@@ -275,7 +276,7 @@
             </noscript>
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
-              <product-form class="product-form">
+              <product-form class="product-form buttons-bottom">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   <div class="product-form__buttons">

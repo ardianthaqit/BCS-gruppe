@@ -319,12 +319,13 @@
         {%- endif -%}
       </div>
       <div class="footer__column footer__column--info">
-        <div class="footer__copyright">
+        <div class="footer__copyright w-1/2">
           <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-          <small class="copyright__content">{{ powered_by_link }}</small>
+          <span class="hidden md:block">|</span> <small class="copyright__content">CREATED BY <a class="font-bold" href="https://www.solution25.com/">SOLUTION25</a></small>
         </div>
-        {%- if section.settings.payment_enable -%}
-          <div class="footer__payment">
+        
+          {% comment %} <div class="footer__payment  w-1/3 text-center">
+          {%- if section.settings.payment_enable -%}
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
             <ul class="list list-payment" role="list">
               {%- for type in shop.enabled_payment_types -%}
@@ -333,8 +334,16 @@
                 </li>
               {%- endfor -%}
             </ul>
-          </div>
-        {%- endif -%}
+            {%- endif -%}
+          </div> {% endcomment %}
+        
+        <div class="w-1/2">
+          <ul class="flex items-center md:justify-end justify-center">
+            <li class="mr-4"><a href="/policies/terms-of-service">AGB</a></li>
+            <li class="mr-4"><a href="/policies/legal-notice">Impressum</a></li>
+            <li><a href="/policies/privacy-policy">Datenschutz</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

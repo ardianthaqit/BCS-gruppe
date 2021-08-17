@@ -265,7 +265,7 @@
   }
 
   .card-wrapper:hover .card-information__text {
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-offset: 0.3rem;
   }
 

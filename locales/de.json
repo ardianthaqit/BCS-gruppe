@@ -112,6 +112,7 @@
         "increase": "Erhöhe die Menge für {{ product }}",
         "decrease": "Verringere die Menge für {{ product }}"
       },
+      "privacy": "Inkl. 7% Mwst. und 10% VVK Gebühr", 
       "price": {
         "from_price_html": "Von {{ price }}",
         "regular_price": "Normaler Preis",

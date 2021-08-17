@@ -57,12 +57,43 @@
                 </ul>
                 <div id="tab-1" class="">
                   <div class="mt-10">
-                    <table>
-                        <tr class="h-91px">
+                    <table class="w-full">
+                      {% for block in section.blocks %}
+                        {% if block.settings.text_tab == 'tab-1' %}
+                        {% if block.settings.date != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
+                            <div>{{ block.settings.description-event }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.date-second != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date-second }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
+                            <div>{{ block.settings.description-event-second }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.date-third != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date-third }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
+                            <div>{{ block.settings.description-event-third }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% endif %}
+                      {% endfor %}
+                        {% comment %} <tr class="h-91px">
                           <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
                           <td>{{ page.metafields.global.tab2 }}</td>
-                        </tr>
-                        <tr class="h-91px">
+                        </tr> {% endcomment %}
+                        {% comment %} <tr class="h-91px">
                           <td>Centro comercial Moctezuma</td>
                           <td>Francisco Chang</td>
                         </tr >
@@ -97,18 +128,49 @@
                         <tr class="h-91px">
                           <td>Laughing Bacchus Winecellars</td>
                           <td>Yoshi Tannamuri</td>
-                        </tr>
+                        </tr> {% endcomment %}
                       </table>
                     </div>
                 </div>
                 <div id="tab-2" class="">
                   <div class="mt-10">
                   <table>
-                    <tr class="h-91px">
+                   {% for block in section.blocks %}
+                        {% if block.settings.text_tab == 'tab-2' %}
+                        {% if block.settings.date != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
+                            <div>{{ block.settings.description-event }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.date-second != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date-second }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
+                            <div>{{ block.settings.description-event-second }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.date-third != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date-third }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
+                            <div>{{ block.settings.description-event-third }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% endif %}
+                      {% endfor %}
+                    {% comment %} <tr class="h-91px">
                       <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
                       <td>Maria Anders</td>
-                    </tr>
-                    <tr class="h-91px">
+                    </tr> {% endcomment %}
+                    {% comment %} <tr class="h-91px">
                       <td>Centro comercial Moctezuma</td>
                       <td>Francisco Chang</td>
                     </tr >
@@ -143,18 +205,45 @@
                     <tr class="h-91px">
                       <td>Laughing Bacchus Winecellars</td>
                       <td>Yoshi Tannamuri</td>
-                    </tr>
+                    </tr> {% endcomment %}
                   </table>
                   </div>
                 </div>
                 <div id="tab-3" class="">
                   <div class="mt-10">
                   <table>
-                    <tr class="h-91px">
-                      <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
-                      <td>Maria Anders</td>
-                    </tr>
-                    <tr class="h-91px">
+                     {% for block in section.blocks %}
+                        {% if block.settings.text_tab == 'tab-3' %}
+                        {% if block.settings.date != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
+                            <div>{{ block.settings.description-event }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.date-second != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date-second }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
+                            <div>{{ block.settings.description-event-second }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.date-third != blank %}
+                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
+                          <div class="w-1/3">{{ block.settings.date-third }}</div>
+                          <div class="w-2/3 ml-8">
+                            <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
+                            <div>{{ block.settings.description-event-third }}</div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% endif %}
+                      {% endfor %}
+                    {% comment %} <tr class="h-91px">
                       <td>Centro comercial Moctezuma</td>
                       <td>Francisco Chang</td>
                     </tr >
@@ -189,7 +278,7 @@
                     <tr class="h-91px">
                       <td>Laughing Bacchus Winecellars</td>
                       <td>Yoshi Tannamuri</td>
-                    </tr>
+                    </tr> {% endcomment %}
                   </table>
                 </div>
                 </div>
@@ -200,6 +289,7 @@
   {% schema %}
 {
 "name": "tabs",
+"max_blocks": 100,
 "settings": [ 
     {
         "type": "image_picker",
@@ -248,9 +338,95 @@
   }
   
 ],
+"blocks": [
+  {
+    "type": "text",
+    "name": "List",
+    "settings": [
+        {
+            "type": "header",
+            "content": "First Event"
+        },
+        {
+            "type": "text",
+            "id": "date",
+            "label": "Date"
+        },
+        {
+            "type": "text",
+            "id": "location-event",
+            "label": "Location Event"
+        },
+        {
+            "type": "text",
+            "id": "description-event",
+            "label": "Description Event"
+        },
+        {
+            "type": "header",
+            "content": "Second Event"
+        },
+        {
+            "type": "text",
+            "id": "date-second",
+            "label": "Date"
+        },
+        {
+            "type": "text",
+            "id": "location-event-second",
+            "label": "Location Event"
+        },
+        {
+            "type": "text",
+            "id": "description-event-second",
+            "label": "Description Event"
+        },
+        {
+            "type": "header",
+            "content": "Third Event"
+        },
+        {
+            "type": "text",
+            "id": "date-third",
+            "label": "Date"
+        },
+        {
+            "type": "text",
+            "id": "location-event-third",
+            "label": "Location Event"
+        },
+        {
+            "type": "text",
+            "id": "description-event-third",
+            "label": "Description Event"
+        },
+        {
+            "type": "select",
+            "id": "text_tab",
+            "label": "Text Tab",
+            "options": [
+                {
+                    "value": "tab-1",
+                    "label": "Tab 1"
+                },
+                {
+                    "value": "tab-2",
+                    "label": "Tab 2"
+                },
+                {
+                    "value": "tab-3",
+                    "label": "Tab 3"
+                }
+            ],
+            "default": "tab-1"
+        }
+  
+    ]
+  }
+],
 "presets": [{
-"name": "tabs",
-"category": "Content"
-}]
+    "name": "tabs",
+    "category": "Content"
+  }]
 }
 {% endschema %} 
