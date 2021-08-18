@@ -480,7 +480,7 @@
           {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
         </p> {% endcomment %}
         <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
-        grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4
+        grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4
         gap-x-2 md:gap-x-5
         gap-y-10 md:gap-y-10">
           {%- for product in collection.products -%}

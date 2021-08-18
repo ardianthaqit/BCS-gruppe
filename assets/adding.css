@@ -392,7 +392,9 @@ span.red-text {
         }
     }
     @media only screen and (max-width: 767px) {
-
+        #collection-hero {
+            padding: 50px 0 0;
+        }
         .hidde-mobile{display: none;}
         .show-mobile{display: block}
         .headline-mobile{
@@ -896,6 +898,23 @@ div#insta-feed h2 {
     text-align: center;
     letter-spacing: 0.2px;
     color: #262626;
+}
+
+ul#main-collection-product-grid {
+    margin-bottom: 5rem;
+}
+
+select#SortBy {
+    border: none;
+}
+
+.shopify-payment-button__button--unbranded {
+    background-color: #006d5d !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
  @media only screen and (max-width: 767px) {

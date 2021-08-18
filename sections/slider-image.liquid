@@ -1,6 +1,6 @@
 <div id="slider-height-auto" class="  md:h-screen h-auto w-full block xl:flex xl:bg-contain sm:bg-cover bg-contain bg-no-repeat  bg-bottom sm:bg-right overflow-hidden" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
   <div class="mx-auto w-full xl:w-10 items-center flex" id="slider-2-height-auto">
-    <div class="h-40vh p-5 md:p-0 xl:w-full md:w-1/2 w-full xl:text-left text-center xl:my-0 mt-20">
+    <div class="h-auto p-5 md:p-0 xl:w-full md:w-1/2 w-full xl:text-left text-center xl:my-0 mt-20 mb-10">
       {% if section.settings.heading != blank %}
       <div class="xl:text-navlink sm:text-white text-navlink text-sm23 font-light leading-40 w-full xl:w-290px	">
         {{ section.settings.heading }}
@@ -65,13 +65,13 @@
 
 </div>
   <!-- FOR MOBILE  -->
-<div class="w-10 show-mobile sm:mb-0 mb-7	" id="rd-2" >
+<div class="w-10 show-mobile sm:mb-0 mb-7" id="rd-2" >
 {% for block in section.blocks %}
 <div class=" mr-0 sm:mr-8 relative mx-auto text-center
 sm:flex inline-block items-center
   rounded-md overflow-hidden
   md:w-full xl:h-full
-  h-auto
+  h-auto w-49
    sm:pt-0
   cursor-pointer"
   x-data="{open: false }" @mouseover="open = true" @mouseout="open = false" @click="open = !open"
@@ -80,7 +80,7 @@ sm:flex inline-block items-center
     {% if block.settings.mobile_background_image != blank %}<div class="flex justify-center items-center"> {{ block.settings.mobile_background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>{% endif %}
     </div>
     <div class="absolute left-1/2 top-0 transform -translate-x-1/2 bottom-5 z-2 text-white w-full h-full"> 
-      <div class="ucards-text text-3xl h-full flex items-center justify-center">
+      <div class="ucards-text text-3xl h-full flex items-center justify-center w-98">
         {{ block.settings.stll}}
       </div>
     </div>

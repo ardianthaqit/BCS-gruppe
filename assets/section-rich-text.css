@@ -77,3 +77,9 @@
 .rich-text__blocks > * + a {
   margin-top: 3rem;
 }
+
+@media only screen and (max-width: 767px) {
+  .collection-heading-space {
+      padding-bottom: 50px!important;
+  }
+}

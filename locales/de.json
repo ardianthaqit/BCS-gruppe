@@ -225,7 +225,7 @@
     },
     "collection_template": {
       "title": "Kategorie",
-      "sort_by_label": "Sortieren nach",
+      "sort_by_label": "Sortieren nach:",
       "sort_button": "Sortieren",
       "product_count": {
         "one": "{{ product_count }} von {{ count }} Produkt wird angezeigt",
