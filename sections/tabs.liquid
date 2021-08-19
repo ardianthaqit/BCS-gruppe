@@ -60,75 +60,80 @@
                     <table class="w-full">
                       {% for block in section.blocks %}
                         {% if block.settings.text_tab == 'tab-1' %}
-                        {% if block.settings.date != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
-                            <div>{{ block.settings.description-event }}</div>
-                          </div>
-                        </div>
-                        {% endif %}
+                          {% if block.settings.date != blank %}
+                          <div class="items-of-events relative">
+                            {% if block.settings.first-event-url != blank %}
+                              <a href="{{ block.settings.first-event-url }}">
+                              <div class="absolute top-1/3 md:right-16 right-2 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                            {% endif %}
+                              <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                                <div class="w-1/3">{{ block.settings.date }}</div>
+                                <div class="w-2/3 ml-8">
+                                  <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
+                                  <div>{{ block.settings.description-event }}</div>
+                                </div>
+                              </div>
+                            {% if block.settings.first-event-url != blank %}
+                              </a>
+                            {% endif %}
+                            </div>
+                          {% endif %}
                         {% if block.settings.date-second != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date-second }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
-                            <div>{{ block.settings.description-event-second }}</div>
+                        <div class="items-of-events relative">
+                          {% if block.settings.second-event-url != blank %}
+                            <a href="{{ block.settings.second-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-second }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
+                                <div>{{ block.settings.description-event-second }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.second-event-url != blank %}
+                            </a>
+                          {% endif %}
                           </div>
-                        </div>
                         {% endif %}
                         {% if block.settings.date-third != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date-third }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
-                            <div>{{ block.settings.description-event-third }}</div>
+                        <div class="items-of-events relative">
+                          {% if block.settings.third-event-url != blank %}
+                            <a href="{{ block.settings.third-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-third }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
+                                <div>{{ block.settings.description-event-third }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.third-event-url != blank %}
+                            </a>
+                          {% endif %}
                           </div>
-                        </div>
+                        {% endif %}
+                        {% if block.settings.date-fourth != blank %}
+                        <div class="items-of-events relative">
+                          {% if block.settings.fourth-event-url != blank %}
+                            <a href="{{ block.settings.fourth-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-fourth }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-fourth }}</div>
+                                <div>{{ block.settings.description-event-fourth }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.fourth-event-url != blank %}
+                            </a>
+                          {% endif %}
+                          </div>
                         {% endif %}
                         {% endif %}
                       {% endfor %}
-                        {% comment %} <tr class="h-91px">
-                          <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
-                          <td>{{ page.metafields.global.tab2 }}</td>
-                        </tr> {% endcomment %}
-                        {% comment %} <tr class="h-91px">
-                          <td>Centro comercial Moctezuma</td>
-                          <td>Francisco Chang</td>
-                        </tr >
-                        <tr class="h-91px">
-                          <td>Ernst Handel</td>
-                          <td>Roland Mendel</td>
-                        </tr ">
-                        <tr class="h-91px">
-                          <td>Island Trading</td>
-                          <td>Helen Bennett</td>
-                        </tr>
-                        <tr class="h-91px">
-                          <td>Laughing Bacchus Winecellars</td>
-                          <td>Yoshi Tannamuri</td>
-                        </tr>
-                        <tr class="h-91px">
-                          <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
-                          <td>Maria Anders</td>
-                        </tr>
-                        <tr class="h-91px">
-                          <td>Centro comercial Moctezuma</td>
-                          <td>Francisco Chang</td>
-                        </tr >
-                        <tr class="h-91px">
-                          <td>Ernst Handel</td>
-                          <td>Roland Mendel</td>
-                        </tr ">
-                        <tr class="h-91px">
-                          <td>Island Trading</td>
-                          <td>Helen Bennett</td>
-                        </tr>
-                        <tr class="h-91px">
-                          <td>Laughing Bacchus Winecellars</td>
-                          <td>Yoshi Tannamuri</td>
-                        </tr> {% endcomment %}
                       </table>
                     </div>
                 </div>
@@ -137,75 +142,80 @@
                   <table>
                    {% for block in section.blocks %}
                         {% if block.settings.text_tab == 'tab-2' %}
-                        {% if block.settings.date != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
-                            <div>{{ block.settings.description-event }}</div>
-                          </div>
-                        </div>
-                        {% endif %}
+                          {% if block.settings.date != blank %}
+                          <div class="items-of-events relative">
+                            {% if block.settings.first-event-url != blank %}
+                              <a href="{{ block.settings.first-event-url }}">
+                              <div class="absolute top-1/3 md:right-16 right-2 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                            {% endif %}
+                              <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                                <div class="w-1/3">{{ block.settings.date }}</div>
+                                <div class="w-2/3 ml-8">
+                                  <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
+                                  <div>{{ block.settings.description-event }}</div>
+                                </div>
+                              </div>
+                            {% if block.settings.first-event-url != blank %}
+                              </a>
+                            {% endif %}
+                            </div>
+                          {% endif %}
                         {% if block.settings.date-second != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date-second }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
-                            <div>{{ block.settings.description-event-second }}</div>
+                        <div class="items-of-events relative">
+                          {% if block.settings.second-event-url != blank %}
+                            <a href="{{ block.settings.second-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-second }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
+                                <div>{{ block.settings.description-event-second }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.second-event-url != blank %}
+                            </a>
+                          {% endif %}
                           </div>
-                        </div>
                         {% endif %}
                         {% if block.settings.date-third != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date-third }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
-                            <div>{{ block.settings.description-event-third }}</div>
+                        <div class="items-of-events relative">
+                          {% if block.settings.third-event-url != blank %}
+                            <a href="{{ block.settings.third-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-third }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
+                                <div>{{ block.settings.description-event-third }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.third-event-url != blank %}
+                            </a>
+                          {% endif %}
                           </div>
-                        </div>
+                        {% endif %}
+                        {% if block.settings.date-fourth != blank %}
+                        <div class="items-of-events relative">
+                          {% if block.settings.fourth-event-url != blank %}
+                            <a href="{{ block.settings.fourth-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-fourth }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-fourth }}</div>
+                                <div>{{ block.settings.description-event-fourth }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.fourth-event-url != blank %}
+                            </a>
+                          {% endif %}
+                          </div>
                         {% endif %}
                         {% endif %}
                       {% endfor %}
-                    {% comment %} <tr class="h-91px">
-                      <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
-                      <td>Maria Anders</td>
-                    </tr> {% endcomment %}
-                    {% comment %} <tr class="h-91px">
-                      <td>Centro comercial Moctezuma</td>
-                      <td>Francisco Chang</td>
-                    </tr >
-                    <tr class="h-91px">
-                      <td>Ernst Handel</td>
-                      <td>Roland Mendel</td>
-                    </tr ">
-                    <tr class="h-91px">
-                      <td>Island Trading</td>
-                      <td>Helen Bennett</td>
-                    </tr>
-                    <tr class="h-91px">
-                      <td>Laughing Bacchus Winecellars</td>
-                      <td>Yoshi Tannamuri</td>
-                    </tr>
-                    <tr class="h-91px">
-                      <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
-                      <td>Maria Anders</td>
-                    </tr>
-                    <tr class="h-91px">
-                      <td>Centro comercial Moctezuma</td>
-                      <td>Francisco Chang</td>
-                    </tr >
-                    <tr class="h-91px">
-                      <td>Ernst Handel</td>
-                      <td>Roland Mendel</td>
-                    </tr ">
-                    <tr class="h-91px">
-                      <td>Island Trading</td>
-                      <td>Helen Bennett</td>
-                    </tr>
-                    <tr class="h-91px">
-                      <td>Laughing Bacchus Winecellars</td>
-                      <td>Yoshi Tannamuri</td>
-                    </tr> {% endcomment %}
                   </table>
                   </div>
                 </div>
@@ -214,71 +224,80 @@
                   <table>
                      {% for block in section.blocks %}
                         {% if block.settings.text_tab == 'tab-3' %}
-                        {% if block.settings.date != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
-                            <div>{{ block.settings.description-event }}</div>
-                          </div>
-                        </div>
-                        {% endif %}
+                          {% if block.settings.date != blank %}
+                          <div class="items-of-events relative">
+                            {% if block.settings.first-event-url != blank %}
+                              <a href="{{ block.settings.first-event-url }}">
+                              <div class="absolute top-1/3 md:right-16 right-2 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                            {% endif %}
+                              <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                                <div class="w-1/3">{{ block.settings.date }}</div>
+                                <div class="w-2/3 ml-8">
+                                  <div class="location-event-title font-bold">{{ block.settings.location-event }}</div>
+                                  <div>{{ block.settings.description-event }}</div>
+                                </div>
+                              </div>
+                            {% if block.settings.first-event-url != blank %}
+                              </a>
+                            {% endif %}
+                            </div>
+                          {% endif %}
                         {% if block.settings.date-second != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date-second }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
-                            <div>{{ block.settings.description-event-second }}</div>
+                        <div class="items-of-events relative">
+                          {% if block.settings.second-event-url != blank %}
+                            <a href="{{ block.settings.second-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-second }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-second }}</div>
+                                <div>{{ block.settings.description-event-second }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.second-event-url != blank %}
+                            </a>
+                          {% endif %}
                           </div>
-                        </div>
                         {% endif %}
                         {% if block.settings.date-third != blank %}
-                        <div class="w-full flex flex-row p-4 items-center items-of-events border border-transparent hover:border-lightgrey">
-                          <div class="w-1/3">{{ block.settings.date-third }}</div>
-                          <div class="w-2/3 ml-8">
-                            <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
-                            <div>{{ block.settings.description-event-third }}</div>
+                        <div class="items-of-events relative">
+                          {% if block.settings.third-event-url != blank %}
+                            <a href="{{ block.settings.third-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-third }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-third }}</div>
+                                <div>{{ block.settings.description-event-third }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.third-event-url != blank %}
+                            </a>
+                          {% endif %}
                           </div>
-                        </div>
+                        {% endif %}
+                        {% if block.settings.date-fourth != blank %}
+                        <div class="items-of-events relative">
+                          {% if block.settings.fourth-event-url != blank %}
+                            <a href="{{ block.settings.fourth-event-url }}">
+                            <div class="absolute top-1/3 md:right-16 right-2 hidden arrow-at-location-events">{% include 'icon-arrow-right' %}</div>
+                          {% endif %}
+                            <div class="w-full flex flex-row p-4 items-center border border-transparent hover:border-lightgrey">
+                              <div class="w-1/3">{{ block.settings.date-fourth }}</div>
+                              <div class="w-2/3 ml-8">
+                                <div class="location-event-title font-bold">{{ block.settings.location-event-fourth }}</div>
+                                <div>{{ block.settings.description-event-fourth }}</div>
+                              </div>
+                            </div>
+                          {% if block.settings.fourth-event-url != blank %}
+                            </a>
+                          {% endif %}
+                          </div>
                         {% endif %}
                         {% endif %}
                       {% endfor %}
-                    {% comment %} <tr class="h-91px">
-                      <td>Centro comercial Moctezuma</td>
-                      <td>Francisco Chang</td>
-                    </tr >
-                    <tr class="h-91px">
-                      <td>Ernst Handel</td>
-                      <td>Roland Mendel</td>
-                    </tr ">
-                    <tr class="h-91px">
-                      <td>Island Trading</td>
-                      <td>Helen Bennett</td>
-                    </tr>
-                    <tr class="h-91px">
-                      <td>Laughing Bacchus Winecellars</td>
-                      <td>Yoshi Tannamuri</td>
-                    </tr>
-                    <tr class="h-91px">
-                      <td class="w-2/6 field-text">{{ page.metafields.global.tab1 }}</td>
-                      <td>Maria Anders</td>
-                    </tr>
-                    <tr class="h-91px">
-                      <td>Centro comercial Moctezuma</td>
-                      <td>Francisco Chang</td>
-                    </tr >
-                    <tr class="h-91px">
-                      <td>Ernst Handel</td>
-                      <td>Roland Mendel</td>
-                    </tr ">
-                    <tr class="h-91px">
-                      <td>Island Trading</td>
-                      <td>Helen Bennett</td>
-                    </tr>
-                    <tr class="h-91px">
-                      <td>Laughing Bacchus Winecellars</td>
-                      <td>Yoshi Tannamuri</td>
-                    </tr> {% endcomment %}
                   </table>
                 </div>
                 </div>
@@ -348,6 +367,11 @@
             "content": "First Event"
         },
         {
+            "type": "url",
+            "id": "first-event-url",
+            "label": "Select Event"
+        },
+        {
             "type": "text",
             "id": "date",
             "label": "Date"
@@ -365,6 +389,11 @@
         {
             "type": "header",
             "content": "Second Event"
+        },
+        {
+            "type": "url",
+            "id": "second-event-url",
+            "label": "Select Event"
         },
         {
             "type": "text",
@@ -386,6 +415,11 @@
             "content": "Third Event"
         },
         {
+            "type": "url",
+            "id": "third-event-url",
+            "label": "Select Event"
+        },
+        {
             "type": "text",
             "id": "date-third",
             "label": "Date"
@@ -398,6 +432,30 @@
         {
             "type": "text",
             "id": "description-event-third",
+            "label": "Description Event"
+        },
+        {
+            "type": "header",
+            "content": "fourth Event"
+        },
+        {
+            "type": "url",
+            "id": "fourth-event-url",
+            "label": "Select Event"
+        },
+        {
+            "type": "text",
+            "id": "date-fourth",
+            "label": "Date"
+        },
+        {
+            "type": "text",
+            "id": "location-event-fourth",
+            "label": "Location Event"
+        },
+        {
+            "type": "text",
+            "id": "description-event-fourth",
             "label": "Description Event"
         },
         {
