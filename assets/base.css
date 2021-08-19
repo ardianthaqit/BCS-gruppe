@@ -1832,8 +1832,8 @@ input[type='checkbox'] {
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .header__icon--cart {
@@ -1844,6 +1844,12 @@ input[type='checkbox'] {
 @media screen and (max-width: 989px) {
   menu-drawer ~ .header__icons .header__icon--account {
     display: none;
+  }
+  .header__icon--cart {
+    margin-right: 0rem;
+  }
+  header-drawer {
+    margin-left: 0rem !important;
   }
 }
 
@@ -2023,7 +2029,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.3rem;
 }
 

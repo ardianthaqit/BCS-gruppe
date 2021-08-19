@@ -1,6 +1,8 @@
+{% assign lefttest = section.settings.background_image %}
+
 <div class=" h-screen w-full flex " id="image-text">
     <div class="w-1/2 flex items-center justify-center " id="text-width">
-        <div class="block mx-auto  sm:w-11/12   xl:w-1/2 w-full xl:my-0">
+        <div class="block mx-auto  sm:w-11/12   2xl:w-55 w-full xl:my-0">
             <div class="xl:w-590px " id="text-title">
                 {% if section.settings.heading != blank %}
                 <div class="xl:font-56 font-32px font-light	md:text-blacklight text-white xl:text-56 text-sm23 bg-redlight sm:bg-transparent sm:p-0 	p-5">
@@ -28,7 +30,9 @@
      
         </div>
     </div>
-    <div class="xl:h-screen lg:h-80vh h-50vh w-full xl:w-1/2 bg-no-repeat bg-cover" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+    <div class="w-full h-full xl:w-1/2 bg-no-repeat bg-cover">
+            {% comment %} {% render 'lazy-image', image: section.settings.background_image, class: "w-full"  %} {% endcomment %}
+        {% render 'lazy-image', image: lefttest, class: 'w-full h-full' %}
     </div>
   </div>
 {% schema %}

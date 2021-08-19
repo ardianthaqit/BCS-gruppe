@@ -2,7 +2,7 @@
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
 <div class="w-full flex items-center h-auto lg:h-220px bg-whitegrey">
-  <div class="xl:w-10 block lg:flex mx-auto sm:pt-0 pt-9 sm:pb-0 pb-5">
+  <div class="md:w-4/5 w-11/12 block lg:flex mx-auto sm:pt-0 pt-9 sm:pb-0 pb-5">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}

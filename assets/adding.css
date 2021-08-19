@@ -232,7 +232,7 @@
 .green-text{
     font-family: Lato;
     font-style: normal;
-    /* font-weight: normal; */
+    font-weight: 400;
     font-size: 44px;
     line-height: 56px;
     letter-spacing: 0.2px;
@@ -887,7 +887,7 @@ span.red-text {
 }
 
 div#insta-feed {
-    width: 67% !important;
+    width: 80% !important;
 }
 div#insta-feed h2 {
     font-family: Lato;
@@ -938,7 +938,14 @@ select#SortBy {
           display: none !important;
       }
       div#insta-feed {
-        width: 100% !important;
+        width: 90% !important;
+    }
+    div#insta-feed a .instafeed-container {
+        width: 50% !important;
+        padding-top: 50% !important;
+    }
+    div#insta-feed h2 {
+        font-size: 32px;
     }
  }
 

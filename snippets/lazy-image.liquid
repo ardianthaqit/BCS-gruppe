@@ -4,7 +4,7 @@
 {%- else -%}
   {%- assign fade_in = true -%}
 {%- endif -%}
-{%- assign img_url = image | img_url: '1x' | replace: '_1x.', '_{width}x@2x.' -%}
+{%- assign img_url = image | img_url: '' -%}
 <img
   src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
   data-src="{{ img_url }}" 
