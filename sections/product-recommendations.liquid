@@ -8,13 +8,13 @@
 <noscript>{{ 'component-product-grid.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-product-recommendations.css' | asset_url | stylesheet_tag }}</noscript>
 
-<product-recommendations class="product-recommendations page-width " data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">
+<product-recommendations class="product-recommendations page-width " data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=3">
   {% if recommendations.performed and recommendations.products_count > 0 %}
   <div class="h-auto ">
     <h2 class="product-recommendations__heading">{{ section.settings.heading | escape }}</h2>
-    <ul class="grid-d flex items-center grid--2-col product-grid{% if recommendations.products_count > 3 %} grid--4-col-desktop grid--quarter-max{% else %} grid--{{ recommendations.products_count }}-col-tablet{% endif %}" role="list">
+    <ul class="grid md:grid-cols-3 grid-cols-2" role="list">
       {% for recommendation in recommendations.products %}
-        <li class="grid__item">
+        <li class="w-full featured-items grid__item">
           {% render 'product-card',
             product_card_product: recommendation,
             media_size: section.settings.image_ratio,

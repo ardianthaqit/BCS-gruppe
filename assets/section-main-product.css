@@ -194,6 +194,7 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
+  border-color: #cbcbcb !important;
 }
 
 .product-form__submit[disabled] + .shopify-payment-button {

@@ -839,7 +839,7 @@ span.red-text {
  }
 
  ul.social_sharing_block {
-     padding-top: 3rem;
+     padding-top: 5rem;
  }
 
  .blocks:hover {
@@ -879,7 +879,7 @@ span.red-text {
 .privacy-on-product {
     font-size: 14px;
     color: #706F6F;
-    margin-top: 0 !important;
+    margin-top: -10px !important;
 }
 
 .buttons-bottom {
@@ -910,11 +910,16 @@ select#SortBy {
 
 .shopify-payment-button__button--unbranded {
     background-color: #006d5d !important;
+    border-radius: 3px !important;
 }
 
 .swiper-button-next, .swiper-button-prev {
     outline: none !important;
     box-shadow: none !important;
+}
+
+.product-form__input .select, .product-form__input {
+    max-width: 100% !important;
 }
 
  @media only screen and (max-width: 767px) {
@@ -947,10 +952,28 @@ select#SortBy {
     div#insta-feed h2 {
         font-size: 32px;
     }
+    .product-recommendations__heading {
+        font-size: 32px !important;
+        line-height: 40px !important;
+    }
+    .card-wrapper {
+        padding: 10px;
+    }
+    .product-title {
+        font-size: 32px;
+        line-height: 44px;
+    }
+    .product__media-list .product__media-item {
+        padding: 0 !important;
+        width: 100% !important;
+    }
  }
 
  @media only screen and (max-width: 1279px) {
     .icons-bar {
         display: none;
+    }
+    .karriere-title, .karriere-title .green-text {
+        color: #fff;
     }
  }

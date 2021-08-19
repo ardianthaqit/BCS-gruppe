@@ -44,6 +44,7 @@
 
 .card--product {
   position: relative;
+  border-radius: 3px;
 }
 
 .card--stretch {

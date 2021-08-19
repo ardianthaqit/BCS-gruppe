@@ -187,8 +187,9 @@
             </share-button> {% endcomment %}
             <p class="privacy-on-product">{{ 'products.product.privacy' | t }}</p>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-            <div class="footer__payment">
+            <div class="footer__payment pt-4">
               <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+              <span class="block pb-2">{{ 'products.product.payment-info' | t }}</span>
               <ul class=" flex justify-start " role="list">
                 {%- for type in shop.enabled_payment_types -%}
                   <li class="list-payment__item">
