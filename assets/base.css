@@ -689,12 +689,12 @@ summary::-webkit-details-marker {
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
-*:focus {
+/* *:focus {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
-}
+} */
 
 /* Negate the fallback side-effect for browsers that support :focus-visible */
 *:focus:not(:focus-visible) {
@@ -714,9 +714,9 @@ summary::-webkit-details-marker {
 
 /* Fallback */
 .focus-inset:focus {
-  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
-  outline-offset: -0.2rem;
-  box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3);
+  outline: none;
+  outline-offset: none;
+  box-shadow: none;
 }
 
 .focus-inset:focus:not(:focus-visible) {
@@ -1820,10 +1820,6 @@ input[type='checkbox'] {
   content: none;
 }
 
-.header__icon:hover .icon,
-.modal__close-button:hover .icon {
-  transform: scale(1.07);
-}
 
 .header__icon .icon {
   height: 2rem;

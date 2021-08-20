@@ -103,6 +103,7 @@
   "products": {
     "product": {
       "add_to_cart": "In den Warenkorb legen",
+      "book_it_now": "Jetzt buchen",
       "description": "Beschreibung",
       "on_sale": "Sale",
       "product_variants": "Produktvarianten",

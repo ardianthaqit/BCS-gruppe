@@ -321,9 +321,21 @@ span.red-text {
         width: 25%!important;
     } 
   }
+  .featuret-subtitle {
+    max-width: 90%;
+    margin: 0 auto;
+}
   @media (min-width: 1024px) {
-
+    .featuret-subtitle {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+    .contact {
+        max-width: 60%;
+    }
     } 
+
+    
 
 
     /* Andi CSS  */
@@ -389,6 +401,10 @@ span.red-text {
         #height-feature{
             max-height: 100%;
             height: 100%;
+        }
+        .featuret-subtitle {
+            max-width: 36%;
+            margin: 0 auto;
         }
     }
     @media only screen and (max-width: 767px) {
@@ -485,6 +501,10 @@ span.red-text {
         .featured-title {
             font-size: 32px;
         }
+        .text-title-full-image, .heading-accordion, .heading-cards {
+            font-size: 32px !important;
+            line-height: 40px !important;
+          }
     }
     @media only screen and (min-width: 768px) and (max-width:1023px) {
         #rd-2{
@@ -976,4 +996,7 @@ select#SortBy {
     .karriere-title, .karriere-title .green-text {
         color: #fff;
     }
+ }
+ @media only screen and (min-width: 1279px) {
+    
  }
