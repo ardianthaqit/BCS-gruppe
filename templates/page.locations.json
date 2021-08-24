@@ -1,0 +1,249 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1628936241ab483961": {
+      "type": "cards",
+      "blocks": {
+        "165a5d5a-7596-42f7-853b-0e55ffee52fa": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/image_4_2.png",
+            "title": "<p>Höpkens Ruh<\/p>",
+            "subheading": "<p>Mehr erfahren<\/p>",
+            "card_url": ""
+          }
+        },
+        "17b3f504-63d5-430e-b37f-259f8051880f": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/image_4_3_14766f8a-393e-4d88-bff3-309169cd143d.png",
+            "title": "<p> Bremenhalle<\/p>",
+            "subheading": "<p> Mehr erfahren<\/p>",
+            "card_url": ""
+          }
+        },
+        "85491aef-da26-49f7-8f75-b31435b4da71": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/image_4_4.png",
+            "title": "<p>Borgfelder Landhaus<\/p>",
+            "subheading": "<p>Mehr erfahren<\/p>",
+            "card_url": ""
+          }
+        },
+        "1628936241ab483961-1": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/image_4_5.png",
+            "title": "<p>Poloclub Hagen Grinden<\/p>",
+            "subheading": "<p>Mehr erfahren<\/p>",
+            "card_url": ""
+          }
+        },
+        "1628936241ab483961-0": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/image_4_6.png",
+            "title": "<p>Johann Jacobs Haus<\/p>",
+            "subheading": "<p>Mehr erfahren<\/p>",
+            "card_url": "shopify:\/\/pages\/single-location"
+          }
+        }
+      },
+      "block_order": [
+        "165a5d5a-7596-42f7-853b-0e55ffee52fa",
+        "17b3f504-63d5-430e-b37f-259f8051880f",
+        "85491aef-da26-49f7-8f75-b31435b4da71",
+        "1628936241ab483961-1",
+        "1628936241ab483961-0"
+      ],
+      "settings": {
+        "miniheading": "<p>Locations<\/p>",
+        "title": "<p>Eventlocations in Bremen<\/p>",
+        "subheading": "<p>Wir bieten die Eventlocation für Ihre Veranstaltung. Ob Partyraum für das Jubiläum, Veranstaltungsraum für Firmenfeiern oder<br\/>Ihr ganz individuelles Event. Im Raum Bremen und Niedersachsen können Sie mit uns klein oder groß feiern. Mieten Sie bei uns <br\/>unkompliziert eine unserer Locations – auf Wunsch untertsützen wir Sie gerne bei der Eventplanung und dem Catering.<\/p>",
+        "button_text": "Jetzt Buchen",
+        "button_url": "shopify:\/\/pages\/single-location"
+      }
+    },
+    "1628945377fde5be8a": {
+      "type": "karriere-full-img-txt",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/samuel-pereira-uf2nnANWa8Q-unsplash_1.png",
+        "layout": "image_first",
+        "miniheading": "<p>Locations in Bremen und Niedersachsen<\/p>",
+        "heading": "<p>Eventlocation mieten<br\/>in Bremen<\/p>",
+        "desc": "<p>In Bremen verfügt die BCS Gruppe über verschiedene Eventlocations in zentraler Lage mit guter Anbindung. So verfügt die auf 1200 Quadratmeter große Eventlocation Hudson Eventloft direkt am Europahafen den passenden Rahmen für moderne und schicke Firmenfeiern für bis zu 440 Gästen. Auch die Bremenhalle, eine moderne und zugleich historische Eventlocation mit Blick auf das Rollfeld des Flughafens, eignet sich perfekt für größere Feiern mit bis zu 450 Gästen.<br\/><br\/>Suchen Sie eine Eventlocation im Grünen? Kein Problem, denn in unserem idyllischen und gemütlichen Borgfelder Landhaus in Bremen lassen sich sowohl größere als auch kleinere Firmenfeste für bis zu 500 Personen veranstalten. Für Feiern im kleinerem,  privaten Rahmen eignet sich bestens das Höpkens Ruh. Hier feiern Sie drinnen im Saal und Kaminzimmer oder draußen auf der traumhaft schönen Terrasse mit 40 bis 120 Personen im Höpkens Ruh. Exklusiv direkt an der historischen Altstadt gelegen finden Sie das Johann Jacobs Haus. Hier tagen und feiern Sie im historischen Ambiente der Bremer Kaffee-Tradition im Herzen der Bremer Innenstadt mit bis zu 50 Personen.<\/p>",
+        "button_text": "Weiterlesen",
+        "button_url": "shopify:\/\/blogs\/news"
+      }
+    },
+    "162894665536db6f3b": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/samuel-pereira-uf2nnANWa8Q-unsplash_1_1.png",
+        "layout": "image_first",
+        "miniheading": "<p>Locations in Bremen und Niedersachsen<\/p>",
+        "heading": "<p>Eventlocation mieten im Raum Achim<\/p>",
+        "desc": "<p>Mit dem Poloclub Hagen Grinden in Langwedel verfügen wir über ein exklusives Angebot in unserem Portfolio. Der Gutshof mit großer Terrasse bietet auf ca. 500 Quadratmetern eine wunderschöne Fläche. Die Räumlichkeiten sind hochwertig und laden zu kleinen sowie großen Feiern ein. Nehmen Sie Kontakt zu uns auf, um eine kostenlose Besichtigung zu buchen<\/p>",
+        "button_text": "Weiterlesen",
+        "button_url": "shopify:\/\/pages\/single-location"
+      }
+    },
+    "16288584113c10c075": {
+      "type": "accordion",
+      "blocks": {
+        "63a57895-4916-4d2f-a697-3827dd072de2": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Kann ich mir die Location anschauen?<\/strong><\/p>",
+            "default_content": "<p>Gerne können Sie mit uns gemeinsam einen Besichtigungstermin vereinbaren, wo Sie sich die Location in Ruhe anschauen können. Dort können auch alle weiteren Fragen geklärt werden.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "1",
+            "anchor_text": "test",
+            "anchor_position": "left"
+          }
+        },
+        "3b66c803-f042-4176-b550-66b549185836": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Kann ich meine eigenen Dienstleister mitbringen?<\/strong><\/p>",
+            "default_content": "<p>Ja- Selbstverständlich können Sie Ihre Dienstleister nach Wunsch wählen. Egal ob DJ, Fotografen oder Dekorateur. Alles kann von Ihreren so gestaltet werden, dass die Veranstaltung rundum gelungen ist. Lediglich das Catering muss von uns bezogen werden, da wir ein Full Service-Dienstleister sind. Durch die vielseitige Menü-Auswahl kommt jedoch jeder auf seine Kosten.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "15f5b17f-a615-4e8b-9c3a-6e573eac0077": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Was muss ich tun, um die Veranstaltung verbindlich zu buchen?<\/strong><\/p>",
+            "default_content": "<p>Bitte schicken Sie uns das unterschriebene Angebot als Foto oder per Scan zurück, sodass wir Ihnen eine Auftragsbestätigung zukommen lassen können. Dann steht Ihrer Veranstaltung nichts mehr im Weg!<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "f8766ffd-df16-463d-a3ea-b8e98538a741": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Haben Sie einen Katalog mit den Preisen für mich?<\/strong><\/p>",
+            "default_content": "<p>Schicken Sie uns gerne Ihre Vorstellungen zu Ihrer Veranstaltung zu und wir schreiben Ihnen daraufhin ein unverbindliches Angebot. Bitte lassen Sie uns folgende Daten per E-Mail zukommen: Anschrift, Telefonnummer & Email, Wunschdatum, Veranstaltungsart, Personenanzahl, Wunschlocation.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "8be4aefd-302d-474c-8e23-4da52ea5cb3f": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Ab wann kann Ich das Lankenauer Höft mieten?<\/strong><\/p>",
+            "default_content": "<p>Aktuell denken wir, dass es ab 2022 möglich ist das Lankenauer Höft in seiner ganzen Pracht für Ihre Veranstaltung anzumieten.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "bd015608-9fba-4d2a-837c-dd3d46a452a5": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Ist bei Ihnen eine Freie Trauung möglich?<\/strong><\/p>",
+            "default_content": "<p>In unseren Location Höpkens Ruh oder Lankenauer Höft steht dem nichts im Wege. Sie können hier problemlos Freie Trauungen in unseren Außenanlagen durchführen. In dieser einzigartigen Atmosphäre lässt sich eine Hochzeit besonders gut genießen.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "9bba875f-ea5c-419b-9614-a52a039dd58c": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Wie lange ist ein Angebot gültig, nachdem Sie es mir zugeschickt haben?<\/strong><\/p>",
+            "default_content": "<p>Unsere Angebote haben eine Gültigkeit von 10 Tagen. In diesem Zeitraum müssteten Sie sich entschieden haben, damit wir gemeinsam mit Ihnen die weiteren Schritten angehen können. <\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "2007045d-8d9e-427e-b2fe-60037defcc26": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Sind gewisse Änderungen\/Anpassungen nach Unterschrift noch möglich?<\/strong><\/p>",
+            "default_content": "<p>Selbstverständlich können wir auch noch nach Ihrer Unterschrift einige Details individuell anpassen. Kommen Sie mit Ihren Wünschen und Vorstellungen einfach auf uns zu.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "e9c01e98-aaf8-490f-8fea-ec6ac10e08a8": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Müssen wir eine Anzahlung leisten?<\/strong><\/p>",
+            "default_content": "<p>Ja, nach Ihrer Auftragserteilung wird eine Anzahlung von 50% des Gesamtbetrages fällig. Die restlichen 50% sind 8 Tage nach der Veranstaltung zu begleichen.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "63a57895-4916-4d2f-a697-3827dd072de2",
+        "3b66c803-f042-4176-b550-66b549185836",
+        "15f5b17f-a615-4e8b-9c3a-6e573eac0077",
+        "f8766ffd-df16-463d-a3ea-b8e98538a741",
+        "8be4aefd-302d-474c-8e23-4da52ea5cb3f",
+        "bd015608-9fba-4d2a-837c-dd3d46a452a5",
+        "9bba875f-ea5c-419b-9614-a52a039dd58c",
+        "2007045d-8d9e-427e-b2fe-60037defcc26",
+        "e9c01e98-aaf8-490f-8fea-ec6ac10e08a8"
+      ],
+      "settings": {
+        "heading": "<p>FAQ´s<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1628936241ab483961",
+    "1628945377fde5be8a",
+    "162894665536db6f3b",
+    "16288584113c10c075"
+  ]
+}

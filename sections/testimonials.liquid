@@ -1,0 +1,92 @@
+<div class="pt-20 max-h-1081 h-1081 w-full flex" {% if section.settings.background_image != blank %} style="background-image: url({{ section.settings.background_image | img_url: 'master' }})" {% endif %}>
+    <div class="mx-auto mr-14 w-10 items-center flex">
+    <div class="flex  mx-auto" id="rd">
+      {% for block in section.blocks %}
+      <div class="mr-8 bg-cardsbg relative mx-auto text-center
+        flex items-center
+          rounded-md overflow-hidden
+          md:w-full xl:h-full
+          h-65vh sm:h-70vh md:h-40vh lg:h-35vh xl:h-50vh
+          pt-7 sm:pt-0
+          cursor-pointer sm:space-x-1.5 space-y-1.5
+          lg:space-x-0 lg:space-y-0
+          space-x-0 lg:space-y-0
+          shadow-cardssh border border-border"
+          >
+            <div class="block">
+            <div id="review-card_image" class="flex justify-center items-center pb-10"> {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>
+            <div id="review-card_name" class="flex justify-center items-center uppercase font-condensed text-4xl tracking-wide leading-tight pb-5">{{ block.settings.title}}</div>
+            <div id="review-card_job-title" class="flex justify-center items-center uppercase font-condensed text-3xl mt-5 tracking-large leading-tightp b-5">{{ block.settings.subheading}}</div>
+            <div id="review-card_description" class="pt-10">{{ block.settings.description }}</div>
+            </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
+</div>
+
+{% schema %}
+{
+"name": "Cards",
+"max_blocks": 4,
+"settings": [ 
+{
+  "type": "image_picker",
+  "id": "background_image",
+  "label": "Background image"
+}, 
+{
+  "type": "image_picker",
+  "id": "mobile_background_image",
+  "label": "Mobile Background image"
+},
+{
+  "type": "richtext",
+  "id": "title",
+  "label": "Heading"
+}, 
+{
+  "type": "text",
+  "id": "subheading",
+  "label": "Subheading"
+}
+],
+"blocks": [
+  {
+    "type": "card",
+    "name": "Card",  
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+    {
+        "type": "richtext",
+        "id": "title",
+        "label": "Title"
+      },
+    {
+        "type": "richtext",
+        "id": "subheading",
+        "label": "Subheading"
+      }, 
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    }
+    ]
+  }
+],
+"presets": [{
+"name": "Cards",
+"category": "Content",
+"blocks": [{
+  "type": "card"
+},{
+  "type": "card"
+}]
+}]
+}
+{% endschema %} 

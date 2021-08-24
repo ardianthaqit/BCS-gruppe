@@ -2208,3 +2208,33 @@ nav.breadcrumbs.white-color {
 
 
 /* Breadcrumbs CSS ends */
+
+
+
+.footer-block__details-content .list-menu__item--link,
+  .copyright__content a,
+  ul.list-menu li a span,
+  .footer__column ul li a {
+  display: inline-block;
+  padding-bottom:5px;
+  background-image: linear-gradient(#1F2021, #1F2021);
+  background-position: right -105% bottom 0;
+  background-size: 200% 2px;
+  background-repeat: no-repeat;
+  line-height: 1;
+}
+
+.footer-block__details-content .list-menu__item--link:hover,
+  .copyright__content a:hover, ul.list-menu li a span:hover,
+  .footer__column ul li a:hover {
+  color: #1F2021;
+  background-position: right 0% bottom 0;
+  transition: background-position 0.4s;
+  cursor: pointer;
+}
+
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  visibility: hidden;
+}

@@ -1,31 +1,27 @@
 {
   "current": {
-    "type_header_font": "neue_plak_n3",
-    "type_body_font": "neue_plak_n3",
+    "type_header_font": "lato_n3",
+    "type_body_font": "lato_n4",
+    "sale_badge_color_scheme": "accent-2",
+    "accent_icons": "outline-button",
+    "social_twitter_link": "#",
+    "social_facebook_link": "#",
+    "social_pinterest_link": "#",
+    "social_instagram_link": "#",
+    "favicon": "shopify:\/\/shop_images\/FAVICO_BG_TRANSPARENT.png",
+    "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
         "settings": {}
       },
       "header": {
         "type": "header",
         "settings": {
-          "logo_width": 100,
+          "logo": "shopify:\/\/shop_images\/image_1.png",
+          "logo_width": 250,
           "logo_position": "middle-left",
-          "menu": "main-menu",
+          "menu": "headermenu",
           "show_line_separator": true,
           "enable_sticky_header": true
         }
@@ -33,25 +29,97 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
+          "164305c3-4814-46d6-93a8-142bf169fb05": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_1_2.png",
+              "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br\/><br\/>+44 345 678 903<br\/>bcs_gruppe@mail.com<\/p>",
+              "image_width": 200,
+              "alignment": "center"
+            }
+          },
+          "ed1c243b-bc52-404e-ad2e-8b28f5a3cc82": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Event Planinng",
+              "menu": "event-planinng"
+            }
+          },
+          "434d81e6-21f3-4194-9083-88845eef8fbf": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Locations",
+              "menu": "locations"
+            }
+          },
+          "0b52fcd4-f840-44b3-afab-c9caf7e17f40": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Cartering",
+              "menu": "cartering"
+            }
+          },
+          "4aeaa472-db32-4d01-aafe-1461fbf12283": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Equipment",
+              "menu": "equipment"
+            }
+          },
+          "3b750546-3425-48b6-9880-3780b9b5f363": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Company",
+              "menu": "company"
             }
           }
         },
         "block_order": [
-          "footer-0"
+          "164305c3-4814-46d6-93a8-142bf169fb05",
+          "ed1c243b-bc52-404e-ad2e-8b28f5a3cc82",
+          "434d81e6-21f3-4194-9083-88845eef8fbf",
+          "0b52fcd4-f840-44b3-afab-c9caf7e17f40",
+          "4aeaa472-db32-4d01-aafe-1461fbf12283",
+          "3b750546-3425-48b6-9880-3780b9b5f363"
         ],
         "settings": {
           "color_scheme": "background-1",
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_heading": "Sign up to our emails",
           "show_social": false,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
-          "payment_enable": true
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "blocks": {
+          "b5780470-cc5f-423c-89bc-30e46a91615b": {
+            "type": "heading",
+            "settings": {
+              "heading": "Immer auf dem neusten Stand bleiben"
+            }
+          },
+          "2182a0f3-571a-4715-b153-0912339869e0": {
+            "type": "paragraph",
+            "settings": {
+              "paragraph": "<p>Jetzt unseren Newsletter abonieren und alle Informationen zu den besten Events und neuen Locations erhalten.<\/p>"
+            }
+          },
+          "166ece84-8475-409e-981d-f8df5e85ede6": {
+            "type": "email_form",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "b5780470-cc5f-423c-89bc-30e46a91615b",
+          "2182a0f3-571a-4715-b153-0912339869e0",
+          "166ece84-8475-409e-981d-f8df5e85ede6"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "full_width": true
         }
       }
     },

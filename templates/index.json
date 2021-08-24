@@ -1,35 +1,110 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "162860828242d1cd53": {
+      "type": "image-and-text",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Group_2.png",
+        "layout": "text_first",
+        "heading": "<p>Feste Feiern in Bremen's<br\/>schönsten Locations.<\/p>",
+        "desc": "<p>Modern, traditionell oder klassisch – die Locations und unser Service Team machen euer Event zu einem ganz individuellen Erlebnis.<\/p>",
+        "button_text": "Jetzt Event Plannen",
+        "button_url": "shopify:\/\/pages\/contact"
+      }
+    },
+    "1628586687e92bf46d": {
+      "type": "slider-image",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "73495b62-f531-474e-97d1-e0d7fe232189": {
+          "type": "card",
           "settings": {
-            "heading": "Talk about your brand"
+            "background_image": "shopify:\/\/shop_images\/Rectangle_73_1.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_afd3946d-5e5e-4bb7-85e5-3362b359443a.png",
+            "stll": "<p>Höpkens Ruh<\/p>",
+            "stlll": "",
+            "description": ""
           }
         },
-        "button": {
-          "type": "buttons",
+        "4010586d-4ad0-426b-9429-96134a5edddf": {
+          "type": "card",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_label_2": ""
+            "background_image": "shopify:\/\/shop_images\/Rectangle_74_e3598f38-06c9-4bc5-99a8-3b230ad0a724.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_2_57f1c29b-d807-473d-a58b-5b5ee1a2a293.png",
+            "stll": "<p>Hudson Loft<\/p>",
+            "stlll": "",
+            "description": ""
+          }
+        },
+        "3b79dee8-bbd7-4d80-8637-be86a8c016c5": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Rectangle_73.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_1_1ad58dc9-3542-4670-9eb2-b299d132e190.png",
+            "stll": "<p>Bremenhalle<\/p>",
+            "stlll": "",
+            "description": ""
+          }
+        },
+        "3f0ade5e-83c7-4b73-a3fb-e48d55e172d5": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Rectangle_76_bc7325f7-9710-4c33-b19c-9f5c02881d11.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_2_57f1c29b-d807-473d-a58b-5b5ee1a2a293.png",
+            "stll": "<p>Borgfelder Landhaus<\/p>",
+            "stlll": "",
+            "description": ""
+          }
+        },
+        "faec3cfd-111b-4e30-99a9-13e32ea4b705": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Rectangle_73.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_4e4f886b-0824-454c-8705-d3c6f99d55d9.png",
+            "stll": "<p>Borgfelder Landhaus<\/p>",
+            "stlll": "",
+            "description": ""
+          }
+        },
+        "00992960-a22a-4557-86e2-b921de5ced6a": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Rectangle_77_42d80948-d742-47a5-8f7e-46c806551689.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_4.png",
+            "stll": "<p>Johann Jacobs Haus<br\/><\/p>",
+            "stlll": "",
+            "description": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "73495b62-f531-474e-97d1-e0d7fe232189",
+        "4010586d-4ad0-426b-9429-96134a5edddf",
+        "3b79dee8-bbd7-4d80-8637-be86a8c016c5",
+        "3f0ade5e-83c7-4b73-a3fb-e48d55e172d5",
+        "faec3cfd-111b-4e30-99a9-13e32ea4b705",
+        "00992960-a22a-4557-86e2-b921de5ced6a"
       ],
       "settings": {
-        "desktop_text_box_position": "flex-end"
+        "background_image": "shopify:\/\/shop_images\/BG_4.png",
+        "heading": "<p>Feste Feiern ind Bremen's schönsten Locations.<\/p>",
+        "desc": "<p>Unsere Event Locations bieten von modern über traditionell bis hin zu aussergewöhnlich alle Möglichkeiten, um euren ganz persönlichen Event zu einem absoluten Highlight zu machen.<\/p>",
+        "button_text": "Mehr entdecken",
+        "button_url": "shopify:\/\/pages\/contact"
       }
     },
-    "featured_products": {
+    "162858307121b4d5d0": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products"
+        "title": "Events & mehr",
+        "subtitle": "<p>Hier findet ihr unsere besten Events und könnt direkt das nächste Erlebnis für euch buchen.<\/p>",
+        "collection": "homepage-collection",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     },
     "image_text": {
@@ -37,15 +112,22 @@
       "blocks": {
         "heading": {
           "type": "heading",
-          "settings": {}
+          "settings": {
+            "heading": "<p>Eure Events sind etwas<br\/><strong>ganz Besonderes.<\/strong><\/p>"
+          }
         },
         "text": {
           "type": "text",
-          "settings": {}
+          "settings": {
+            "text": "<p>Was darf es sein? Private Feier oder Firmen Event – wir inszenieren eure Ideen und Wünsche für jeden Anlass, damit ihr jeden Moment mit euren Gästen genießen könnt.<\/p>"
+          }
         },
         "button": {
           "type": "button",
-          "settings": {}
+          "settings": {
+            "button_label": "Mehr Entdecken",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -53,12 +135,72 @@
         "text",
         "button"
       ],
-      "settings": {}
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_116_46dbeb82-e7e2-45d7-a099-3212ba6c6007.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "text_first"
+      }
+    },
+    "16285828778337341d": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "16285828778337341d-0": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Image_Placeholder_1.png",
+            "title": "<p>Shalima Hayden<\/p>",
+            "subheading": "<p>Product Designer<\/p>",
+            "description": "<p>Product DesignerReachCircle is the friendliest and most efficient company I have ever used. The whole thing takes time to introduce the product and as a result puts forward only,<\/p>"
+          }
+        },
+        "16285828778337341d-1": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Image_Placeholder_1.png",
+            "title": "<p>Shalima Hayden<\/p>",
+            "subheading": "<p>Product Designer<\/p>",
+            "description": "<p>ReachCircle is the friendliest and most efficient company I have ever used. The whole thing takes time to introduce the product and as a result puts forward only,<\/p>"
+          }
+        },
+        "2dea734d-9818-43de-8f0e-cf4e6101a5fd": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Image_Placeholder_1.png",
+            "title": "<p>Shalima Hayden<\/p>",
+            "subheading": "<p>Product Designer<\/p>",
+            "description": "<p>ReachCircle is the friendliest and most efficient company I have ever used. The whole thing takes time to introduce the product and as a result puts forward only,<\/p>"
+          }
+        },
+        "9ee5f7f7-0da4-48d1-819f-3837cd9dbc27": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Image_Placeholder_1.png",
+            "title": "<p>Shalima Hayden<\/p>",
+            "subheading": "<p>Product Designer<\/p>",
+            "description": "<p>ReachCircle is the friendliest and most efficient company I have ever used. The whole thing takes time to introduce the product and as a result puts forward only,<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16285828778337341d-0",
+        "16285828778337341d-1",
+        "2dea734d-9818-43de-8f0e-cf4e6101a5fd",
+        "9ee5f7f7-0da4-48d1-819f-3837cd9dbc27"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Photo.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/NoPath_-_Copy.png",
+        "title": "",
+        "subheading": ""
+      }
     }
   },
   "order": [
-    "image_banner",
-    "featured_products",
-    "image_text"
+    "162860828242d1cd53",
+    "1628586687e92bf46d",
+    "162858307121b4d5d0",
+    "image_text",
+    "16285828778337341d"
   ]
 }

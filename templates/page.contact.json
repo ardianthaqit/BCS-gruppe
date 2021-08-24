@@ -2,17 +2,76 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "162894835178fd76b8": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "162894835178fd76b8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "162894835178fd76b8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "162894835178fd76b8-0",
+        "162894835178fd76b8-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "bgcolor": "#8b2533",
+        "text_color": "#fff"
+      }
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "fde4d033-4897-4d88-9a78-aa8cdf15686f": {
+          "type": "minitext",
+          "settings": {
+            "minitext": "<p>Shop<\/p>"
+          }
+        },
+        "0fd8d2cb-0211-4303-8bbd-fccdeb7a315d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get in touch with us",
+            "heading_size": "h1"
+          }
+        },
+        "102c61a4-8799-49c4-afe2-be88fd2ba940": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tristique phasellus adipiscing facilisis maecenas donec. Dictumst sit massa elementum nec. Risus orci sollicitudin quis facilisi consectetur id. Arcu tortor, sed pharetra dui lorem semper nunc mauris.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fde4d033-4897-4d88-9a78-aa8cdf15686f",
+        "0fd8d2cb-0211-4303-8bbd-fccdeb7a315d",
+        "102c61a4-8799-49c4-afe2-be88fd2ba940"
+      ],
       "settings": {
-        "heading": ""
+        "color_scheme": "background-1",
+        "full_width": true,
+        "bgcolor": "#8b2533"
       }
     }
   },
   "order": [
     "main",
+    "162894835178fd76b8",
     "form"
   ]
 }

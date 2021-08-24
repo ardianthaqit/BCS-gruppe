@@ -1,0 +1,8 @@
+{% if page.metafields.custom_fields["test_"] != blank %}
+  <div class="custom-field custom-field__test- custom-field__type--text">
+    <h3 class="custom-field--title">test </h3>
+    <div class="custom-field--value">
+      {{ page.metafields.custom_fields["test_"] }}
+    </div>
+  </div>
+{% endif %}

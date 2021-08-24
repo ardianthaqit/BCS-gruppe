@@ -1,0 +1,81 @@
+#collection-hero {
+    padding: 100px 0;
+    background: #FAF9F8;
+}
+
+#collection-hero .collection-hero__title {
+    margin: 0;
+}
+
+#main-collection-product-grid .grid__item .card-wrapper,
+.featured-collection_container .card-wrapper {
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/* Featured collections */
+
+#height-feature {
+    display: flex;
+    align-items: center;
+    background: #FAF9F8;
+}
+
+.featured-collection_container {
+    width: 100%;
+}
+
+.collection .button {
+    background: transparent;
+    color: #262626;
+    box-shadow: none;
+    border-top: 1px solid #262626;
+    padding: 0;
+    display: inline-block;
+}
+
+.featured-collection_container .card-wrapper {
+    background: white;
+}
+
+@media (min-width: 750px) {
+    .featured-collection_container #product-grid .grid__item {
+        padding-left: 30px;
+    }
+}
+
+.bg-cardsbg {
+    padding: 60px 20px;
+}
+
+.bg-cardsbg .block {
+    height: 100%;
+    width: 100%;
+}
+
+#review-card_image {
+    padding-bottom: 16px;
+}
+
+#review-card_job-title {
+    margin: 0;
+    padding-bottom: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#review-card_job-title::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    display: block;
+    background-color: #CBCBCB;
+    position: absolute;
+    bottom: 0;
+}
+
+#review-card_description {
+    padding: 0;
+}

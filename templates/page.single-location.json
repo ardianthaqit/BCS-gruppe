@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "16289580493f6f655c": {
+      "type": "minibanner-with-text",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/image_5_2.png",
+        "minitext": "<p>Eine einzigartige Eventlocation<\/p>",
+        "heading": "<p>Johann Jacobs Haus<\/p>",
+        "desc": "<p>Das Johann-Jacobs-Haus ist eine komplett neue und einzigartige Eventlocation im Herzen der Bremer Innenstadt. Erleben Sie auf vier möglichen Ebenen Ihr Event. Ganz gleich ob Sie eine Tagung, eine Hochzeit oder eine Firmenfeier ausrichten wollen, die<br\/>neu errichteten Flächen bieten viel Platz, den Sie ganz nach Ihren Vorstellungen<br\/>nutzen können.<\/p>",
+        "button_text": "Jetzt anrufen",
+        "button_url": "shopify:\/\/pages\/contact"
+      }
+    },
+    "1628960048c9743845": {
+      "type": "mini-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Rectangle_1_1.png"
+      }
+    },
+    "16289600673d292fe6": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/samuel-pereira-uf2nnANWa8Q-unsplash_1_2_9d11b718-d57c-4687-91f1-38688c3486d3.png",
+        "layout": "image_first",
+        "miniheading": "<p>Locations in Bremen und Niedersachsen<\/p>",
+        "heading": "<p>Räumlichkeiten – vielfältige<\/p><p>Veranstaltungsflächen<\/p>",
+        "desc": "<p>Wenn Sie eine geeignete Location für Ihre Veranstaltung suchen, die sie mit dem Thema Kaffee verbinden können, sind Sie im Johann Jacobs Haus genau richtig! Ganz gleich ob Tagung, Konferenz, Seminar oder sonstige Feier– ergänzen Sie Ihr Event z.B. mit einer Kaffeeschulung oder Verköstigung.<br\/><br\/>Im Johann Jacobs finden Sie Veranstaltungsräume, die ein bedeutendes Stück Bremer Geschichte erzählen und mit viel Liebe zum Detail einen originalgetreuen Eindruck wiedergeben. Antike Möbel, verschiedene Holzarten aus den Kaffeeursprungsländern oder die Kaffeewerkstatt in der Jacobs Kaffeerösterei verleihen den Räumlichkeiten im Johann Jacobs Haus ein einzigartiges, historisches Flair. Abgerundet wird das Erlebnis spätestens auf der Dachterrasse, mit Blick auf den Bremer Dom und einer besonderen Atmosphäre über den Dächern Bremens.<br\/><br\/>Mit unserem Full-Service-Angebot unterstützen wir Sie außerdem mit der notwendigen Technik, Arbeitsmaterialien und versorgen Sie mit erstklassigen Speisen & Getränken. Gerne runden wir Ihre Tagesveranstaltung auch mit einem Abendprogramm ab – ob unter freiem Himmel auf der Dachterrasse oder in den vielseitig nutzbaren Kaffeehausräumlichkeiten.<\/p>",
+        "button_text": "Weiterlesen",
+        "button_url": "shopify:\/\/blogs\/news"
+      }
+    },
+    "1628960096ed49debd": {
+      "type": "accordion",
+      "blocks": {
+        "7c3a7c31-1482-43b1-830c-ae2e155b124d": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Walther-Jacobs-Zimmer<\/strong><\/p>",
+            "default_content": "<p>In Ehrerbietung an das Wirken des Bremer Kaufmanns Walter Johann Jacobs ist dieser Raum im 2. Obergeschoss entstanden. Der holzvertäfelte Besprechungsraum ist dem historischen Original nachempfunden und bietet eine exklusive Atmosphäre im modernen Kontext für Anlässe jeder Art.<br\/><br\/>Raumdetails und Ausstattung:<br\/><br\/>• 28 m² mit Platz für bis zu 20 Personen<br\/>• Bildschirm mit integriertem Soundsystem<br\/>• Whiteboard<br\/>• Konferenztisch<br\/>• Stühle<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "aae98ac4-473a-4494-b749-45218421f0c7": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Jacobs Kaffee Akademie<\/strong><\/p>",
+            "default_content": "<p>Die Räumlichkeiten im 3. Obergeschoss bieten Ihnen einen inspirierenden Ort für Tagungen, Konferenzen, Seminare und Empfänge jeder Art. Das Raumkonzept mit antiken Möbeln, verschiedenen Holzarten aus den Kaffeeursprungsländern, Terrazzoboden und einem Gemälde von Johann Jacobs verleihen diesem Veranstaltungsraum ein historisches Flair mit Anlehnung an den Ursprung des ehemaligen Büros der Familie Jacobs aus der Mitte des 20. Jahrhunderts.<br\/><br\/><strong>Raumdetails und Ausstattung:<\/strong><br\/><br\/>• 195 m² mit Platz für bis zu 50 Personen<br\/>• Beamer mit Leinwand und Steuerungstechnik<br\/>• 2 mobile Bildschirm-Einheiten mit integriertem Soundsystem<br\/>• Lautsprecherausstattung zur Präsentations- und Musikbeschallung, Mikrofonsystem und Kamera (auch geeignet für Live-Übertragungen von Reden\/Podiumsdiskussionen in andere Geschosse oder von Veranstaltungen ins Internet)<br\/>• Whiteboard<br\/>• flexible Bestuhlungsmöglichkeiten<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Jacobs Kaffee Rösterei<\/strong><\/p>",
+            "default_content": "<p>Diese vielseitig nutzbaren Räumlichkeiten im 4. Obergeschoss befinden sich im Herzstück des Hauses. Im puristischen Design gehalten, verfügt die Jacobs Kaffeerösterei über eine Kaffeewerkstatt mit außenliegender Loggia, die zur Verarbeitung von Kaffee oder zum Entdecken und Experimentieren genutzt werden kann. Eine Kaffeeröstmaschine, professionelle Kaffeemaschinen und weiteres Zubehör laden Sie zu authentischen und einzigartigen Erlebnissen ein.<br\/><br\/><strong>Raumdetails und Ausstattung:<\/strong><br\/><br\/>• 173 m² mit Platz für bis zu 50 Personen<br\/>• 2 mobile Bildschirm-Einheiten mit integriertem Soundsystem<br\/>• Kaffeeröstmaschine<br\/>• Kaffeemaschinen<br\/>• Produktionstische mit Zubehör zur Verarbeitung, Aufbereitung und Verpackung von Kaffee<br\/>• Arbeitsplätze nach WBC-Richtlinien für Wettkämpfe<br\/>• erweiterbar durch verschiedenes Mobiliar aus anderen Etagen<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "ed61e1d9-29b6-4b43-a827-8387877d0874": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Dachterrasse<\/strong><\/p>",
+            "default_content": "<p>Auf der Dachterrasse des Johann Jacobs Hauses erwartet Sie eine einzigartige Atmosphäre über den Dächern von Bremen. Mit direktem Blick auf den Bremer Dom und die Stadtmusikanten verleiht diese Location Ihren feierlichen Anlässen das besondere Extra.<br\/><br\/>Raumdetails und Ausstattung:<br\/><br\/>• 125 m² für bis zu 40 Personen<br\/>• Ausstattung nach Bedarf<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "7c3a7c31-1482-43b1-830c-ae2e155b124d",
+        "aae98ac4-473a-4494-b749-45218421f0c7",
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d",
+        "ed61e1d9-29b6-4b43-a827-8387877d0874"
+      ],
+      "settings": {
+        "heading": "<p>Die Räumlichkeiten im Überblick<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16289580493f6f655c",
+    "1628960048c9743845",
+    "16289600673d292fe6",
+    "1628960096ed49debd"
+  ]
+}

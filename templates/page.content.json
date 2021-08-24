@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1629210251d9164bf5": {
+      "type": "page",
+      "settings": {
+        "page": "eventplanung"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1629210251d9164bf5"
+  ]
+}

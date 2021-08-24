@@ -1,0 +1,199 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "16286127581cb3b626": {
+      "type": "grunkohlfahrt-image-text",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/BG_1bd6e08d-7828-4638-8e3e-85f518c9996c.png",
+        "image": "shopify:\/\/shop_images\/Frame_6184.png",
+        "smtext": "<p>Wir sind immer interessiert an Mitarbeitern<\/p>",
+        "heading": "<p>Wir freuen uns auf<br\/>Ihre ((Bewerbung!))<\/p>",
+        "desc": "<p>Die Gastronomie ist Ihre Leidenschaft und individuelle Entfaltung ist Ihnen wichtig? Dann freuen wir uns über Ihre Bewerbung! Es warten flache Hierarchien in einem spannenden Umfeld, in welchem eigene Ideen eingebracht und umgesetzt werden können.<\/p>",
+        "button_text": "Offene Stellen",
+        "button_url": "shopify:\/\/blogs\/news",
+        "secondbutton_text": "oder senden Sie eine E-Mail",
+        "secondbutton_url": "shopify:\/\/pages\/contact",
+        "layout": "greenbutton"
+      }
+    },
+    "1628666518ec6a7ff8": {
+      "type": "karriere-full-img-txt",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/samuel-pereira-uf2nnANWa8Q-unsplash_2.png",
+        "layout": "image_first",
+        "miniheading": "<p>Eget arcu quis risus dignissim.<\/p>",
+        "heading": "<p>Lacus, hac mauris eros nec malesuada et odio diam.<\/p>",
+        "desc": "<p>Molestie nisi id turpis et. Natoque mattis interdum non fermentum. Tincidunt ultricies nisi cras et ac id. A libero tempor tristique condimentum mattis arcu dui. Orci tellus non eget tincidunt tellus semper nulla a. Consequat, arcu id mi varius cursus vitae eros, quisque.<\/p>",
+        "button_text": "A libero tempor",
+        "button_url": "shopify:\/\/pages\/karriere"
+      }
+    },
+    "162866662186b91c5b": {
+      "type": "image-with-text",
+      "blocks": {
+        "162866662186b91c5b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Lacus, hac mauris eros nec malesuada et odio diam.<\/p>"
+          }
+        },
+        "162866662186b91c5b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Molestie nisi id turpis et. Natoque mattis interdum non fermentum. Tincidunt ultricies nisi cras et ac id. A libero tempor tristique condimentum mattis arcu dui. Orci tellus non eget tincidunt tellus semper nulla a. Consequat, arcu id mi varius cursus vitae eros, quisque.<\/p>"
+          }
+        },
+        "162866662186b91c5b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "A libero tempor",
+            "button_link": "shopify:\/\/pages\/contact"
+          }
+        }
+      },
+      "block_order": [
+        "162866662186b91c5b-0",
+        "162866662186b91c5b-1",
+        "162866662186b91c5b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_116_1.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "text_first"
+      }
+    },
+    "1628668266840230d7": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "1628668266840230d7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lassen Sie uns eine offene Stelle für Sie finden.",
+            "heading_size": "h1"
+          }
+        },
+        "1628668266840230d7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fin the right job for you no matter what is that you do.Typography<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1628668266840230d7-0",
+        "1628668266840230d7-1"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "bgcolor": "#8b2533",
+        "text_color": "#ffffff"
+      }
+    },
+    "1628670587b88c227a": {
+      "type": "blocks",
+      "blocks": {
+        "1628670587b88c227a-0": {
+          "type": "card",
+          "settings": {
+            "title": "<p>Koch (m\/w\/d)<\/p>",
+            "subheading": "<p>Bremen, Deutschland<\/p>",
+            "description": ""
+          }
+        },
+        "1628670587b88c227a-1": {
+          "type": "card",
+          "settings": {
+            "title": "<p>Reinigungskraft (m\/w\/d)<\/p>",
+            "subheading": "<p>Bremen, Deutschland<\/p>",
+            "description": ""
+          }
+        },
+        "b2b63ffb-0d6c-4f75-a377-36330b7a0637": {
+          "type": "card",
+          "settings": {
+            "title": "<p>Servicekraft (m\/w\/d)<\/p>",
+            "subheading": "<p>Bremen, Deutschland<\/p>",
+            "description": ""
+          }
+        },
+        "e371e208-37e6-4520-b484-9a22d9ee38f1": {
+          "type": "card",
+          "settings": {
+            "title": "<p>Koch (m\/w\/d)<\/p>",
+            "subheading": "<p>Bremen, Deutschland<\/p>",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "1628670587b88c227a-0",
+        "1628670587b88c227a-1",
+        "b2b63ffb-0d6c-4f75-a377-36330b7a0637",
+        "e371e208-37e6-4520-b484-9a22d9ee38f1"
+      ],
+      "settings": {
+        "title": "Lassen Sie uns eine offene Stelle für Sie finden.",
+        "subheading": "<p>Fin the right job for you no matter what is that you do.<\/p>",
+        "bgcolor": "#8b2533"
+      }
+    },
+    "1628896544a670f4d6": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "1628896544a670f4d6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Immer auf dem neusten Stand bleiben"
+          }
+        },
+        "1628896544a670f4d6-1": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br\/>tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "1628896544a670f4d6-2": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "1628896544a670f4d6-0",
+        "1628896544a670f4d6-1",
+        "1628896544a670f4d6-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1628896550106a9888": {
+      "type": "instafeed",
+      "disabled": true,
+      "settings": {
+        "heading_font": "helvetica_n4",
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16286127581cb3b626",
+    "1628666518ec6a7ff8",
+    "162866662186b91c5b",
+    "1628668266840230d7",
+    "1628670587b88c227a",
+    "1628896544a670f4d6",
+    "1628896550106a9888"
+  ]
+}

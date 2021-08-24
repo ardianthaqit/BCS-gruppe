@@ -1,0 +1,339 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "162861044550b50aef": {
+      "type": "grunkohlfahrt-image-text",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/BG_3_988d63ce-a417-4f44-9298-e695183e5a58.png",
+        "image": "shopify:\/\/shop_images\/Rectangle_89.png",
+        "smtext": "<p>Wr lieben Grünkohl.<\/p>",
+        "heading": "<p>Freut euch auf die Grünkohlzeit<br\/><strong>ab Januar 2022.<\/strong><\/p>",
+        "desc": "<p>Wer Lust auf Bremen’s Lieblingsgericht hat, kann schon jetzt seine Reservierung für die nächste Grünkohlsaison aufgeben. Ab Januar 2022 wird wieder jeden Freitag und Samstag ganz frisch im Borgfelder Landhaus gekocht. Unser Highlight: An einem Sonntag in jedem Monat gibt’s das Grünkohl Event auch für die ganze Familie.<\/p>",
+        "button_text": "Jetzt buchen",
+        "button_url": "shopify:\/\/pages\/contact",
+        "secondbutton_text": "oder senden Sie eine E-Mail",
+        "secondbutton_url": "shopify:\/\/pages\/contact",
+        "layout": "redbutton"
+      }
+    },
+    "1628748615043a8502": {
+      "type": "tabs",
+      "blocks": {
+        "261d2328-2bbb-4139-a36e-951ae68fb87d": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751199682759",
+            "date": "Freitag, Januar 07, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Toddy",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751199781063",
+            "date-second": "Samstag, Januar 08, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "DJ Toddy",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40750125711559",
+            "date-third": "Freitag, Januar 14, 2022",
+            "location-event-third": "Borgfelder Landhaus",
+            "description-event-third": "DJ Toddy",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-1"
+          }
+        },
+        "4f1e34a8-15b6-4b85-8a39-4e6c03cd1940": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40750165131463",
+            "date": "Samstag, Januar 15, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Toddy",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40702420484295",
+            "date-second": "Samstag, Januar 15, 2022",
+            "location-event-second": "Höpkens Ruh",
+            "description-event-second": "DJ Franky",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751190671559",
+            "date-third": "Freitag, Januar 21, 2022",
+            "location-event-third": "Borgfelder Landhaus",
+            "description-event-third": "DJ Björn",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-1"
+          }
+        },
+        "9bd2856a-7d5b-4160-b3c1-201298799ae2": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751190769863",
+            "date": "Samstag Januar 22, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Björn",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750277591239",
+            "date-second": "Samstag, Januar 22, 2022",
+            "location-event-second": "Höpkens Ruh",
+            "description-event-second": "DJ Franky",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751190868167",
+            "date-third": "Sonntag, Januar 23, 2022",
+            "location-event-third": "Borgfelder Landhaus",
+            "description-event-third": "DJ Björn",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-1"
+          }
+        },
+        "f9b85530-3264-49e1-bae8-ba99d69f96aa": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751220261063",
+            "date": "Freitag, Januar 28, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Björn",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751220359367",
+            "date-second": "Samstag, Januar 29, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "DJ Björn",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750277689543",
+            "date-third": "Samstag, Januar 29, 2022",
+            "location-event-third": "Höpkens Ruh",
+            "description-event-third": "DJ Franky",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-1"
+          }
+        },
+        "294c08b9-4012-4ada-8a2d-c616f7df6ce8": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751220457671",
+            "date": "Freitag, Februar 04, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Toddy",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751220555975",
+            "date-second": "Samstag, Februar 05, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "DJ Björn",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750277787847",
+            "date-third": "Samstag, Februar 05, 2022",
+            "location-event-third": "Höpkens Ruh",
+            "description-event-third": "DJ Franky",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-2"
+          }
+        },
+        "ac751d50-5f38-4b71-82d9-bf508049792e": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751220654279",
+            "date": "Freitag, Februar 11, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Toddy",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751220752583",
+            "date-second": "Samstag, Februar 12, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "DJ Andre",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750277886151",
+            "date-third": "Samstag, Februar 12, 2022",
+            "location-event-third": "Höpkens Ruh",
+            "description-event-third": "DJ Franky",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-2"
+          }
+        },
+        "3abef554-256d-4e18-85ac-fe6a8234dbd5": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751220850887",
+            "date": "Freitag, Februar 18, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Björn",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751220949191",
+            "date-second": "Samstag, Februar 19, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "DJ Björn",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750277984455",
+            "date-third": "Samstag, Februar 19, 2022",
+            "location-event-third": "Höpkens Ruh",
+            "description-event-third": "DJ Franky",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-2"
+          }
+        },
+        "9e897075-8dd3-4806-8109-1f63076c2eab": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751221080263",
+            "date": "Sonntag, Februar 20, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Björn",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751234580679",
+            "date-second": "Freitag, Februar 25, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "DJ Björn",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751234678983",
+            "date-third": "Samstag, Februar 26, 2022",
+            "location-event-third": "Borgfelder Landhaus",
+            "description-event-third": "DJ Andre",
+            "fourth-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750278082759",
+            "date-fourth": "Samstag, Februar 26, 2022",
+            "location-event-fourth": "Höpkens Ruh",
+            "description-event-fourth": "DJ Franky",
+            "text_tab": "tab-2"
+          }
+        },
+        "04a0f0f4-7331-4786-8cf3-9047adc51015": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751234777287",
+            "date": "Freitag, März 04, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Björn",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751234908359",
+            "date-second": "Samstag, März 05, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "DJ Björn",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750278181063",
+            "date-third": "Samstag, März 05, 2022",
+            "location-event-third": "Höpkens Ruh",
+            "description-event-third": "DJ Franky",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-3"
+          }
+        },
+        "8699ea6e-fd31-4634-a4cf-ed5d51c0cfa3": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751235006663",
+            "date": "Freitag, März 11, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Toddy",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751235104967",
+            "date-second": "Samstag, März 12, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "DJ Toddy",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750278377671",
+            "date-third": "Samstag, März 12, 2022",
+            "location-event-third": "Höpkens Ruh",
+            "description-event-third": "DJ Franky",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-3"
+          }
+        },
+        "77a090b2-2261-4d48-a11b-1b80d548bb31": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751235203271",
+            "date": "Sonntag, März 13, 2022",
+            "location-event": "Borgfelder Landhaus",
+            "description-event": "DJ Toddy",
+            "second-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751248867527",
+            "date-second": "Freitag, März 18, 2022",
+            "location-event-second": "Borgfelder Landhaus",
+            "description-event-second": "???",
+            "third-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-borgefelder-landhaus-1?variant=40751249096903",
+            "date-third": "Samstag, März 19, 2022",
+            "location-event-third": "Borgfelder Landhaus",
+            "description-event-third": "???",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-3"
+          }
+        },
+        "fe209b34-cb0f-4926-9da5-d1e0e3873baf": {
+          "type": "text",
+          "settings": {
+            "first-event-url": "https:\/\/bcs-gruppe-de.myshopify.com\/products\/kohlfahrt-hopkens-ruh-15-januar?variant=40750278475975",
+            "date": "Samstag, März 19, 2022",
+            "location-event": "Höpkens Ruh",
+            "description-event": "DJ Franky",
+            "second-event-url": "",
+            "date-second": "",
+            "location-event-second": "",
+            "description-event-second": "",
+            "third-event-url": "",
+            "date-third": "",
+            "location-event-third": "",
+            "description-event-third": "",
+            "fourth-event-url": "",
+            "date-fourth": "",
+            "location-event-fourth": "",
+            "description-event-fourth": "",
+            "text_tab": "tab-3"
+          }
+        }
+      },
+      "block_order": [
+        "261d2328-2bbb-4139-a36e-951ae68fb87d",
+        "4f1e34a8-15b6-4b85-8a39-4e6c03cd1940",
+        "9bd2856a-7d5b-4160-b3c1-201298799ae2",
+        "f9b85530-3264-49e1-bae8-ba99d69f96aa",
+        "294c08b9-4012-4ada-8a2d-c616f7df6ce8",
+        "ac751d50-5f38-4b71-82d9-bf508049792e",
+        "3abef554-256d-4e18-85ac-fe6a8234dbd5",
+        "9e897075-8dd3-4806-8109-1f63076c2eab",
+        "04a0f0f4-7331-4786-8cf3-9047adc51015",
+        "8699ea6e-fd31-4634-a4cf-ed5d51c0cfa3",
+        "77a090b2-2261-4d48-a11b-1b80d548bb31",
+        "fe209b34-cb0f-4926-9da5-d1e0e3873baf"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/5u416f1h2_1.png",
+        "smtext": "<p>Borgfelder Landhaus und Höpkens Ruh<\/p>",
+        "heading": "<p>Die neuen [[Grünkohl Termine]]<\/p>",
+        "desc": "<p>Hier findet ihr alle aktuellen Termine für die Monate Januar, Februar und März 2022. Die neuen Grünkohl Events in unseren beiden Event Locations könnt ihr direkt online buchen und euch euren Lieblingstermin schon jetzt aussuchen.<\/p>",
+        "button_text": "Offene Stellen",
+        "button_url": "shopify:\/\/blogs\/news",
+        "firsttab": "January",
+        "secondtab": "Februar",
+        "thirdtab": "März"
+      }
+    },
+    "1628754063db92d6bf": {
+      "type": "grunkohlfahrt-image-text",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/BG_3.png",
+        "image": "shopify:\/\/shop_images\/Rectangle_89_1.png",
+        "smtext": "<p>Klassisch oder vegetarisch<\/p>",
+        "heading": "<p>Das traditionelle [[Grünkohl Menu]] – jetzt auch für den vegetarischen Gaumen<\/p>",
+        "desc": "<p>Ab 2022 gibt's bei uns nicht nur die traditionelle Variante, sondern wir bieten auch eine leckere Alternative für unsere vegetarischen Gäste. Genießen und feiern wollen wir alle, aber dann bitte auch mit dem Lieblingsgericht, das euch am besten schmeckt.<\/p>",
+        "button_text": "Menü",
+        "button_url": "shopify:\/\/pages\/karriere",
+        "secondbutton_text": "",
+        "secondbutton_url": "",
+        "layout": "redbutton"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "162861044550b50aef",
+    "1628748615043a8502",
+    "1628754063db92d6bf"
+  ]
+}

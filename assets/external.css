@@ -1,0 +1,80 @@
+@media only screen and (max-width: 767px) {
+    #w-text-fl{
+        width: 100%;
+    }
+
+    #w-text-fl{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: #262626;
+        margin: 20px 0 10px 0;
+    }
+
+    #w-text-fl1{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;  
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #706F6F;
+        margin-bottom: 10px;
+    }
+
+    .button-config-text{
+        justify-content: center;
+    }
+
+    #btn-cnfg{
+        border: 1px solid #262626;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        color: #262626;
+        background: transparent;
+    }
+
+    #slider-height-auto{
+        position: relative;
+        height: 100vh;
+    }
+
+    #swiper-wrapper{
+        position: absolute;
+        left: 23px;
+        bottom: 10px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width:1366px) {
+    #theHeader #header-logo{
+        display: block;
+        text-align: right;
+    }
+
+    .header-wrapper.header-wrapper--border-bottom #theHeader{
+        grid-template-areas: 'heading navigation icons';
+        grid-template-columns: auto 1fr auto;
+        column-gap: 2rem;
+    }
+
+    #img-replace{
+        overflow: hidden;
+    }
+
+    #img-replace .box-s-2{
+        height: 500px;
+    }
+}
