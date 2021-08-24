@@ -219,7 +219,7 @@
       "onboarding_content": "Verschaffe deinen Kunden eine Übersicht über deinen Blog-Beitrag"
     },
     "featured_collection": {
-      "view_all": "Alle anzeigen",
+      "view_all": "Alle Ereignisse anzeigen",
       "view_all_label": "Alle Produkte in der Kategorie {{ collection_name }} anzeigen"
     },
     "collection_list": {

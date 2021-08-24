@@ -11,7 +11,7 @@
     ul.tabs li a {
       display: block;
       font-size: 13px;
-      height: 29px;
+      height: 56px;
       line-height: 30px;
       margin: 0;
       padding: 0 20px;
@@ -21,12 +21,16 @@
       border-bottom:none !important;
     }
     ul.tabs li a.active {
-        text-decoration: underline;
+        text-decoration: none;
         padding: 0;
+        border-bottom: 3px solid #38664C !important;
     }
     ul.tabs li:last-child a {
       border-top-right-radius: 2px;
     }
+    .items-of-events:nth-child(1) {
+      border-top: 1px solid #cbcbcb;
+  }
     /* ul.tabs:before, ul.tabs:after {
       content: " ";
       display: block;

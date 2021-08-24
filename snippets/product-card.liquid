@@ -93,14 +93,14 @@
 
         {%- if product_card_product.featured_media -%}
           <span class="card-information__text font-title-cart">
-            {{ product_card_product.title | escape }}
+            {{ product_card_product.title | escape | truncate: 30 }}
           </span>
         {%- endif -%}
 
         <div class="text-darkgrey w-full xl:w-3/5 date-on-collection">
         {% unless product.has_only_default_variant %}
         {% for option in product_card_product.options_with_values limit:1 %}
-              {% for value in option.values %}
+              {% for value in option.values limit:1 %}
                 {{ value }}
               {% endfor %}
               {% endfor %}
