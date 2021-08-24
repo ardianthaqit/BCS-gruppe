@@ -2238,3 +2238,38 @@ nav.breadcrumbs.white-color {
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
   visibility: hidden;
 }
+
+
+/* Contact Form  */
+.globo-formbuilder[data-id="56956"] .globo-form-app {
+  max-width: 1048px !important;
+}
+.globo-form-app .globo-form-control input, .globo-form-app .globo-form-control select, .globo-form-app .globo-form-control textarea {
+  background: transparent !important;
+  border: 1px solid #cbcbcb !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+}
+
+button.action.next.submit.classic-button {
+  float: right !important;
+  margin-right: 10px !important;
+}
+.globo-form-app .line {
+  top: 8px !important;
+}
+.globo-form-app .checkmark {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.step.-completed .step__content svg.checkmark circle.checkmark__circle {
+  fill: #8B2533 !important;
+}
+
+.globo-formbuilder[data-id="56956"] .globo-form-app .checkmark__check, .globo-formbuilder[data-id="56956"] .globo-form-app .step .step__content svg.checkmark circle.checkmark__circle {
+  stroke: #CBCBCB !important;
+}
+.globo-formbuilder[data-id="56956"] .globo-form-app .checkmark__check, .globo-formbuilder[data-id="56956"] .globo-form-app .step.-completed .step__content svg.checkmark circle.checkmark__circle {
+  stroke: #8B2533 !important;
+}

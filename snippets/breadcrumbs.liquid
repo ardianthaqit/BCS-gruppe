@@ -3,7 +3,7 @@
 {% assign t = template | split: '.' | first %}
 
 <nav class="breadcrumbs 
-{% if template contains 'page' and page.url == '/pages/contact' %}white-color{% endif %}
+{% if template contains 'page' and page.url == '/pages/contact' or page.url == '/pages/eventplanung-1' %}white-color{% endif %}
 {% if template contains 'page' and page.url == '/pages/grunkohlfahrt' or page.url == '/pages/karriere'  %}white-color-mobile{% endif %} 
 {% if template contains 'product' %}prooduct-breadcrumbs-style{% endif %}
 " role="navigation" aria-label="breadcrumbs">
