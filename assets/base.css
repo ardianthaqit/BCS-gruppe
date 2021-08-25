@@ -2273,3 +2273,170 @@ button.action.next.submit.classic-button {
 .globo-formbuilder[data-id="56956"] .globo-form-app .checkmark__check, .globo-formbuilder[data-id="56956"] .globo-form-app .step.-completed .step__content svg.checkmark circle.checkmark__circle {
   stroke: #8B2533 !important;
 }
+
+.line.-start {
+  display: block;
+}
+
+.globo-form-app .panel {
+  padding-top: 60px !important;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li {
+  width: 15%;
+  position: relative;
+  height: 139px;
+}
+
+.panel:nth-child(2) .globo-form-control.layout-1-column ul {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  flex-direction: row;
+}
+
+.panel:nth-child(2) .globo-form-control.layout-1-column ul li {
+  width: 32%;
+  border: 1px solid #cbcbcb;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.panel:nth-child(2) .globo-form-control.layout-1-column ul li .checkbox-wrapper {
+  padding-left: 0 !important;
+}
+
+.panel:nth-child(2) .globo-form-control.layout-1-column ul li .checkbox-wrapper label {
+  width: 100%;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+.panel:nth-child(2) .globo-form-control.layout-1-column ul li .checkbox-wrapper label::after {
+  display: none !important;
+}
+
+.panel:nth-child(2) .globo-form-control.layout-1-column ul li .checkbox-wrapper label::before {
+  left: auto;
+  position: relative;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li:first-child::after {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Hudson.png?v=1629884121);
+  width: 88%;
+  height: 139px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li:nth-child(2)::after {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Johnn_jacobs.png?v=1629884218);
+  width: 90%;
+  height: 139px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li:nth-child(3)::after {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/bremen-halle.png?v=1629885077);
+  width: 88%;
+  height: 139px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li:nth-child(4)::after {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Borgfelder.png?v=1629884243);
+  width: 88%;
+  height: 139px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li:nth-child(5)::after {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Hopkens_ruh.png?v=1629884243);
+  width: 88%;
+  height: 139px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper {
+  margin-left: 0;
+  width: 133px;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label {
+  height: 139px;
+  width: 133px;
+  z-index: 1;
+  color: transparent !important;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label::after,
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label::before {
+    left: auto;
+    right: 30px;
+    top: 5px;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label::before {
+  display: none;
+}
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label::after {
+  border-color: transparent;
+}
+
+
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper .radio-input:checked ~ .radio-label:after {
+  background: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/fi_check-square.svg?v=1629883427);
+    background-repeat: no-repeat;
+}
+
+.globo-form-app .message.success h4 img, .globo-form-app .message.success p img {
+  margin: 0 auto;
+}
+
+.globo-form-app .message.success {
+  background: #fff !important;
+  color: #212b36;
+  box-shadow: none;
+  text-align: center;
+}
+
+.globo-form-app .message.success p a {
+  border: 1px solid #8B2533;
+  padding: 15px 30px;
+  border-radius: 3px;
+  color: #8B2533 !important;
+}
+
+.globo-form-app .message.success h2 {
+  font-size: 4.4rem;
+}
