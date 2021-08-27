@@ -445,9 +445,9 @@ footer details[open] summary ~ * {
   text-align: center;
 }
 
-.footer-block__details-content {
+/* .footer-block__details-content {
   margin-bottom: 4rem;
-}
+} */
 
 /* .footer-block__details-content li:first-child .link {
   padding-top: 3rem;

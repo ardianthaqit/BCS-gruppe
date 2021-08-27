@@ -1,0 +1,136 @@
+{% style %}
+  .contact-info {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+  }
+
+  .contact-info img {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+  }
+  .contact-info ul.icon-wrapper {
+    list-style-type: none;
+    padding: 0;
+    transform: translateX(0px);
+	margin-left: 0;
+  }
+
+  .contact-info ul.icon-wrapper>li {
+    display: flex;
+    width: 150px;
+    text-align: left;
+    height: auto;
+    position: relative;
+    transform: translateX(0px);
+    transition: all 1s;
+	padding-bottom: 0.5rem;
+	{% comment %} background: #e8de4f; {% endcomment %}
+  }
+
+  .contact-info ul.icon-wrapper>li .icon {
+    background-color: #8b2533;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    position: absolute;
+    left: 0px;
+    padding-right: 0px;
+    top: 0;
+	width: 40px;
+	height: 40px;
+  }
+  li.contact-form {
+    padding: 13.5px 0;
+  }
+  .mail-style {
+	margin-top: 0 !important;
+  }
+
+  .contact-info .info-wrapper {
+    padding-left: 20px;
+    font-size: 15px;
+	margin-top: 0rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+  }
+  .contact-info ul.icon-wrapper>li:hover {
+  	transform: translateX(150px);
+  	cursor: pointer;
+  }
+  .contact-info ul.icon-wrapper>li:hover div.info-wrapper {
+    transform: translateX(-150px);
+}
+.contact-info ul.icon-wrapper>li div {
+    background-color: #8b2533;
+    transform: translateX(-150px);
+
+}
+.info-wrapper.mail-details.mail-style {
+    margin-top: -13.5px !important;
+    padding-left: 2px;
+}
+  .contact-info>ul.icon-wrapper>li>.info-wrapper>.social-icons-wrapper>li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  ul.social-icons-wrapper {
+  	display: flex;
+  }
+
+  li.telephone {
+  	height: 20px;
+  }
+
+  li.contact-form {
+  	height: 20px;
+  }
+
+  .info-wrapper p {
+  	margin-bottom: 0px;
+  }
+
+  .contact-info .social-icons-wrapper>li img {
+    height: 20px;
+    width: auto;
+  }
+
+  li.contact-form>.info-wrapper>p {
+  	font-size: 12px;
+  }
+
+  nav.contact-info>ul.icon-wrapper>li.share>div.info-wrapper>ul.social-icons-wrapper>li {
+    padding: 3px 6px;
+    margin-left: 15px;
+  }
+
+
+  #colophon .widget-container li.telephone {
+  	margin-bottom: 10px;
+  }
+{% endstyle %}
+
+
+<nav class="contact-info d-none d-md-block">
+  <ul class="icon-wrapper">
+    <li class="telephone">
+      <div class="info-wrapper">  
+        <p><a href="tel:{{ shop.phone }}" class="sticky_clickCall">{{ shop.phone }}</a></p>
+      </div>
+      <span class="icon"><img class="img-fluid" src="https://cdn.shopify.com/s/files/1/0591/7625/5687/files/phone.png?v=1630066057" alt="phone icon"></span>
+      
+    </li>
+    <li class="contact-form">
+      <span class="icon"><img class="img-fluid" src="https://cdn.shopify.com/s/files/1/0591/7625/5687/files/mail.png?v=1630066057" alt="envelope icon"><span class="sprites sprites-mail">&nbsp;</span></span>
+      <div class="info-wrapper mail-details mail-style">
+        <p><a href="/pages/contact" class="sticky_clickCall">{{ shop.email }}</a></p>
+      </div>
+    </li>
+  </ul>
+</nav>

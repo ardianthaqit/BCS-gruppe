@@ -13,19 +13,25 @@
     <div id="blocks__jobs__container" class="w-11/12 lg:w-full xl:w-10 mx-auto">
         <div class="pt-20">
             {% for block in section.blocks %}
-            <div class="flex blocks mb-7 h-95px	 w-full lg:w-920px mx-auto items-center">
-                <div class="w-1/2">
-                    <div class="flex items-center justify-start xl:ml-60 lg:ml-40 md:ml-20 ml-4">
-                        <div id="blocks__content" class="block">
-                            <div class="font-block">{{ block.settings.title}}</div>
-                            <div class="font-block-light"> {{ block.settings.subheading}}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-1/2">
-                    <div id="blocks__content__svg-icon" class="items-center flex justify-around mr-8"> {% include 'icon_block-arrow' %} </div>
-                </div>
-            </div>
+            {% if block.settings.link_to != blank %}
+            <a href="{{ block.settings.link_to }}">
+            {% endif %}
+              <div class="flex blocks mb-7 h-95px	 w-full lg:w-920px mx-auto items-center">
+                  <div class="w-1/2">
+                      <div class="flex items-center justify-start xl:ml-60 lg:ml-40 md:ml-20 ml-4">
+                          <div id="blocks__content" class="block">
+                              <div class="font-block">{{ block.settings.title}}</div>
+                              <div class="font-block-light"> {{ block.settings.subheading}}</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-1/2">
+                      <div id="blocks__content__svg-icon" class="items-center flex justify-around mr-8"> {% include 'icon_block-arrow' %} </div>
+                  </div>
+              </div>
+            {% if block.settings.link_to != blank %}
+            </a>
+            {% endif %}
         {% endfor %}
         </div>
     </div>
@@ -75,6 +81,11 @@
       "type": "richtext",
       "id": "description",
       "label": "Description"
+    }, 
+    {
+      "type": "url",
+      "id": "link_to",
+      "label": "Link"
     }
     ]
   }

@@ -44,7 +44,9 @@
                     {{ 'newsletter.label' | t }}
                   </label>
                   <button type="submit" class="relative right-9	" name="commit">
+                    {% if block.settings.show_arrow %}
                     {% include 'icon_arrow-right-newsletter' %}
+                    {% endif %}
                   </button>
                 </div>
                 {%- if form.errors -%}
@@ -138,7 +140,14 @@
     {
       "type": "email_form",
       "name": "t:sections.newsletter.blocks.email_form.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "label": "Show Arrow"
+        }
+      ]
     },
     {
       "type": "@app"

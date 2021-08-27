@@ -44,9 +44,15 @@
           <div class="block">
           <div class="flex justify-center items-center tablet-responsive "> {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>
           </div>
+          {% if block.settings.direct_to != blank %}
+          <a href="{{block.settings.direct_to}}">
+          {% endif %}
           <div class="absolute left-1/2  transform -translate-x-1/2  z-2 text-white"
           x-show.transition.opacity.duration.750="open"> 
           <div class="border-hover"> </div>
+          {% if block.settings.direct_to != blank %}
+          </a>
+          {% endif %}
         </div>
           <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 bottom-5 z-2 text-white w-full"> 
             <div class="ucards-text text-4.5xl">
@@ -156,6 +162,11 @@ sm:flex inline-block items-center
     "type": "richtext",
     "id": "description",
     "label": "Description"
+  }, 
+  {
+    "type": "url",
+    "id": "direct_to",
+    "label": "Link"
   }
   ]
 }

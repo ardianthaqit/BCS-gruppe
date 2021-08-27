@@ -127,7 +127,7 @@
         "unavailable": "Couldn't load pickup availability",
         "refresh": "Refresh"
       },
-      "privacy": "Inkl. 7% Mwst. und 10% VVK Gebühr", 
+      "privacy": "Inkl. 19% Mwst.", 
       "price": {
         "from_price_html": "From {{ price }}",
         "regular_price": "Regular price",
@@ -201,7 +201,7 @@
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
       "headings": {
-        "product": "Product",
+        "product": "Tickets",
         "price": "Price",
         "total": "Total",
         "quantity": "Quantity"

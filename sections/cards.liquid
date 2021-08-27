@@ -25,10 +25,10 @@
       </a>
     {% endif %}
     </div>
-      <div class="xl:w-10 w-11/12 mx-auto  justify-between md:pt-20 pt-4 xl:flex md:grid grid-flow-col grid-cols-3 grid-rows-2 gap-4 block">
+      <div class="max-w-7xl xl:w-10 w-4/5 mx-auto justify-between md:pt-20 pt-4 grid md:grid-cols-3 grid-cols-1 gap-8 block">
         {% for block in section.blocks %}
         {% if block.settings.background_image != blank %}
-        <div class="block sm:pt-0 pt-10">
+        <div class="block pt-10">
              <a href="{{ block.settings.card_url }}"><div class="w-full img-cards-w-full">
                 {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt }}
              </div>
@@ -43,6 +43,7 @@
               <a href="{{ block.settings.card_url }}">
                 {{ block.settings.subheading }}
               </a>
+              <span class="line-bottom"></span>
             </div>
             {% endif %}
         </div>

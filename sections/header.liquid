@@ -94,7 +94,7 @@
                       <li>
                         {%- if link.links != blank -%}
                           <details>
-                            <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
+                            <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset uppercase{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
                               {{ link.title | escape }}
                               {% render 'icon-arrow' %}
                               {% render 'icon-caret' %}
@@ -143,7 +143,7 @@
                             </div>
                           </details>
                         {%- else -%}
-                          <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
+                          <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset uppercase{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
                             {{ link.title | escape }}
                           </a>
                         {%- endif -%}
@@ -341,7 +341,7 @@
                 </details-disclosure>
               {%- else -%}
                 <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                  <span  class="{%- if link.current %}header__active-menu-item{% endif %} text-navlink hover:text-colorprimary {% if link.title contains 'Grünkohlfahrt' %}text-Killarney{% endif %}">{{ link.title | escape }}</span>
+                  <span  class="uppercase {%- if link.current %} header__active-menu-item{% endif %} text-navlink hover:text-colorprimary {% if link.title contains 'Grünkohl' %}text-Killarney{% endif %}">{{ link.title | escape }}</span>
                 </a>
               {%- endif -%}
             </li>

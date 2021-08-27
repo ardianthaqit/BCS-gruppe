@@ -246,11 +246,11 @@
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 22px;
     text-align: center;
     letter-spacing: 0.3px;
-    color: #8B2533;
+    /* color: #8B2533; */
   }
   .heading-accordion{
     font-family: Lato;
@@ -516,5 +516,6 @@ letter-spacing: 0.3px;
 @media only screen and (max-width: 750px) {
   .title-contact {
       font-size: 32px;
+      line-height: 42px;
   }
 }
