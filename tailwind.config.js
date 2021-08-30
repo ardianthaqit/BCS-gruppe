@@ -24,6 +24,7 @@ module.exports = {
         whitegrey:'#F5F5F5',
         darkgrey:'#706F6F',
         Killarney:'#38664C',
+        ShadowGreen:'#93BDB4',
       },
       width: {
         '1/7': '14.2857143%',
@@ -36,11 +37,15 @@ module.exports = {
         '10':'1320px',
         '49':'49%',
         '55':'55%',
-        '98':'95%',
+        '98':'94%',
          '290px':'290px',
          '590px':'590px',
+         '775px':'775px',
          '920px':'920px',
          '220px':'220px',
+      },
+      maxWidth: {
+        '8xl': '95rem',
       },
       maxHeight: {
         '6': '1.5rem',

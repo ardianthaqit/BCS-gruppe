@@ -19,18 +19,25 @@
                 </div>
             {% endif %}
                 <div class=" block md:flex ">
+                    {% if section.settings.make-download-button %}
+                      <a class="button-config-text pt-14	items-center" href="{{ section.settings.button_url }}" target="_blank">
+                      <div class="{% if section.settings.layout == 'greenbutton' %}  button-karriere  border-solid sm:border-white border-current border {% endif %} greenbutton border-solid sm:border-white border-current border">
+                            {{- section.settings.button_text | escape -}}
+                          </div>
+                          </a>
+                    {% endif %}
                     {% if section.settings.button_text != blank %}
-                    <a href="{{ section.settings.button_url }}"
-                      class=" button-config-text pt-14	items-center "
-                      aria-label="{{ ariaLabel }}">
-                        <div class="{% if section.settings.layout == 'greenbutton' %}  button-karriere  border-solid sm:border-white border-current border {% endif %} greenbutton border-solid sm:border-white border-current border">
-                          {{- section.settings.button_text | escape -}}
-                        </div>
-                    </a>
-                {% endif %}
+                      <a href="{{ section.settings.button_url }}"
+                        class=" button-config-text pt-14	items-center {% if section.settings.make-download-button %}hidden{% endif %}"
+                        aria-label="{{ ariaLabel }}">
+                          <div class="{% if section.settings.layout == 'greenbutton' %}  button-karriere  border-solid sm:border-white border-current border {% endif %} greenbutton border-solid sm:border-white border-current border">
+                            {{- section.settings.button_text | escape -}}
+                          </div>
+                      </a>
+                    {% endif %}
                 {% if section.settings.button_text != blank %}
                 <a href="{{ section.settings.secondbutton_url }}"
-                  class="button-config-text pt-14 pl-5 flex items-center	"
+                  class="button-config-text pt-14 pl-5 flex items-center {% if section.settings.make-download-button %}hidden{% endif %}"
                   aria-label="{{ ariaLabel }}">
                     <div class="{% if section.settings.layout == 'greenbutton' %} buttontext xl:text-darkgrey text-white {% endif %} redbuttontext xl:text-darkgrey text-white">
                       {{- section.settings.secondbutton_text | escape -}}
@@ -118,6 +125,12 @@
     "default": "greenbutton",
     "label": "Layout Button",
     "info": "Change color of button"
+  },
+  {
+    "type": "checkbox",
+    "id": "make-download-button",
+    "label": "Make a download button",
+    "default": false
   }
 ],
 "presets": [{

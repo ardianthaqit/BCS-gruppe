@@ -518,4 +518,8 @@ letter-spacing: 0.3px;
       font-size: 32px;
       line-height: 42px;
   }
+  .karriere-title, .green-text, .tab-title{
+    font-size: 30px;
+    line-height: 42px;
+  }
 }

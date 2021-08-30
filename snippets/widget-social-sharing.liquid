@@ -23,28 +23,29 @@
   </style>
   <ul class="social_sharing_block">
           <li class="social mrs20">
-              <a class="facebook" target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_link }}" title="Share">
+              <a class="facebook flex items-center" target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_link }}" title="Share">
                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.27984 15.68V8.64001H8.51984L8.83984 6.08001H6.27984V4.48001C6.27984 3.84001 6.59984 3.20001 7.55984 3.20001H8.83984V0.640015H6.59984C4.67984 0.640015 3.07984 1.92001 3.07984 4.16001V6.08001H0.839844V8.64001H3.07984V15.68H6.27984Z" fill="#262626"/>
-                    </svg>                    
+                    </svg>   
+                    <div class="inline-social social-font relative -top-px	pl-4">Share</div>                 
               </a>
-            <div class="inline-social social-font relative -top-px	pl-4">Share</div>
           </li>
           <li class="social mrs20">
-              <a class="twitter" target="_blank" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_link }}" title="Share">
+              <a class="twitter flex items-center" target="_blank" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_link }}" title="Share">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.6404 2.36646C15.2058 3.00779 14.6841 3.55113 14.0754 3.99646C14.0754 4.03979 14.0809 4.10779 14.0919 4.20046C14.1029 4.29313 14.1084 4.36113 14.1084 4.40446C14.1084 5.25213 13.9834 6.09979 13.7334 6.94746C13.4834 7.79513 13.1031 8.60479 12.5924 9.37646C12.0818 10.1481 11.4759 10.8328 10.7749 11.4305C10.0739 12.0281 9.23176 12.5063 8.24843 12.865C7.2651 13.2236 6.20826 13.403 5.07793 13.403C3.31726 13.403 1.70893 12.9303 0.25293 11.985C0.557263 12.0066 0.807263 12.0175 1.00293 12.0175C2.46993 12.0175 3.77943 11.572 4.93143 10.681C4.24676 10.67 3.63543 10.4608 3.09743 10.0535C2.55943 9.64613 2.18176 9.12179 1.96443 8.48046C2.1491 8.52379 2.3501 8.54546 2.56743 8.54546C2.86076 8.54546 3.13793 8.50196 3.39893 8.41496C2.67093 8.26296 2.06776 7.89896 1.58943 7.32296C1.1111 6.74696 0.87193 6.08413 0.87193 5.33446V5.30196C1.28493 5.51929 1.7576 5.63879 2.28993 5.66046C1.86626 5.37779 1.52943 5.00563 1.27943 4.54396C1.02943 4.08229 0.90443 3.58513 0.90443 3.05246C0.90443 2.50913 1.04026 1.97663 1.31193 1.45496C2.10526 2.44396 3.06426 3.22363 4.18893 3.79396C5.3136 4.36429 6.53343 4.68213 7.84843 4.74746C7.77243 4.47579 7.73443 4.23679 7.73443 4.03046C7.73443 3.16113 8.0441 2.41946 8.66343 1.80546C9.28276 1.19146 10.0381 0.88446 10.9294 0.88446C11.3641 0.88446 11.7824 0.97146 12.1844 1.14546C12.5864 1.31946 12.9288 1.56396 13.2114 1.87896C13.9288 1.73763 14.5971 1.48229 15.2164 1.11296C14.9881 1.85196 14.5263 2.43329 13.8309 2.85696C14.4939 2.76996 15.0971 2.60696 15.6404 2.36796V2.36646Z" fill="#262626"/>
                     </svg>
-                    
+                    <div class="inline-social social-font relative -top-px	pl-4">Tweet</div>
               </a>
-            <div class="inline-social social-font relative -top-px	pl-4">Tweet</div>
+            
           </li>
           <li class="social mrs20">
-              <a class="pinterest" target="_blank" href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_link }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}" title="Share">
+              <a class="pinterest flex items-center" target="_blank" href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_link }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}" title="Share">
                 <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.7601 4.79999C11.4401 1.91999 8.56006 0.639987 5.36006 0.959987C3.12006 1.27999 0.560059 3.19999 0.560059 6.07999C0.560059 7.67999 0.880059 8.95999 2.48006 9.27999C3.12006 7.99999 2.16006 7.67999 2.16006 7.03999C1.52006 3.51999 6.32006 0.959987 8.88006 3.51999C10.4801 5.43999 9.52006 10.56 6.64006 10.24C4.08006 9.59999 7.92006 5.43999 5.68006 4.47999C4.08006 3.83999 3.12006 6.71999 3.76006 7.99999C3.12006 10.24 2.16006 12.48 2.80006 15.68C4.08006 14.72 4.72006 12.8 5.04006 10.88C5.68006 11.2 6.00006 11.84 6.96006 11.84C10.1601 11.52 12.0801 7.99999 11.7601 4.79999Z" fill="#262626"/>
-                    </svg>                    
+                    </svg>     
+                    <div class="inline-social social-font relative -top-px	pl-4">Pin it</div>               
               </a>
-            <div class="inline-social social-font relative -top-px	pl-4">Pin it</div>
+            
           </li>
   </ul>

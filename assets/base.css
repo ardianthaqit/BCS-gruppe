@@ -2153,6 +2153,7 @@ span.line-bottom {
 }
 
 
+
 /* Breadcrumbs CSS */
 .breadcrumbs {
   font-size: .85em;
@@ -2216,6 +2217,39 @@ nav.breadcrumbs.white-color {
   }
 }
 
+/* Popup */
+
+.scappfancybox-close {
+  display: block !important;
+}
+
+table.scapp-promobox {
+  background-repeat: no-repeat;
+}
+
+.sca-style-br p a, .clear-both a {
+  text-decoration: underline;
+  font-size: 22px !important;
+  line-height: 40px;
+}
+
+a.scappfancybox-item.scappfancybox-close {
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/fi_x.png?v=1630316663) !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+@media only screen and (max-width: 580px) {
+  .sca-style-br {
+    margin-bottom: 3rem;
+  }
+  .sca-style-br p span {
+    font-size: 20px !important;
+  }
+  .clear-both a, .sca-style-br p a {
+    font-size: 18px !important;
+  }
+}
 
 /* Breadcrumbs CSS ends */
 
