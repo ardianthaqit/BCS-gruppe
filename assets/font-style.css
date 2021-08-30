@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "YesevaOne";
+  font-style: normal;
+  src:url("YesevaOne-Regular.woff") format("woff");
+}
+
 @media only screen and (min-width: 1024px) { 
     .font-slider{
         color: #ffffff!important;
@@ -10,7 +16,7 @@
       }
  }
  .tab-title{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 44px;
@@ -58,7 +64,7 @@
   }
   /* andi css  */
   .font-title{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 56px;
@@ -76,7 +82,7 @@
     color: #706F6F;
   }
   .font-title-sm{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
@@ -233,7 +239,7 @@
     color: #706F6F;
   }
   .cards-title{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -253,7 +259,7 @@
     /* color: #8B2533; */
   }
   .heading-accordion{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 44px;
@@ -263,7 +269,7 @@
     color: #262626;
   }
   .title-accordion{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -290,7 +296,7 @@
     color: #706F6F;
   }
   .minititle-contact{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -300,7 +306,7 @@
     color: #CBCBCB;
   }
   .title-contact{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 56px;
@@ -350,7 +356,7 @@
     color: #706F6F;
   }
   .title-footer{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -417,7 +423,7 @@
   letter-spacing: 0.3px;
 }
 .karriere-title{
-  font-family: Lato;
+  font-family: YesevaOne;
   font-style: normal;
   font-weight: 300;
   font-size: 44px;
@@ -494,7 +500,7 @@ letter-spacing: 0.3px;
   color: #706F6F;
 }
 .text-title-full-image{
-  font-family: Lato;
+  font-family: YesevaOne;
   font-style: normal;
   font-weight: 300;
   font-size: 44px;
@@ -522,4 +528,8 @@ letter-spacing: 0.3px;
     font-size: 30px;
     line-height: 42px;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: YesevaOne !important;
 }

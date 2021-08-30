@@ -8,7 +8,7 @@
     color: #38664C;
 }
 .product-title{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 44px;
@@ -16,8 +16,11 @@
     color: #262626;
 
 }
+.newsletter-font {
+    font-family: YesevaOne;
+}
 .featured-title{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 44px;
@@ -118,7 +121,7 @@
     color: #706F6F;
   }
   .title-menu-footer{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -136,7 +139,7 @@
     color: #706F6F;
   }
   .rich-text-title{
-    font-family: Lato;
+    font-family: YesevaOne;
     font-style: normal;
     font-weight: 300;
     font-size: 44px;
@@ -355,7 +358,7 @@ span.red-text {
             max-height: auto;
         }
         #title-sm-footer{
-            font-family: Lato;
+            font-family: YesevaOne;
             font-style: normal;
             font-weight: 900;
             font-size: 16px;
@@ -520,7 +523,7 @@ span.red-text {
             max-height: auto;
         }
         #title-sm-footer{
-            font-family: Lato;
+            font-family: YesevaOne;
             font-style: normal;
             font-weight: 900;
             font-size: 16px;

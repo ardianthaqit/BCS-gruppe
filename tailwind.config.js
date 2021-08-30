@@ -25,6 +25,7 @@ module.exports = {
         darkgrey:'#706F6F',
         Killarney:'#38664C',
         ShadowGreen:'#93BDB4',
+        white:'#fff',
       },
       width: {
         '1/7': '14.2857143%',

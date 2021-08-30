@@ -1,10 +1,10 @@
 <div class=" w-full relative">
 {{ section.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt }}
 {% if section.settings.show-button %}
-<div class="absolute top-1/2 2xl:left-80 left-20">
+<div class="md:absolute top-1/2 2xl:left-80 left-20">
         {% if section.settings.button_text != blank %}
             <a href="{{ section.settings.button_url }}"
-              class="button-config-text"
+              class="flex justify-center text-white md:mt-0 mt-8"
               aria-label="{{ ariaLabel }}">
                 <div class="button-config">
                   {{- section.settings.button_text | escape -}}

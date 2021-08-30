@@ -2144,11 +2144,11 @@ transition: box-shadow var(--duration-short) ease;
 
 span.line-bottom {
   width: 70px;
-  height: 3px;
+  height: 1px;
   background: #262626;
   display: block;
-  margin-top: 5px;
   margin: 0 auto;
+  margin-top: 10px;
   border-radius: 10px;
 }
 
