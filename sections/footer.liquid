@@ -29,14 +29,15 @@
             assign footer_grid_class = 'grid--3-col-tablet'
           endif
         -%}
-        <div class="footer__blocks-wrapper xl:flex   grid grid-flow-col grid-cols-3 grid-rows-2 gap-4 items-center">
+        <div class="footer__blocks-wrapper xl:flex   grid grid-flow-col grid-cols-3 grid-rows-2 gap-4">
           {%- for block in section.blocks -%}
             {%- if block.type == 'link_list' and block.settings.heading != blank -%}
               <div class="accordion" {{ block.shopify_attributes }}>
                 <div>
-                  <summary><h2 class="title-footer">{{ block.settings.heading | escape }}</h2></summary>
+                <details>
+                  <summary><h2 class="title-footer mobile-footer-title">{{ block.settings.heading | escape }}</h2>{% render 'icon-caret' %}</summary>
                   {%- if block.settings.menu != blank -%}
-                    <ul class="footer-block__details-content list-unstyled hidden">
+                    <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
                           <a href="{{ link.url }}" class="links-footer link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
@@ -46,13 +47,14 @@
                       {%- endfor -%}
                     </ul>
                   {%- endif -%}
+                  </details>
                   </div>
               </div>
             {%- endif -%}
 
-            <div class="footer-block w-full xl:w-1/5	{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block w-full xl:w-1/5 {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <div class="title-footer">{{- block.settings.heading | escape -}}</div>
+                <div class="title-footer {% if block.type == 'link_list' %}hidden{% endif %}">{{- block.settings.heading | escape -}}</div>
               {%- endif -%}
 
               {%- case block.type -%}
@@ -62,7 +64,10 @@
                   </div>
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-                    <ul class="footer-block__details-content list-unstyled hidden">
+                  
+                  <details>
+                  <summary class="relative flex items-center title-footer-desktop"><h2 class="title-footer">{{ block.settings.heading | escape }}</h2>{% render 'icon-caret' %}</summary>
+                    <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
                           <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
@@ -71,6 +76,7 @@
                         </li>
                       {%- endfor -%}
                     </ul>
+                    </details>
                   {%- endif -%}
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image  {{ block.settings.alignment }}">

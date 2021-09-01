@@ -190,9 +190,9 @@
             <div class="footer__payment pt-4">
               <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
               <span class="block pb-2">{{ 'products.product.payment-info' | t }}</span>
-              <ul class=" flex justify-start " role="list">
+              <ul class="flex flex-wrap justify-start " role="list">
                 {%- for type in shop.enabled_payment_types -%}
-                  <li class="list-payment__item">
+                  <li class="list-payment__item pb-4">
                     {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                   </li>
                 {%- endfor -%}

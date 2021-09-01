@@ -2152,6 +2152,9 @@ span.line-bottom {
   border-radius: 10px;
 }
 
+.mobile-footer-title {
+  margin: 0 !important;
+}
 
 
 /* Breadcrumbs CSS */
@@ -2432,35 +2435,35 @@ button.action.next.submit.classic-button {
   background-size: contain;
 }
 
-.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper {
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .checkbox-wrapper {
   margin-left: 0;
   width: 88%;
 }
 
-.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label {
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .checkbox-wrapper label {
   height: 139px;
   width: 100%;
   z-index: 1;
   color: transparent !important;
 }
 
-.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label::after,
-.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label::before {
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .checkbox-wrapper label::after,
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .checkbox-wrapper label::before {
     left: auto;
     right: 0.5rem;
     top: 5px;
 }
 
-.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label::before {
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .checkbox-wrapper label::before {
   display: none;
 }
 
-.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper label::after {
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .checkbox-wrapper label::after {
   border-color: transparent;
 }
 
 
-.panel:nth-child(1) .globo-form-control.layout-1-column ul li .radio-wrapper .radio-input:checked ~ .radio-label:after {
+.panel:nth-child(1) .globo-form-control.layout-1-column ul li .checkbox-wrapper .checkbox-input:checked ~ .checkbox-label:after {
   background: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/fi_check-square.svg?v=1629883427);
     background-repeat: no-repeat;
 }
@@ -2487,6 +2490,14 @@ button.action.next.submit.classic-button {
   font-size: 4.4rem;
 }
 
+.img-cards-w-full img:hover {
+  opacity: 0.8;
+}
+
+summary {
+  outline: none !important;
+}
+
 @media only screen and (max-width: 1480px) and (min-width: 581px){
   .panel:nth-child(1) .globo-form-control.layout-1-column ul li{
     width: 20%;
@@ -2502,5 +2513,8 @@ button.action.next.submit.classic-button {
   }
   .globo-form-app .message.success h2 {
     font-size: 3rem;
+  }
+  .footer-block-image {
+    margin-bottom: 2rem;
   }
 }
