@@ -54,7 +54,7 @@
 
             <div class="footer-block w-full xl:w-1/5 {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <div class="title-footer {% if block.type == 'link_list' %}hidden{% endif %}">{{- block.settings.heading | escape -}}</div>
+                <div class="title-footer">{{- block.settings.heading | escape -}}</div>
               {%- endif -%}
 
               {%- case block.type -%}
@@ -65,8 +65,6 @@
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank and block.settings.heading != blank -%}
                   
-                  <details>
-                  <summary class="relative flex items-center title-footer-desktop"><h2 class="title-footer">{{ block.settings.heading | escape }}</h2>{% render 'icon-caret' %}</summary>
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
@@ -76,7 +74,6 @@
                         </li>
                       {%- endfor -%}
                     </ul>
-                    </details>
                   {%- endif -%}
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image  {{ block.settings.alignment }}">

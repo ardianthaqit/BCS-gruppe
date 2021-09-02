@@ -1,13 +1,17 @@
 <div class=" w-full relative">
-{{ section.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt }}
+{% comment %} {{ section.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt }} {% endcomment %}
+{% render 'lazy-image', image: section.settings.background_image, class: 'w-full h-full'  %}
 {% if section.settings.show-button %}
-<div class="md:absolute top-1/2 2xl:left-80 left-20">
+<div class="md:absolute left-0 bottom-0 w-4/5 md:w-2/5 xl:w-full md:max-w-625 show-button-mobile">
         {% if section.settings.button_text != blank %}
             <a href="{{ section.settings.button_url }}"
-              class="flex justify-center text-white md:mt-0 mt-8"
+              class="flex justify-center text-white md:mt-0 mt-8 lg:text-5xl text-3xl"
               aria-label="{{ ariaLabel }}">
-                <div class="button-config">
+                <div class="flex justify-center items-baseline button-config homepage-button">
                   {{- section.settings.button_text | escape -}}
+                  <div class="relative ml-4">
+                    {% include 'icon_chevron-right.liquid' %}
+                  </div>
                 </div>
             </a>
           {% endif %}

@@ -52,7 +52,10 @@
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                 {%- endif -%}
-      
+                <div class="checkbox-part"> 
+                <input type="checkbox" class="checkbox-style" style="background:red" required>
+                  <p>Die <a href="/policies/privacy-policy"><u>Datenschutzbestimmungen</u></a> habe ich zur Kenntnis genommen.</p>
+              </div>
               </div>
 
               {%- if form.posted_successfully? -%}

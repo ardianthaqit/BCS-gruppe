@@ -127,7 +127,7 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
-    <div id="insta-feed"></div>
+    <div id="insta-feed" class="{% if template contains 'page' and page.url == '/pages/hopkens-ruh'  %}hidden{% endif %}"></div>
     {% section 'newsletter' %}
     {% section 'footer' %}
     {% include 'sticky-button' %}

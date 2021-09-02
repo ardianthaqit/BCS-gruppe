@@ -503,9 +503,15 @@ span.red-text {
         .featured-title {
             font-size: 32px;
         }
-        .text-title-full-image, .heading-accordion, .heading-cards {
+         .heading-accordion, .heading-cards {
             font-size: 32px !important;
             line-height: 40px !important;
+            padding-top: 15px;
+          }
+          .text-title-full-image {
+            font-size: 29px!important;
+            line-height: 36px !important;
+            padding-top: 15px;
           }
     }
     @media only screen and (min-width: 768px) and (max-width:1023px) {
@@ -988,6 +994,9 @@ select#SortBy {
     .product__media-list .product__media-item {
         padding: 0 !important;
         width: 100% !important;
+    }
+    #ContactForm{
+        padding: 25px 25px 30px 25px;
     }
  }
 

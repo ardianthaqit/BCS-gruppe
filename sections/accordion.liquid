@@ -1,4 +1,4 @@
-<div class="w-full bg-green py-8 relative {% if section.settings.show-side-image %}flex xl:flex-row flex-col-reverse items-center justify-center py-0{% endif %}">
+<div class="w-full bg-green relative {% if section.settings.show-side-image %}flex xl:flex-row flex-col-reverse items-center justify-center py-0{% endif %}">
     {% if section.settings.show-side-image %}
     <div class="xl:w-1/2 w-full">
       <div class="md:h-screen h-50vh w-full bg-no-repeat bg-cover" {% if section.settings.image-full != blank %} style="background-image: url({{ section.settings.image-full | img_url: 'master' }})" {% endif %}>

@@ -2240,6 +2240,7 @@ a.scappfancybox-item.scappfancybox-close {
   background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/fi_x.png?v=1630316663) !important;
   width: 24px !important;
   height: 24px !important;
+  position: absolute !important;
 }
 
 @media only screen and (max-width: 580px) {
@@ -2251,6 +2252,9 @@ a.scappfancybox-item.scappfancybox-close {
   }
   .clear-both a, .sca-style-br p a {
     font-size: 18px !important;
+  }
+  .decs-contact {
+    padding: 1rem 3rem !important;
   }
 }
 
@@ -2498,6 +2502,59 @@ summary {
   outline: none !important;
 }
 
+.part-of-homepage {
+  max-width: 625px;
+  width: 100%;
+}
+
+.button-config.homepage-button {
+  border-top-right-radius: 200px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  /* font-size: 32px; */
+}
+
+.button-config.homepage-button svg {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+
+#bcpo .bcpo-default select, #bcpo .bcpo-select select, #bcpo .bcpo-dropdown select, #bcpo .bcpo-text input, #bcpo .bcpo-textarea textarea {
+  min-width: 100%;
+  outline: none !important;
+  box-shadow: none;
+  height: 52px;
+  font-size: 1.6rem;
+}
+
+.bcpo-label {
+  display: none;
+}
+
+div#bcpo-select-option-0 ul li span {
+  font-size: 1.6rem !important;
+}
+
+div#bcpo-select-option-0 ul li {
+  width: 100% !important;
+  max-width: 100%;
+  height: 52px;
+  display: flex !important;
+  align-items: center;
+  font-size: 1.6rem !important;
+}
+
+.checkbox-part {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-part p {
+  font-size: 14px;
+}
 @media only screen and (max-width: 1480px) and (min-width: 581px){
   .panel:nth-child(1) .globo-form-control.layout-1-column ul li{
     width: 20%;
@@ -2516,5 +2573,14 @@ summary {
   }
   .footer-block-image {
     margin-bottom: 2rem;
+  }
+  .show-button-mobile {
+    margin: 0 auto;
+  }
+  .button-config.homepage-button {
+    border-top-right-radius: revert;
+  }
+  .checkbox-part {
+    align-items: baseline;
   }
 }
