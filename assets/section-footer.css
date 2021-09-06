@@ -528,6 +528,7 @@ footer details[open] summary ~ * {
 @media screen and (max-width: 749px) {
   .footer-block-image {
     text-align: center;
+    margin-left: -7px;
   }
 }
 

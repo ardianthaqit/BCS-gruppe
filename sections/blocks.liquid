@@ -1,3 +1,17 @@
+<script type="text/javascript">
+      StaffCloud = window.StaffCloud || [];
+      (function(n,u,t,s) {
+          var uv=n.createElement('script');
+          var el=n.getElementsByTagName('script')[0];
+          uv.type=u;uv.async=t;uv.src=s;
+          el.parentNode.insertBefore(uv,el)
+      })(document,'text/javascript',true,'//bcs-gruppe.staff.cloud/sdk.js');
+
+      StaffCloud.push(['setup', {
+          url: '//bcs-gruppe.staff.cloud'
+      }]);
+</script>
+
 <div class=" h-full w-full block">
     <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -10,15 +24,15 @@
               <div class="rich-text-para">{{ section.settings.subheading }}</div>
       </div>
     </div>
-    <div id="blocks__jobs__container" class="w-11/12 lg:w-full xl:w-10 mx-auto">
+    <div id="blocks__jobs__container" class="w-11/12 lg:w-full xl:w-10 mx-auto flex items-center xl:flex-row flex-col justify-between">
         <div class="pt-20">
             {% for block in section.blocks %}
-            {% if block.settings.link_to != blank %}
-            <a href="{{ block.settings.link_to }}">
-            {% endif %}
-              <div class="flex blocks mb-7 h-95px	 w-full lg:w-920px mx-auto items-center">
-                  <div class="w-1/2">
-                      <div class="flex items-center justify-start xl:ml-60 lg:ml-40 md:ml-20 ml-4">
+              {% if block.settings.link_to != blank %}
+              <a href="{{ block.settings.link_to }}">
+              {% endif %}
+              <div class="flex blocks mb-7 h-95px	 w-full lg:w-600px mx-auto items-center gap-x-10">
+                  <div class="md:w-1/2 w-full">
+                      <div class="flex items-center justify-start md:ml-20 ml-4">
                           <div id="blocks__content" class="block">
                               <div class="font-block">{{ block.settings.title}}</div>
                               <div class="font-block-light"> {{ block.settings.subheading}}</div>
@@ -29,17 +43,31 @@
                       <div id="blocks__content__svg-icon" class="items-center flex justify-around mr-8"> {% include 'icon_block-arrow' %} </div>
                   </div>
               </div>
-            {% if block.settings.link_to != blank %}
-            </a>
-            {% endif %}
-        {% endfor %}
+              {% if block.settings.link_to != blank %}
+              </a>
+              {% endif %}
+            {% endfor %}
+        </div>
+        <div class="pt-20 hidden">
+          <div id="ec-recruiting"></div>
+                    <script>
+                        StaffCloud.push(['recruiting', {
+                            target: 'ec-recruiting',
+                            showHeader: true,
+                            width: 600,
+                            height: 600,
+                            stylesheet: 'https://lankenauerhoeft.de/',
+                            defaultLanguage: 'en'
+                        }]);
+                    </script>
+        </div>
         </div>
     </div>
 </div>
 {% schema %}
 {
 "name": "Blocks",
-"max_blocks": 4,
+"max_blocks": 8,
 "settings": [ 
 {
   "type": "text",

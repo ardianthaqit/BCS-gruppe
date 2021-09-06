@@ -47,13 +47,13 @@
           {% if block.settings.direct_to != blank %}
           <a href="{{block.settings.direct_to}}">
           {% endif %}
-          <div class="absolute left-1/2  transform -translate-x-1/2  z-2 text-white"
-          x-show.transition.opacity.duration.750="open"> 
-          <div class="border-hover"> </div>
-          {% if block.settings.direct_to != blank %}
+            <div class="absolute left-1/2  transform -translate-x-1/2  z-2 text-white top-12"
+            x-show.transition.opacity.duration.750="open"> 
+              <div class="border-hover"> </div>
+            </div>
+        {% if block.settings.direct_to != blank %}
           </a>
           {% endif %}
-        </div>
           <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 bottom-5 z-2 text-white w-full"> 
             <div class="ucards-text text-4.5xl">
               {{ block.settings.stll}}
@@ -83,13 +83,23 @@ sm:flex inline-block items-center
   x-data="{open: false }" @mouseover="open = true" @mouseout="open = false" @click="open = !open"
   >
     <div class="block">
-    {% if block.settings.mobile_background_image != blank %}<div class="flex justify-center items-center"> {{ block.settings.mobile_background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} </div>{% endif %}
+    {% if block.settings.mobile_background_image != blank %}
+      <div class="flex justify-center items-center"> 
+        {{ block.settings.mobile_background_image | img_url: 'master'| img_tag: block.settings.icon.alt}} 
+      </div>
+      {% endif %}
     </div>
+    {% if block.settings.direct_to != blank %}
+      <a href="{{block.settings.direct_to}}">
+    {% endif %}
     <div class="absolute left-1/2 top-0 transform -translate-x-1/2 bottom-5 z-2 text-white w-full h-full"> 
       <div class="ucards-text text-3xl h-full flex items-center justify-center w-98">
         {{ block.settings.stll}}
       </div>
     </div>
+    {% if block.settings.direct_to != blank %}
+      </a>
+    {% endif %}
 </div>
 {% endfor %}
 </div>

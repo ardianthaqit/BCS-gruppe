@@ -269,7 +269,7 @@
     color: #262626;
   }
   .title-accordion{
-    font-family: YesevaOne;
+    font-family: Lato !important;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -356,7 +356,7 @@
     color: #706F6F;
   }
   .title-footer{
-    font-family: YesevaOne;
+    font-family: Lato !important;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -527,6 +527,10 @@ letter-spacing: 0.3px;
   .karriere-title, .green-text, .tab-title{
     font-size: 30px;
     line-height: 42px;
+  }
+  .heading-banner{
+    font-size: 42px;
+    line-height: 52px;
   }
 }
 

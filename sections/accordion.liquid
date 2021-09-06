@@ -1,11 +1,11 @@
-<div class="w-full bg-green relative {% if section.settings.show-side-image %}flex xl:flex-row flex-col-reverse items-center justify-center py-0{% endif %}">
+<div class="w-full bg-green relative {% if section.settings.show-side-image %}flex {% if section.settings.change-position %}xl:flex-row-reverse{% else %}xl:flex-row{% endif %} flex-col-reverse items-center justify-center py-0{% endif %}">
     {% if section.settings.show-side-image %}
     <div class="xl:w-1/2 w-full">
       <div class="md:h-screen h-50vh w-full bg-no-repeat bg-cover" {% if section.settings.image-full != blank %} style="background-image: url({{ section.settings.image-full | img_url: 'master' }})" {% endif %}>
     </div>
     </div>
     {% endif %}
-    <div class="xl:w-1/2 w-11/12 mx-auto px-2 xl:px-0 {% if section.settings.show-side-image %} max-w-5xl xl:mb-0 mb-8{% endif %}">
+    <div class="xl:w-1/2 w-11/12 mx-auto px-2 xl:px-0 {% if section.settings.show-side-image %} max-w-5xl xl:mb-0 m-8{% endif %}">
       {% if section.settings.heading != blank %}
       <div class="heading-accordion mb-20 mt-24">
         {{ section.settings.heading }}
@@ -20,7 +20,7 @@
             <div x-data="{open: false}" class="rounded-md bg-white border-b	border-lightgrey mb-6 relative"
               {% if block.settings.anchor != blank %} id="{{block.settings.anchor|handle }}" data-anchor="{{ block.settings.anchor_text | default: block.settings.title }}" data-position="{{ block.settings.anchor_position }}" {% endif %}
               >  
-              <div class="px-5 py-3 xl:py-3 w-full relative cursor-pointer  flex justify-between mb-6" @click="open = !open">
+              <div class="px-10 py-3 xl:py-3 w-full relative cursor-pointer  flex justify-between mb-6" @click="open = !open">
                 <h2 class="title-accordion my-0 py-0">{{ block.settings.title }}</h2> 
                 <div x-show="open === false ">
                   {% include 'icon_plus' %}
@@ -49,12 +49,12 @@
                     {% if block.settings.only_if_available %}
                       {% assign show_tab = false%}
                     {% endif %}
-                    <div class="content-accordion my-5">
+                    <div class="content-accordion my-5 px-5">
                       {{ block.settings.default_content }}
                     </div>
                   {% endif %}
                 {% else %}
-                <div class="content-accordion my-5">
+                <div class="content-accordion my-5 px-5">
                   {{ block.settings.default_content }}
                 </div>
                 {% endif %}
@@ -90,6 +90,12 @@
       "label":	"image",
       "type": 	"image_picker",
       "id": 		"image-full"
+    },
+    {
+      "label":	"Change Position of Image",
+      "type": 	"checkbox",
+      "id": 		"change-position",
+      "default": false
     }
     ],
     "blocks": [

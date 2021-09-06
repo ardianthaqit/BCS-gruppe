@@ -1676,7 +1676,7 @@ input[type='checkbox'] {
 }
 
 .shopify-section-header-hidden {
-  transform: translateY(-100%);
+  /* transform: translateY(-100%); */
 }
 
 #shopify-section-header.animate {
@@ -2384,9 +2384,13 @@ button.action.next.submit.classic-button {
   position: relative;
 }
 
+.globo-form-app .wizard__steps {
+  z-index: 2 !important;
+}
+
 .panel:nth-child(1) .globo-form-control.layout-1-column ul li:first-child::after {
   content: '';
-  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Hudson.png?v=1629884121);
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Hopkens_ruh.png?v=1629884243);
   width: 88.5%;
   height: 139px;
   position: absolute;
@@ -2397,8 +2401,8 @@ button.action.next.submit.classic-button {
 
 .panel:nth-child(1) .globo-form-control.layout-1-column ul li:nth-child(2)::after {
   content: '';
-  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Johnn_jacobs.png?v=1629884218);
-  width: 90%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Hudson.png?v=1629884121);
+  width: 88.5%;
   height: 139px;
   position: absolute;
   top: 0;
@@ -2430,8 +2434,8 @@ button.action.next.submit.classic-button {
 
 .panel:nth-child(1) .globo-form-control.layout-1-column ul li:nth-child(5)::after {
   content: '';
-  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Hopkens_ruh.png?v=1629884243);
-  width: 88%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0591/7625/5687/files/Johnn_jacobs.png?v=1629884218);
+  width: 88.5%;
   height: 139px;
   position: absolute;
   top: 0;
@@ -2582,5 +2586,8 @@ div#bcpo-select-option-0 ul li {
   }
   .checkbox-part {
     align-items: baseline;
+  }
+  iframe.ec-widget-recruiting {
+    width: 100%;
   }
 }
