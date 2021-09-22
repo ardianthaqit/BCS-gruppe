@@ -2595,3 +2595,6 @@ div#bcpo-select-option-0 ul li {
 cart-note.cart__note textarea#Cart-note {
   border: 1px solid;
 }
+div#lt-content {
+  width: 100% !important;
+}
