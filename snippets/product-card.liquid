@@ -97,15 +97,17 @@
           </span>
         {%- endif -%}
 
+        {% if show_date_on_collection %}
         <div class="text-darkgrey w-full xl:w-3/5 date-on-collection">
         {% unless product.has_only_default_variant %}
-        {% for option in product_card_product.options_with_values limit:1 %}
+          {% for option in product_card_product.options_with_values limit:1 %}
               {% for value in option.values limit:1 %}
                 {{ value }}
               {% endfor %}
-              {% endfor %}
+          {% endfor %}
         {% endunless %}
         </div>
+        {% endif %}
 
         <div class="flex justify-start items-baseline font-medium">
           {{ 'products.product.book_it_now' | t }}
