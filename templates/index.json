@@ -1,7 +1,17 @@
 {
   "sections": {
+    "1630327930c5f76187": {
+      "type": "mini-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/MicrosoftTeams-image_27_-min.png",
+        "show-button": true,
+        "button_text": "JETZT EVENT PLANEN",
+        "button_url": "shopify:\/\/pages\/eventplanung-1"
+      }
+    },
     "162860828242d1cd53": {
       "type": "image-and-text",
+      "disabled": true,
       "settings": {
         "background_image": "shopify:\/\/shop_images\/Group_2.png",
         "layout": "text_first",
@@ -11,67 +21,148 @@
         "button_url": "shopify:\/\/pages\/contact"
       }
     },
+    "1630326772a5a3361d": {
+      "type": "cards",
+      "blocks": {
+        "1630326772a5a3361d-0": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/01_Hoepkens_Ruh_Hochzeitslocation_BCS.png",
+            "title": "<p>HÖPKENS RUH<\/p>",
+            "subheading": "<p>Die grüne Oase<\/p>",
+            "card_url": "shopify:\/\/pages\/hopkens-ruh"
+          }
+        },
+        "1630326772a5a3361d-1": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/02_Hudoson_Eventloft_BCS.png",
+            "title": "<p>HUDSON EVENTLOFT<\/p>",
+            "subheading": "<p>Das moderne Hafen-Loft<\/p>",
+            "card_url": "shopify:\/\/pages\/hudson-eventloft-1"
+          }
+        },
+        "754314f5-39d2-4737-a880-27f2ec5027b5": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/03_BremenhalleBremenhalle_04.png",
+            "title": "<p>BREMENHALLE<\/p>",
+            "subheading": "<p>Tagen mit Blick auf das Rollfeld<\/p>",
+            "card_url": "shopify:\/\/pages\/bremenhalle-1"
+          }
+        },
+        "2ac99247-c872-4efc-8132-4bff4313d8a4": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/04_Borgfelder_Landhaus_BCS_Location.png",
+            "title": "<p>BORGFELDER LANDHAUS<\/p>",
+            "subheading": "<p>Grünkohl-Touren mit Tradition<\/p>",
+            "card_url": "shopify:\/\/pages\/borgfelder-landhaus-1"
+          }
+        },
+        "51e744dc-ab2d-40de-a9df-9578bc2f6039": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/05_Johann_Jacobs_Haus.png",
+            "title": "<p>JOHANN JACOBS HAUS<\/p>",
+            "subheading": "<p>Events mitten in der Innenstadt<\/p>",
+            "card_url": "shopify:\/\/pages\/johann-jacobs-haus-1"
+          }
+        },
+        "b3453f48-2d07-4e46-84ca-5db1225daeeb": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/06_Caterin_BCS_FineDining.png",
+            "title": "<p>CATERING<\/p>",
+            "subheading": "<p>Exklusives Catering für Events<\/p>",
+            "card_url": "shopify:\/\/pages\/catering-1"
+          }
+        }
+      },
+      "block_order": [
+        "1630326772a5a3361d-0",
+        "1630326772a5a3361d-1",
+        "754314f5-39d2-4737-a880-27f2ec5027b5",
+        "2ac99247-c872-4efc-8132-4bff4313d8a4",
+        "51e744dc-ab2d-40de-a9df-9578bc2f6039",
+        "b3453f48-2d07-4e46-84ca-5db1225daeeb"
+      ],
+      "settings": {
+        "miniheading": "",
+        "title": "<p>FESTE FEIERN<\/p>",
+        "subheading": "<p>... in Bremen's schönsten Locations<\/p><p>Modern, traditionell oder klassisch - die Locations und unser Service Team machen euer Event zu einem ganz individuellen Erlebnis.<\/p>",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
     "1628586687e92bf46d": {
       "type": "slider-image",
+      "disabled": true,
       "blocks": {
         "73495b62-f531-474e-97d1-e0d7fe232189": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_73_1.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_afd3946d-5e5e-4bb7-85e5-3362b359443a.png",
+            "background_image": "shopify:\/\/shop_images\/Hopkensruh.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Hopkens-ruh-mobile.png",
             "stll": "<p>Höpkens Ruh<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/contact"
           }
         },
         "4010586d-4ad0-426b-9429-96134a5edddf": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_74_e3598f38-06c9-4bc5-99a8-3b230ad0a724.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_2_57f1c29b-d807-473d-a58b-5b5ee1a2a293.png",
-            "stll": "<p>Hudson Loft<\/p>",
+            "background_image": "shopify:\/\/shop_images\/Hudsonevnetloft.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/hudson_eventloft-mobile.png",
+            "stll": "<p>Hudson Eventloft<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/contact"
           }
         },
         "3b79dee8-bbd7-4d80-8637-be86a8c016c5": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_73.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_1_1ad58dc9-3542-4670-9eb2-b299d132e190.png",
+            "background_image": "shopify:\/\/shop_images\/bremenhalle.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/bremenhalle-mobile.png",
             "stll": "<p>Bremenhalle<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/contact"
           }
         },
         "3f0ade5e-83c7-4b73-a3fb-e48d55e172d5": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_76_bc7325f7-9710-4c33-b19c-9f5c02881d11.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_2_57f1c29b-d807-473d-a58b-5b5ee1a2a293.png",
+            "background_image": "shopify:\/\/shop_images\/brogfelder_landhaus.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/brogfelder-landhaus-mobile.png",
             "stll": "<p>Borgfelder Landhaus<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": ""
           }
         },
         "faec3cfd-111b-4e30-99a9-13e32ea4b705": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_73.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_4e4f886b-0824-454c-8705-d3c6f99d55d9.png",
-            "stll": "<p>Borgfelder Landhaus<\/p>",
+            "background_image": "shopify:\/\/shop_images\/jacobs.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/jacobs-mobile.png",
+            "stll": "<p>Johann Jacobs Haus<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/contact"
           }
         },
         "00992960-a22a-4557-86e2-b921de5ced6a": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_77_42d80948-d742-47a5-8f7e-46c806551689.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_4.png",
-            "stll": "<p>Johann Jacobs Haus<br\/><\/p>",
+            "background_image": "shopify:\/\/shop_images\/categing.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Catering-mobile.png",
+            "stll": "<p>Catering<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/contact"
           }
         }
       },
@@ -87,7 +178,7 @@
         "background_image": "shopify:\/\/shop_images\/BG_4.png",
         "heading": "<p>Feste Feiern ind Bremen's schönsten Locations.<\/p>",
         "desc": "<p>Unsere Event Locations bieten von modern über traditionell bis hin zu aussergewöhnlich alle Möglichkeiten, um euren ganz persönlichen Event zu einem absoluten Highlight zu machen.<\/p>",
-        "button_text": "Mehr entdecken",
+        "button_text": "Jetzt kontaktieren",
         "button_url": "shopify:\/\/pages\/contact"
       }
     },
@@ -95,7 +186,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Events & mehr",
-        "subtitle": "<p>Hier findet ihr unsere besten Events und könnt direkt das nächste Erlebnis für euch buchen.<\/p>",
+        "subtitle": "<p>Hier findet ihr unsere besten Events und könnt direkt das nächste Erlebnis für euch buchen.<\/p><p>Klickt auf die gewünschte Veranstaltung um alle Termine zu sehen.<\/p>",
         "collection": "homepage-collection",
         "products_to_show": 4,
         "show_view_all": true,
@@ -109,6 +200,7 @@
     },
     "image_text": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -144,6 +236,7 @@
     },
     "16285828778337341d": {
       "type": "testimonial-slider",
+      "disabled": true,
       "blocks": {
         "16285828778337341d-0": {
           "type": "card",
@@ -197,7 +290,9 @@
     }
   },
   "order": [
+    "1630327930c5f76187",
     "162860828242d1cd53",
+    "1630326772a5a3361d",
     "1628586687e92bf46d",
     "162858307121b4d5d0",
     "image_text",

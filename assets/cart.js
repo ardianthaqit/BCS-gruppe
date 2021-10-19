@@ -132,3 +132,11 @@ class CartItems extends HTMLElement {
 }
 
 customElements.define('cart-items', CartItems);
+
+
+  // Dynamicapp
+  for (let i = 1; i < 100; i++) {
+    $('.product-option dd').html(function(){
+      return $(this).html().replaceAll(i +' x','<br /> ' + i +' x');
+    });
+    }

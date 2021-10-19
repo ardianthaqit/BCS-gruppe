@@ -13,14 +13,14 @@
         "16289845405cfbde36-0": {
           "type": "heading",
           "settings": {
-            "heading": "Holen Sie sich jetzt die Tickets",
+            "heading": "Holt euch jetzt die Tickets",
             "heading_size": "h1"
           }
         },
         "16289845405cfbde36-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Tristique phasellus adipiscing facilisis maecenas donec. Dictumst sit massa elementum nec. Risus orci sollicitudin quis facilisi consectetur id. Arcu tortor, sed pharetra dui lorem semper nunc mauris.<\/p>"
+            "text": "<p>Sichert euch jetzt die Tickets für Bremens beliebte Grünkohl-Partys im Borgfelder Landhaus und Höpkens Ruh. Wer Lust auf Bremens Lieblingsgericht und die besten DJ's der Stadt hat, bucht direkt hier seine Tickets.<\/p>"
           }
         }
       },
@@ -51,65 +51,72 @@
     },
     "16289603715b2216a5": {
       "type": "slider-image",
+      "disabled": true,
       "blocks": {
         "16289603715b2216a5-0": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_73.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_4e4f886b-0824-454c-8705-d3c6f99d55d9.png",
+            "background_image": "shopify:\/\/shop_images\/Hopkensruh.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Hopkens-ruh-mobile.png",
             "stll": "<p>Höpkens Ruh<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/hopkens-ruh"
           }
         },
         "16289603715b2216a5-1": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_74.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_afd3946d-5e5e-4bb7-85e5-3362b359443a.png",
-            "stll": "<p>Bremenhalle<\/p>",
+            "background_image": "shopify:\/\/shop_images\/Hudsonevnetloft.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/hudson_eventloft-mobile.png",
+            "stll": "<p>Hudson Eventloft<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/hudson-eventloft-1"
           }
         },
         "b172f7ca-da0d-4d6c-9cba-2fa2aaa3e689": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_76_bc7325f7-9710-4c33-b19c-9f5c02881d11.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_1_1ad58dc9-3542-4670-9eb2-b299d132e190.png",
-            "stll": "<p>Borgfelder Landhaus<\/p>",
+            "background_image": "shopify:\/\/shop_images\/bremenhalle.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/bremenhalle-mobile.png",
+            "stll": "<p>Bremenhalle<\/p>",
             "stlll": "",
-            "description": ""
-          }
-        },
-        "b58a86b9-5955-4227-9394-0e8027165666": {
-          "type": "card",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_76.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_2.png",
-            "stll": "<p>Poloclub Hagen Grinden<\/p>",
-            "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/bremenhalle-1"
           }
         },
         "c7f83d37-bd00-487e-bcce-9f975ba985f4": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_77.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_4e4f886b-0824-454c-8705-d3c6f99d55d9.png",
-            "stll": "",
+            "background_image": "shopify:\/\/shop_images\/brogfelder_landhaus.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/brogfelder-landhaus-mobile.png",
+            "stll": "<p>Borgfelder Landhaus<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/borgfelder-landhaus-1"
+          }
+        },
+        "b58a86b9-5955-4227-9394-0e8027165666": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/jacobs.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/jacobs-mobile.png",
+            "stll": "<p>Johann Jacobs Haus<\/p>",
+            "stlll": "",
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/johann-jacobs-haus-1"
           }
         },
         "5cad704e-fb9f-48f7-ae90-e6b705a2de4e": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Rectangle_75.png",
-            "mobile_background_image": "shopify:\/\/shop_images\/Rectangle_73_2.png",
-            "stll": "",
+            "background_image": "shopify:\/\/shop_images\/categing.png",
+            "mobile_background_image": "shopify:\/\/shop_images\/Catering-mobile.png",
+            "stll": "<p>Catering<\/p>",
             "stlll": "",
-            "description": ""
+            "description": "",
+            "direct_to": "shopify:\/\/pages\/catering-1"
           }
         }
       },
@@ -117,8 +124,8 @@
         "16289603715b2216a5-0",
         "16289603715b2216a5-1",
         "b172f7ca-da0d-4d6c-9cba-2fa2aaa3e689",
-        "b58a86b9-5955-4227-9394-0e8027165666",
         "c7f83d37-bd00-487e-bcce-9f975ba985f4",
+        "b58a86b9-5955-4227-9394-0e8027165666",
         "5cad704e-fb9f-48f7-ae90-e6b705a2de4e"
       ],
       "settings": {
@@ -126,7 +133,7 @@
         "heading": "<p>Mehr als nur eine Ort<\/p>",
         "desc": "<p>Unsere Event Locations bieten von modern über traditionell bis hin zu aussergewöhnlich alle Möglichkeiten, um euren ganz persönlichen Event zu einem absoluten Highlight zu machen.<\/p>",
         "button_text": "Mehr entdecken",
-        "button_url": "shopify:\/\/blogs\/news"
+        "button_url": "shopify:\/\/pages\/contact"
       }
     }
   },

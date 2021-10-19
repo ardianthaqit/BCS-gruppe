@@ -11,62 +11,72 @@
         "165a5d5a-7596-42f7-853b-0e55ffee52fa": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/image_4_2.png",
-            "title": "<p>Höpkens Ruh<\/p>",
-            "subheading": "<p>Mehr erfahren<\/p>",
-            "card_url": ""
-          }
-        },
-        "17b3f504-63d5-430e-b37f-259f8051880f": {
-          "type": "card",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/image_4_3_14766f8a-393e-4d88-bff3-309169cd143d.png",
-            "title": "<p> Bremenhalle<\/p>",
-            "subheading": "<p> Mehr erfahren<\/p>",
-            "card_url": ""
-          }
-        },
-        "85491aef-da26-49f7-8f75-b31435b4da71": {
-          "type": "card",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/image_4_4.png",
-            "title": "<p>Borgfelder Landhaus<\/p>",
-            "subheading": "<p>Mehr erfahren<\/p>",
-            "card_url": ""
+            "background_image": "shopify:\/\/shop_images\/01_Hoepkens_Ruh_Hochzeitslocation_BCS.png",
+            "title": "<p>HÖPKENS RUH<\/p>",
+            "subheading": "<p>Die grüne Oase<\/p>",
+            "card_url": "shopify:\/\/pages\/hopkens-ruh"
           }
         },
         "1628936241ab483961-1": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/image_4_5.png",
-            "title": "<p>Poloclub Hagen Grinden<\/p>",
-            "subheading": "<p>Mehr erfahren<\/p>",
-            "card_url": ""
+            "background_image": "shopify:\/\/shop_images\/02_Hudoson_Eventloft_BCS.png",
+            "title": "<p>HUDSON EVENTLOFT<\/p>",
+            "subheading": "<p>Das moderne City-Loft<\/p>",
+            "card_url": "shopify:\/\/pages\/hudson-eventloft-1"
+          }
+        },
+        "17b3f504-63d5-430e-b37f-259f8051880f": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/03_BremenhalleBremenhalle_04.png",
+            "title": "<p>BREMENHALLE<\/p>",
+            "subheading": "<p>Tagen mit Blick auf das Rollfeld<\/p>",
+            "card_url": "shopify:\/\/pages\/bremenhalle-1"
+          }
+        },
+        "85491aef-da26-49f7-8f75-b31435b4da71": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/04_Borgfelder_Landhaus_BCS_Location.png",
+            "title": "<p>BORGFELDER LANDHAUS<\/p>",
+            "subheading": "<p>Grünkohl-Touren mit Tradition<\/p>",
+            "card_url": "shopify:\/\/pages\/borgfelder-landhaus-1"
           }
         },
         "1628936241ab483961-0": {
           "type": "card",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/image_4_6.png",
-            "title": "<p>Johann Jacobs Haus<\/p>",
-            "subheading": "<p>Mehr erfahren<\/p>",
-            "card_url": "shopify:\/\/pages\/single-location"
+            "background_image": "shopify:\/\/shop_images\/05_Johann_Jacobs_Haus.png",
+            "title": "<p>JOHANN JACOBS HAUS<\/p>",
+            "subheading": "<p>Events mitten in der Innenstadt<\/p>",
+            "card_url": "shopify:\/\/pages\/johann-jacobs-haus-1"
+          }
+        },
+        "b1ecd214-1308-46d3-bcd2-e0fbdd008a07": {
+          "type": "card",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/06_Caterin_BCS_FineDining.png",
+            "title": "<p>CATERING<\/p>",
+            "subheading": "<p>Exklusives Catering für Events<\/p>",
+            "card_url": "shopify:\/\/pages\/catering-1"
           }
         }
       },
       "block_order": [
         "165a5d5a-7596-42f7-853b-0e55ffee52fa",
+        "1628936241ab483961-1",
         "17b3f504-63d5-430e-b37f-259f8051880f",
         "85491aef-da26-49f7-8f75-b31435b4da71",
-        "1628936241ab483961-1",
-        "1628936241ab483961-0"
+        "1628936241ab483961-0",
+        "b1ecd214-1308-46d3-bcd2-e0fbdd008a07"
       ],
       "settings": {
         "miniheading": "<p>Locations<\/p>",
         "title": "<p>Eventlocations in Bremen<\/p>",
-        "subheading": "<p>Wir bieten die Eventlocation für Ihre Veranstaltung. Ob Partyraum für das Jubiläum, Veranstaltungsraum für Firmenfeiern oder<br\/>Ihr ganz individuelles Event. Im Raum Bremen und Niedersachsen können Sie mit uns klein oder groß feiern. Mieten Sie bei uns <br\/>unkompliziert eine unserer Locations – auf Wunsch untertsützen wir Sie gerne bei der Eventplanung und dem Catering.<\/p>",
+        "subheading": "<p>Wir bieten die Eventlocation für Ihre Veranstaltung. Ob Partyraum für das Jubiläum, Veranstaltungsraum für Firmenfeiern oder<br\/>Ihr ganz individuelles Event. In unseren Locations in Bremen können Sie mit uns klein oder groß feiern. Mieten Sie bei uns <br\/>unkompliziert eine unserer Locations – auf Wunsch unterstützen wir Sie gerne bei der Eventplanung und dem Catering.<\/p>",
         "button_text": "Jetzt Buchen",
-        "button_url": "shopify:\/\/pages\/single-location"
+        "button_url": "shopify:\/\/pages\/johann-jacobs-haus-1"
       }
     },
     "1628945377fde5be8a": {
@@ -78,7 +88,7 @@
         "heading": "<p>Eventlocation mieten<br\/>in Bremen<\/p>",
         "desc": "<p>In Bremen verfügt die BCS Gruppe über verschiedene Eventlocations in zentraler Lage mit guter Anbindung. So verfügt die auf 1200 Quadratmeter große Eventlocation Hudson Eventloft direkt am Europahafen den passenden Rahmen für moderne und schicke Firmenfeiern für bis zu 440 Gästen. Auch die Bremenhalle, eine moderne und zugleich historische Eventlocation mit Blick auf das Rollfeld des Flughafens, eignet sich perfekt für größere Feiern mit bis zu 450 Gästen.<br\/><br\/>Suchen Sie eine Eventlocation im Grünen? Kein Problem, denn in unserem idyllischen und gemütlichen Borgfelder Landhaus in Bremen lassen sich sowohl größere als auch kleinere Firmenfeste für bis zu 500 Personen veranstalten. Für Feiern im kleinerem,  privaten Rahmen eignet sich bestens das Höpkens Ruh. Hier feiern Sie drinnen im Saal und Kaminzimmer oder draußen auf der traumhaft schönen Terrasse mit 40 bis 120 Personen im Höpkens Ruh. Exklusiv direkt an der historischen Altstadt gelegen finden Sie das Johann Jacobs Haus. Hier tagen und feiern Sie im historischen Ambiente der Bremer Kaffee-Tradition im Herzen der Bremer Innenstadt mit bis zu 50 Personen.<\/p>",
         "button_text": "Weiterlesen",
-        "button_url": "shopify:\/\/blogs\/news"
+        "button_url": "shopify:\/\/pages\/borgfelder-landhaus-1"
       }
     },
     "162894665536db6f3b": {
@@ -90,7 +100,7 @@
         "heading": "<p>Eventlocation mieten im Raum Achim<\/p>",
         "desc": "<p>Mit dem Poloclub Hagen Grinden in Langwedel verfügen wir über ein exklusives Angebot in unserem Portfolio. Der Gutshof mit großer Terrasse bietet auf ca. 500 Quadratmetern eine wunderschöne Fläche. Die Räumlichkeiten sind hochwertig und laden zu kleinen sowie großen Feiern ein. Nehmen Sie Kontakt zu uns auf, um eine kostenlose Besichtigung zu buchen<\/p>",
         "button_text": "Weiterlesen",
-        "button_url": "shopify:\/\/pages\/single-location"
+        "button_url": "shopify:\/\/pages\/contact"
       }
     },
     "16288584113c10c075": {
@@ -235,7 +245,9 @@
         "e9c01e98-aaf8-490f-8fea-ec6ac10e08a8"
       ],
       "settings": {
-        "heading": "<p>FAQ´s<\/p>"
+        "heading": "<p>FAQ´s<\/p>",
+        "show-side-image": false,
+        "change-position": false
       }
     }
   },

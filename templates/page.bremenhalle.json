@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1628960048c9743845": {
+      "type": "mini-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/header-bremenhalle-min.png",
+        "show-button": false,
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "1630914490aef2b158": {
+      "type": "minibanner-with-text",
+      "settings": {
+        "minitext": "",
+        "heading": "<p>BREMENHALLE<\/p>",
+        "desc": "<p>Die Bremenhalle befindet sich direkt im Bremer Airport und sticht mit dem einzigartigen Ausblick auf das Vorfeld der Start- und Landebahn heraus. So können Sie während des Events startende und landende Flugzeuge bestaunen. <\/p>",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "16289600673d292fe6": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/01_Bremenhalle.jpg",
+        "layout": "image_first",
+        "miniheading": "",
+        "heading": "",
+        "desc": "<p>Die beeindruckende Fläche von 780 Quadratmetern kann bei einer Bankettbestuhlung bis zu 300 Personen beherbergen und als Empfang mit Stehtischen bis zu 450 Personen. Die Bremenhalle lädt zu Events unterschiedlichster Art ein: Firmenfeiern, Privatfeiern oder Tagungen. <\/p>",
+        "button_text": "",
+        "button_url": "shopify:\/\/blogs\/news"
+      }
+    },
+    "1628960096ed49debd": {
+      "type": "accordion",
+      "blocks": {
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Lage<\/strong><\/p>",
+            "default_content": "<p>Zentrale Lage und perfekte Anbindung Die ideale Verkehrsanbindung macht diese Location besonders attraktiv. Der zentral gelegene Bremer Flughafen liegt nur 15 Minuten von der Bremer Innenstadt entfernt und verfügt über einen direkten Anschluss an die A281. Mit über 4.600 Parkplätzen können Sie entspannt mit dem Auto, mit der Straßenbahn oder dem Flugzeug anreisen.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "36408f41-c1d2-42a0-bb73-00298e1c38b0": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Junkers W 33 Bremen<\/strong><\/p>",
+            "default_content": "<p>Das Highlight in der Bremenhalle ist das Flugzeug Junkers W 33 Bremen. 1928 flog das Mehrzweckflugzeug den ersten erfolgreichen Transatlantikflug der Geschichte von Ost nach West. Dies verleiht der modernen Halle eine nostalgische Wirkung, die Ihre Gäste begeistert.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "a8e48d60-40d2-4953-b796-c520a469d74e": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Halle mit Blick auf das Rollfeld<\/strong><\/p>",
+            "default_content": "<p>Die eindrucksvolle Halle bietet neben dem einzigartigen Blick auf das Rollfeld des Bremer Airports viele Gestaltungsmöglichkeiten. Die 7m hohe Decke und die bodentiefen Fensterfronten schaffen auf 800 Quadratmetern viele Nutzungsideen.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "95fe0011-208c-4bb9-8256-38f8c6a25531": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Besucherterrasse<\/strong><\/p>",
+            "default_content": "<p>Die mit Holzboden versehene Terrasse lädt vor allem bei Sonnenschein für eine Pause ein. Betrachten Sie hierbei das Rollfeld mit startenden und landenden Flugzeugen.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d",
+        "36408f41-c1d2-42a0-bb73-00298e1c38b0",
+        "a8e48d60-40d2-4953-b796-c520a469d74e",
+        "95fe0011-208c-4bb9-8256-38f8c6a25531"
+      ],
+      "settings": {
+        "heading": "<p>FACTS<\/p>",
+        "show-side-image": true,
+        "image-full": "shopify:\/\/shop_images\/02_Bremenhalle-455.jpg",
+        "change-position": false
+      }
+    },
+    "16300693429acfec4a": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Optimized-03_Bremenhalle.jpg",
+        "layout": "text_first",
+        "miniheading": "",
+        "heading": "<p>Full Service Partner<\/p>",
+        "desc": "<p>Ob mit Kollegen, Mitarbeitern, Kunden oder den Liebsten. Bieten Sie Ihren Gästen ein exklusives Ambiente, um ein erfolgreiches Jahr, ein neues Produkt oder gar den schönsten Tag im Leben zu feiern. Die Bremenhalle passt sich Ihren individuellen Wünschen an und lässt dabei genügend Raum für Präsentationen, Musikshows oder andere Darbietungen. <\/p>",
+        "button_text": "",
+        "button_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1628960048c9743845",
+    "1630914490aef2b158",
+    "16289600673d292fe6",
+    "1628960096ed49debd",
+    "16300693429acfec4a"
+  ]
+}

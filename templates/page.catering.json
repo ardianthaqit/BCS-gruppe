@@ -1,0 +1,163 @@
+{
+  "sections": {
+    "1628960048c9743845": {
+      "type": "mini-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Catering_BCS.jpg",
+        "show-button": false,
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1630918482eec6aeac": {
+      "type": "minibanner-with-text",
+      "settings": {
+        "minitext": "",
+        "heading": "<p>CATERING<\/p>",
+        "desc": "<p>Wir möchten Ihr Event einzigartig machen. Oberste Prämisse ist für uns daher die ästhetische und einfallsreiche Präsentation unserer Speisen, denn das Auge isst ja bekanntermaßen mit.<br\/><br\/><\/p>",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "16289600673d292fe6": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Optimized-Catering_01.jpg",
+        "layout": "image_first",
+        "miniheading": "",
+        "heading": "<p>Einzigartige Events<\/p>",
+        "desc": "<p>Oberste Prämisse ist für uns die ästhetische und einfallsreiche Präsentation unserer Speisen, denn das Auge ist ja bekanntermaßen mit.<\/p><p>Besonders wichtig ist uns das harmonische Zusammenspiel von frischen und hochwertigen Zutaten. So können wir Sie und Ihre Gäste kulinarisch verwöhnen und ein genussvolles Event garantieren.<\/p>",
+        "button_text": "",
+        "button_url": "shopify:\/\/blogs\/news"
+      }
+    },
+    "1628960096ed49debd": {
+      "type": "accordion",
+      "blocks": {
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Buffet Catering<\/strong><\/p>",
+            "default_content": "<p>Was auch immer ansteht: eine Hochzeit, Taufe, Geburtstagsfeier, ein Jubiläum oder eine Tagung; im Frühling, Sommer, Herbst oder Winter - wir kreieren Ihnen das perfekte Buffet! Dabei spielt bei uns die Qualität der Speisen eine genauso große Rolle wie die Regionalität der von uns verwendeten Produkte.<\/p><p>Lehnen Sie sich zurück und lassen Sie sich von uns verwöhnen.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "941f5f21-0cc7-4a56-aa86-09650c1438db": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Flying Buffet<\/strong><\/p>",
+            "default_content": "<p>Keine Lust auf Schlange stehen am Buffet? Dann ist das Flying Buffet die perfekte Alternative für Sie und ein absolutes Highlight für jede Hochzeit, Party, Messe, Tagung oder auch für jeden Empfang. Unser gut geschultes und zuvorkommendes Servicepersonal steht Ihnen, Ihren Freunden oder Kollegen mit Tabletts voll mit mundgerechten Köstlichkeiten zur Verfügung.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "23d0ff88-b00b-41f6-9d40-ece28672c1a0": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Fingerfood<\/strong><\/p>",
+            "default_content": "<p>Es braucht nicht immer ein gehobenes oder ausgefallenes Menü, um Ihre Gäste glücklich zu machen. Manchmal reichen auch kleine, aber mit Liebe und Kreativität zubereitete Fingerfood Köstlichkeiten, die Ihre Freunde, Geschäftspartner oder Familie voll zufriedenstellen. Ob für einen Stehempfang, zur Zwischenverpflegung oder als Konferenzbewirtung - diese Form des Caterings ist unkompliziert und bei allen Gästen beliebt.<\/p><p>Sie verraten uns Ihren Geschmack - wir erstellen für Sie ein rundum gelungenes Fingerfood-Catering.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "6c054c2d-9d2f-4084-a66e-8167f5894b1d": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Menü Catering<\/strong><\/p>",
+            "default_content": "<p>Ganz egal, was Ihnen vorschwebt - drei, sechs oder noch mehr Gänge - wir setzen Ihre Wünsche gerne für Sie und Ihre Gäste in die Tat um.<\/p><p>Dinner-Party, Gala-Abend oder Familienfeier: Das Menü Catering ist eine stilvolle und elegante Möglichkeit Ihre Gäste zu verwöhnen und für einen unvergesslichen Abend zu sorgen. Selbstverständlich gehen wir auf Vorlieben ein, kombinieren sie mit den passenden Getränkeempfehlungen und legen größten Wert auf jedes noch so kleine Detail.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d",
+        "941f5f21-0cc7-4a56-aa86-09650c1438db",
+        "23d0ff88-b00b-41f6-9d40-ece28672c1a0",
+        "6c054c2d-9d2f-4084-a66e-8167f5894b1d"
+      ],
+      "settings": {
+        "heading": "<p>Die perfekte Catering-Wahl<\/p>",
+        "show-side-image": true,
+        "image-full": "shopify:\/\/shop_images\/Optimized-Catering_BCS_02.jpg",
+        "change-position": false
+      }
+    },
+    "16300693429acfec4a": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Optimized-Catering_BCs_03.jpg",
+        "layout": "text_first",
+        "miniheading": "",
+        "heading": "<p>Auf alle Bedürfnisse abgestimmt<\/p>",
+        "desc": "<p>Individualität, Kreativität und Flexibilität - nach dieser Prämisse setzen wir Ihre noch so außergewöhnlichen Ideen und Wünsche in die Tat um. Dabei bieten wir Menü-Variationen für jedes Bedürfnis an. Gourmet, Grillbuffet, vegetarisch, vegan oder halal. Und selbstverständlich bedienen wir auch Lebensmittel-Allergien und Intoleranzen.<\/p>",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "16309231851512491b": {
+      "type": "accordion",
+      "disabled": true,
+      "blocks": {
+        "854539c4-2afe-4ab6-bfdc-e624e07d4072": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p>Title<\/p>",
+            "default_content": "<p>Info<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "854539c4-2afe-4ab6-bfdc-e624e07d4072"
+      ],
+      "settings": {
+        "heading": "<p>Facts<\/p>",
+        "show-side-image": true,
+        "image-full": "shopify:\/\/shop_images\/Optimized-Catering_BCS_04.jpg",
+        "change-position": false
+      }
+    }
+  },
+  "order": [
+    "1628960048c9743845",
+    "main",
+    "1630918482eec6aeac",
+    "16289600673d292fe6",
+    "1628960096ed49debd",
+    "16300693429acfec4a",
+    "16309231851512491b"
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1628960048c9743845": {
+      "type": "mini-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/header-borgfelder-min.png",
+        "show-button": false,
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "163091247434de2b0e": {
+      "type": "minibanner-with-text",
+      "settings": {
+        "minitext": "",
+        "heading": "<p>BORGFELDER LANDHAUS<\/p>",
+        "desc": "<p>Das Borgfelder Landhaus bietet den idealen Rahmen für Veranstaltungen jeglicher Art. Ob Firmen- oder Familienfeiern, Geburtstage, Hochzeiten, Kohlfahrten, Jubiläen oder andere Anlässe, fast alles ist bei uns möglich. Nutzen Sie unsere langjährige Erfahrung aus Gastronomie, Hotel- und Veranstaltungsgewerbe sowie die persönliche Beratung bei der Planung und Durchführung Ihrer Veranstaltung.<\/p>",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "16289600673d292fe6": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Optimized-01_Groonkohl_268x279_Borgfelder.jpg",
+        "layout": "image_first",
+        "miniheading": "",
+        "heading": "",
+        "desc": "<p>Von größeren Veranstaltungen bis hin zu Familienfeiern im engsten Kreis – unser Haus ist bestens auf Sie vorbereitet. Im Borgfelder Landhaus wird Ihre Feier garantiert zum Erlebnis!<\/p>",
+        "button_text": "",
+        "button_url": "shopify:\/\/blogs\/news"
+      }
+    },
+    "1628960096ed49debd": {
+      "type": "accordion",
+      "blocks": {
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Räumlichkeiten<\/strong><\/p>",
+            "default_content": "<p>Das Borgfelder Landhaus bietet Ihnen insgesamt vier verschiedene Räumlichkeiten an:<br\/><br\/>• Saal: feiern Sie ausgelassen mit bis zu 400 Personen<\/p><p>• Restaurant: ideal für Gesellschaften bis 60 Personen<br\/>• Zollstube: kleinerer Raum für bis zu 30 Personen<br\/>• Kaminzimmer: das gemütliche Zimmer ist für bis zu 30 Personen geeignet<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "5ce20c69-8bed-45fd-a1b0-d5a9963d3b95": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Lage<\/strong><\/p>",
+            "default_content": "<p>Das naturgelegene Borgfelder Landhaus ist ideal mit öffentlichen Verkehrsmitteln oder dem Auto zu erreichen. Es stehen Ihnen etwa 80 Parkplätze zur Verfügung. Ebenso lädt der Wümme-Radweg für eine entspannte Anreise durch die Natur per Fahrrad ein. Wir richten Ihr Event für 40 bis 500 Personen aus. Es stehen vor Ort bereits eine Bühne sowie Ton und Licht für tolle Effekte zur Verfügung<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "b406390b-1b6d-4f3b-8dc5-e19b9f74ce97": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Hotel<\/strong><\/p>",
+            "default_content": "<p><br\/><\/p><p>Hell, persönlich und individuell – so präsentiert sich das Gästehaus fliegendes Perlhuhn (ehemals Borgfelder Landhaus Hotel). Verbringen Sie eine schöne Zeit in dem einladenen Gästehaus. Die Lage ist zentral und gleichzeitig sehr ruhig in Lilienthal\/ Borgfeld. Ob Geschäftsreise, Pilgerer, Fahrradaktivurlaub, Besuch bei Freunden und Bekannten, als Zimmer für Monteure – Sie sind für Ihren Kurz- oder Langzeitaufenthalt herzlich in unserem Gästehaus willkommen. Wir sind ideal per Auto, Fahrrad oder mit öffentlichen Verkehrsmitteln zu erreichen.<br\/><br\/>Ebenso Gäste – des vor allem für Hochzeiten und Privatfeiern beliebten – Borgfelder Landhauses, welches direkt gegenüber liegt, werden sich in unseren Räumlichkeiten wohlfühlen und profitieren von der kurzen Distanz und der unkomplizierten Buchung. Im Gästehaus ist Ihre Familie bestens aufgehoben.<br\/><br\/>Alle Zimmer sind komfortabel und modern eingerichtet, teilweise mit Balkon oder Terrasse. Es stehen Ihnen Einzelzimmer, Doppel- und Zweibettzimmer, Dreibett und Vierbettzimmer mit folgender Ausstattung zur Verfügung.<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "73ee75f8-d9c7-4fc7-92c8-e66f681d89a7": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Ausstattung<\/strong><\/p>",
+            "default_content": "<p>•Dusche <\/p><p>• WC<\/p><p>• TV<\/p><p>• Föhn<\/p><p>• Sitzgelegenheit<\/p><p>• Kühlschrank<\/p><p>• Wasserkocher<\/p><p>• Kaffeestation<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d",
+        "5ce20c69-8bed-45fd-a1b0-d5a9963d3b95",
+        "b406390b-1b6d-4f3b-8dc5-e19b9f74ce97",
+        "73ee75f8-d9c7-4fc7-92c8-e66f681d89a7"
+      ],
+      "settings": {
+        "heading": "<p>Unsere Räumlichkeiten<\/p>",
+        "show-side-image": true,
+        "image-full": "shopify:\/\/shop_images\/Optimized-02_Borgfelder_Landhaus_02.jpg",
+        "change-position": false
+      }
+    },
+    "163091359910508d42": {
+      "type": "accordion",
+      "disabled": true,
+      "blocks": {
+        "63c3e310-0a21-4091-bea1-ab12d2e7d0a8": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Hotel<\/strong><\/p>",
+            "default_content": "<p>Hell, persönlich und individuell – so präsentiert sich das Gästehaus fliegendes Perlhuhn (ehemals Borgfelder Landhaus Hotel). Verbringen Sie eine schöne Zeit in dem einladenen Gästehaus. Die Lage ist zentral und gleichzeitig sehr ruhig in Lilienthal\/ Borgfeld. Ob Geschäftsreise, Pilgerer, Fahrradaktivurlaub, Besuch bei Freunden und Bekannten, als Zimmer für Monteure – Sie sind für Ihren Kurz- oder Langzeitaufenthalt herzlich in unserem Gästehaus willkommen. Wir sind ideal per Auto, Fahrrad oder mit öffentlichen Verkehrsmitteln zu erreichen.<br\/><br\/>Ebenso Gäste – des vor allem für Hochzeiten und Privatfeiern beliebten – Borgfelder Landhauses, welches direkt gegenüber liegt, werden sich in unseren Räumlichkeiten wohlfühlen und profitieren von der kurzen Distanz und der unkomplizierten Buchung. Im Gästehaus ist Ihre Familie bestens aufgehoben.<br\/><br\/>Alle Zimmer sind komfortabel und modern eingerichtet, teilweise mit Balkon oder Terrasse. Es stehen Ihnen Einzelzimmer, Doppel- und Zweibettzimmer, Dreibett und Vierbettzimmer mit folgender <\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "7622a32b-2dee-4c4a-949e-21c03f889ddf": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Ausstattung<\/strong><\/p>",
+            "default_content": "<p>• Dusche<br\/>• WC<\/p><p>• TV<\/p><p>• Föhn<\/p><p>• Sitz­ge­legen­heit<\/p><p>• Kühlschrank<\/p><p>• Wasserkocher<\/p><p>• Kaffeestation<\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "63c3e310-0a21-4091-bea1-ab12d2e7d0a8",
+        "7622a32b-2dee-4c4a-949e-21c03f889ddf"
+      ],
+      "settings": {
+        "heading": "",
+        "show-side-image": true,
+        "image-full": "shopify:\/\/shop_images\/Optimized-03_Borgfelder_Landhaus_03.jpg",
+        "change-position": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1628960048c9743845",
+    "163091247434de2b0e",
+    "16289600673d292fe6",
+    "1628960096ed49debd",
+    "163091359910508d42"
+  ]
+}

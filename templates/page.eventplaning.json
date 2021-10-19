@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1629810222e78a8949": {
+      "type": "contact-form-event",
+      "blocks": {
+        "1629810222e78a8949-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Event in 2 Minuten planen!",
+            "heading_size": "h1"
+          }
+        },
+        "1629810222e78a8949-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir setzen Ihr Event in Szene!  Wir liefern Ihnen auf Wunsch das Gesamtpaket – traumhafte Location, schmackhaftes Catering, vielseitiges Equipment und passende Unterhaltung. Alles aus einer Hand. Wir verwirklichen, was Ihnen vorschwebt – und sorgen dafür, dass keiner Ihrer Gäste es so schnell vergessen wird.<br\/><br\/><\/p>"
+          }
+        },
+        "1629810222e78a8949-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1629810222e78a8949-0",
+        "1629810222e78a8949-1",
+        "1629810222e78a8949-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "bgcolor": "#8b2533"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1629810222e78a8949"
+  ]
+}

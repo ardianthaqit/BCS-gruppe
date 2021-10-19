@@ -9,31 +9,33 @@
       "type": "grunkohlfahrt-image-text",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/BG_1bd6e08d-7828-4638-8e3e-85f518c9996c.png",
-        "image": "shopify:\/\/shop_images\/Frame_6184.png",
-        "smtext": "<p>Wir sind immer interessiert an Mitarbeitern<\/p>",
-        "heading": "<p>Wir freuen uns auf<br\/>Ihre ((Bewerbung!))<\/p>",
-        "desc": "<p>Die Gastronomie ist Ihre Leidenschaft und individuelle Entfaltung ist Ihnen wichtig? Dann freuen wir uns über Ihre Bewerbung! Es warten flache Hierarchien in einem spannenden Umfeld, in welchem eigene Ideen eingebracht und umgesetzt werden können.<\/p>",
-        "button_text": "Offene Stellen",
-        "button_url": "shopify:\/\/blogs\/news",
-        "secondbutton_text": "oder senden Sie eine E-Mail",
+        "image": "shopify:\/\/shop_images\/Jobs_BCS.png",
+        "smtext": "<p>Aktuell auf Jobsuche?<\/p>",
+        "heading": "<p>Dann komm zu uns ins Team!<\/p>",
+        "desc": "<p>Gastronomie ist deine Leidenschaft und individuelle Entfaltung ist dir wichtig? Dann freuen wir uns über deine Bewerbung! Es warten flache Hierarchien in einem spannenden Umfeld, in welchem eigene Ideen eingebracht und umgesetzt werden können.<\/p>",
+        "button_text": "Hier bewerben",
+        "button_url": "mailto:info@bcs-gruppe.de",
+        "secondbutton_text": "oder schick uns eine E-Mail",
         "secondbutton_url": "shopify:\/\/pages\/contact",
-        "layout": "greenbutton"
+        "layout": "greenbutton",
+        "make-download-button": false
       }
     },
     "1628666518ec6a7ff8": {
       "type": "karriere-full-img-txt",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/samuel-pereira-uf2nnANWa8Q-unsplash_2.png",
+        "background_image": "shopify:\/\/shop_images\/Jobs_BCS.jpg",
         "layout": "image_first",
-        "miniheading": "<p>Eget arcu quis risus dignissim.<\/p>",
-        "heading": "<p>Lacus, hac mauris eros nec malesuada et odio diam.<\/p>",
-        "desc": "<p>Molestie nisi id turpis et. Natoque mattis interdum non fermentum. Tincidunt ultricies nisi cras et ac id. A libero tempor tristique condimentum mattis arcu dui. Orci tellus non eget tincidunt tellus semper nulla a. Consequat, arcu id mi varius cursus vitae eros, quisque.<\/p>",
-        "button_text": "A libero tempor",
+        "miniheading": "<p>Du bist auf Jobsuche<\/p>",
+        "heading": "<p>Bewirb dich jetzt <br\/>& komm zu ins Team!<\/p>",
+        "desc": "<p><br\/>Die BCS Gruppe ist ein etablierter Eventplaner und Caterer im Großraum Bremen. Als innovatives Unternehmen erweitern wir stetig unsere Expertise. So bieten wir unseren Kunden zudem eigenes Equipment für Ihre Feierlichkeiten an, vermieten und gestalten eigene Veranstaltungsorte und bieten gerne auch eigenes Service Personal an. Dadurch garantiert die BCS Gruppe einen reibungslosen Ablauf der Veranstaltungen durch Service aus einer Hand..<\/p>",
+        "button_text": "Unsere offenen Stellen",
         "button_url": "shopify:\/\/pages\/karriere"
       }
     },
     "162866662186b91c5b": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "162866662186b91c5b-0": {
           "type": "heading",
@@ -74,14 +76,14 @@
         "1628668266840230d7-0": {
           "type": "heading",
           "settings": {
-            "heading": "Lassen Sie uns eine offene Stelle für Sie finden.",
+            "heading": "Lass uns eine offene Stelle für dich finden.",
             "heading_size": "h1"
           }
         },
         "1628668266840230d7-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Fin the right job for you no matter what is that you do.Typography<\/p>"
+            "text": "<p>Wähle einen Job, den du liebst, und du wirst nie wieder arbeiten müssen.<\/p>"
           }
         }
       },
@@ -102,33 +104,64 @@
         "1628670587b88c227a-0": {
           "type": "card",
           "settings": {
-            "title": "<p>Koch (m\/w\/d)<\/p>",
-            "subheading": "<p>Bremen, Deutschland<\/p>",
-            "description": ""
+            "title": "<p>Barkeeper (m\/w\/d)<\/p>",
+            "subheading": "<p>Komm zu uns ins Team und bewirb dich jetzt.<\/p>",
+            "description": "",
+            "link_to": ""
           }
         },
         "1628670587b88c227a-1": {
           "type": "card",
           "settings": {
-            "title": "<p>Reinigungskraft (m\/w\/d)<\/p>",
-            "subheading": "<p>Bremen, Deutschland<\/p>",
-            "description": ""
+            "title": "<p>Servicekraft (m\/w\/d)<\/p>",
+            "subheading": "<p>Komm zu uns ins Team und bewirb dich jetzt.<\/p>",
+            "description": "",
+            "link_to": ""
           }
         },
         "b2b63ffb-0d6c-4f75-a377-36330b7a0637": {
           "type": "card",
           "settings": {
-            "title": "<p>Servicekraft (m\/w\/d)<\/p>",
-            "subheading": "<p>Bremen, Deutschland<\/p>",
-            "description": ""
+            "title": "<p>Reinigungskraft (m\/w\/d)<\/p>",
+            "subheading": "<p>Komm zu uns ins Team und bewirb dich jetzt.<\/p>",
+            "description": "",
+            "link_to": ""
           }
         },
         "e371e208-37e6-4520-b484-9a22d9ee38f1": {
           "type": "card",
           "settings": {
             "title": "<p>Koch (m\/w\/d)<\/p>",
-            "subheading": "<p>Bremen, Deutschland<\/p>",
-            "description": ""
+            "subheading": "<p>Komm zu uns ins Team und bewirb dich jetzt.<\/p>",
+            "description": "",
+            "link_to": ""
+          }
+        },
+        "faa371e0-9294-4947-ad41-8d9e75a06876": {
+          "type": "card",
+          "settings": {
+            "title": "<p>Küchenhelfer (m\/w\/d)<\/p>",
+            "subheading": "<p>Komm zu uns ins Team und bewirb dich jetzt.<\/p>",
+            "description": "",
+            "link_to": ""
+          }
+        },
+        "d3682862-10eb-439f-999a-6f9e020f00ae": {
+          "type": "card",
+          "settings": {
+            "title": "<p>Veranstaltungsleiter (m\/w\/d)<\/p>",
+            "subheading": "<p>Komm zu uns ins Team und bewirb dich jetzt.<\/p>",
+            "description": "",
+            "link_to": ""
+          }
+        },
+        "61e2d205-4f3e-43ed-acd2-027ab91a6c11": {
+          "type": "card",
+          "settings": {
+            "title": "<p>Kaufmännische Angestellte (m\/w\/d)<\/p>",
+            "subheading": "<p>Komm zu uns ins Team und bewirb dich jetzt.<\/p>",
+            "description": "",
+            "link_to": ""
           }
         }
       },
@@ -136,10 +169,13 @@
         "1628670587b88c227a-0",
         "1628670587b88c227a-1",
         "b2b63ffb-0d6c-4f75-a377-36330b7a0637",
-        "e371e208-37e6-4520-b484-9a22d9ee38f1"
+        "e371e208-37e6-4520-b484-9a22d9ee38f1",
+        "faa371e0-9294-4947-ad41-8d9e75a06876",
+        "d3682862-10eb-439f-999a-6f9e020f00ae",
+        "61e2d205-4f3e-43ed-acd2-027ab91a6c11"
       ],
       "settings": {
-        "title": "Lassen Sie uns eine offene Stelle für Sie finden.",
+        "title": "Lass uns eine offene Stelle für dich finden.",
         "subheading": "<p>Fin the right job for you no matter what is that you do.<\/p>",
         "bgcolor": "#8b2533"
       }
@@ -162,7 +198,9 @@
         },
         "1628896544a670f4d6-2": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+            "show_arrow": false
+          }
         }
       },
       "block_order": [

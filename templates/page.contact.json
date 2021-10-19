@@ -31,7 +31,7 @@
         "color_scheme": "background-1",
         "full_width": true,
         "bgcolor": "#8b2533",
-        "text_color": "#fff"
+        "text_color": "#ffffff"
       }
     },
     "form": {
@@ -40,20 +40,20 @@
         "fde4d033-4897-4d88-9a78-aa8cdf15686f": {
           "type": "minitext",
           "settings": {
-            "minitext": "<p>Shop<\/p>"
+            "minitext": ""
           }
         },
         "0fd8d2cb-0211-4303-8bbd-fccdeb7a315d": {
           "type": "heading",
           "settings": {
-            "heading": "Get in touch with us",
+            "heading": "“Schöne Momente erleben?”",
             "heading_size": "h1"
           }
         },
         "102c61a4-8799-49c4-afe2-be88fd2ba940": {
           "type": "text",
           "settings": {
-            "text": "<p>Tristique phasellus adipiscing facilisis maecenas donec. Dictumst sit massa elementum nec. Risus orci sollicitudin quis facilisi consectetur id. Arcu tortor, sed pharetra dui lorem semper nunc mauris.<\/p>"
+            "text": "<p>Wir helfen Events  zu einem unvergesslichen Erlebnis zu machen! <br\/>Ihr habt Fragen oder möchtet eine unserer Locations buchen?  Schreibt uns einfach über das folgende Kontaktformular!<\/p>"
           }
         }
       },

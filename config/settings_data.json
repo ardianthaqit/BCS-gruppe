@@ -1,5 +1,6 @@
 {
   "current": {
+    "colors_background_2": "#f5f5f5",
     "type_header_font": "lato_n3",
     "type_body_font": "lato_n4",
     "sale_badge_color_scheme": "accent-2",
@@ -18,7 +19,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/image_1.png",
+          "logo": "shopify:\/\/shop_images\/MicrosoftTeams-image_28.png",
           "logo_width": 250,
           "logo_position": "middle-left",
           "menu": "headermenu",
@@ -32,8 +33,8 @@
           "164305c3-4814-46d6-93a8-142bf169fb05": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_1_2.png",
-              "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br\/><br\/>+44 345 678 903<br\/>bcs_gruppe@mail.com<\/p>",
+              "image": "shopify:\/\/shop_images\/MicrosoftTeams-image_28.png",
+              "desc": "",
               "image_width": 200,
               "alignment": "center"
             }
@@ -41,7 +42,7 @@
           "ed1c243b-bc52-404e-ad2e-8b28f5a3cc82": {
             "type": "link_list",
             "settings": {
-              "heading": "Event Planinng",
+              "heading": "Eventplanung",
               "menu": "event-planinng"
             }
           },
@@ -55,7 +56,7 @@
           "0b52fcd4-f840-44b3-afab-c9caf7e17f40": {
             "type": "link_list",
             "settings": {
-              "heading": "Cartering",
+              "heading": "Catering",
               "menu": "cartering"
             }
           },
@@ -69,7 +70,7 @@
           "3b750546-3425-48b6-9880-3780b9b5f363": {
             "type": "link_list",
             "settings": {
-              "heading": "Company",
+              "heading": "BCS Gruppe",
               "menu": "company"
             }
           }
@@ -83,7 +84,7 @@
           "3b750546-3425-48b6-9880-3780b9b5f363"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "background-2",
           "newsletter_enable": false,
           "newsletter_heading": "Sign up to our emails",
           "show_social": false,
@@ -98,18 +99,20 @@
           "b5780470-cc5f-423c-89bc-30e46a91615b": {
             "type": "heading",
             "settings": {
-              "heading": "Immer auf dem neusten Stand bleiben"
+              "heading": "Newsletter & mehr"
             }
           },
           "2182a0f3-571a-4715-b153-0912339869e0": {
             "type": "paragraph",
             "settings": {
-              "paragraph": "<p>Jetzt unseren Newsletter abonieren und alle Informationen zu den besten Events und neuen Locations erhalten.<\/p>"
+              "paragraph": "<p>Besondere Locations <br\/>und großartige Events!<br\/>Jetzt für unseren Newsletter anmelden und kein Highlight mehr verpassen.<\/p>"
             }
           },
           "166ece84-8475-409e-981d-f8df5e85ede6": {
             "type": "email_form",
-            "settings": {}
+            "settings": {
+              "show_arrow": true
+            }
           }
         },
         "block_order": [

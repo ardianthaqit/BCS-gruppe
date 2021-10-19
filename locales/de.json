@@ -113,7 +113,7 @@
         "increase": "Erhöhe die Menge für {{ product }}",
         "decrease": "Verringere die Menge für {{ product }}"
       },
-      "privacy": "Inkl. 19% Mwst.", 
+      "privacy": "Inkl. 19% Mwst.",
       "price": {
         "from_price_html": "Von {{ price }}",
         "regular_price": "Normaler Preis",
@@ -378,6 +378,16 @@
       "expired": "Abgelaufen",
       "copy_code_success": "Code erfolgreich kopiert",
       "print_gift_card": "Drucken"
+    }
+  },
+  "shopify": {
+    "page_titles": {
+      "shopping_cart": "Warenkorb für Event- und Veranstaltungstickets | BCS-Gruppe"
+    },
+    "checkout": {
+      "shop_policies": {
+        "legal_notice": "Impressum"
+      }
     }
   }
 }

@@ -2639,3 +2639,131 @@ cart-note.cart__note textarea#Cart-note {
 div#lt-content {
   width: 100% !important;
 }
+
+/* Dynamic app */
+
+div#bcpo {
+  display: flex;
+  flex-direction: column;
+}
+.selector-wrapper.bcpo-default {
+  order: 2;
+}
+.mw-stack--vertical {
+  margin-left: -10px !important;
+}
+.field {
+  display: block;
+    width: 100% !important;
+  height: auto !important;
+}
+#itoris_dynamicproductoptions li.fields div.field {
+  margin-left: 0px;
+}
+#itoris_dynamicproductoptions ul.form-list {
+margin: 0 !important;
+}
+.options-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-step-select .control .options-list{
+  flex-direction: row;
+  align-items: center;
+}
+.first-step-select .control .options-list .field.choice.admin__field.admin__field-option {
+  display: flex;
+  align-items: center;
+}
+
+.first-step-select .control .options-list .field.choice.admin__field.admin__field-option input {
+  margin-top: 0 !important;
+}
+.option-qty-wrapper span.option-qty-label {
+  display: none !important;
+}
+.option-qty {
+  border: none;
+  background: #F6F5F5 !important;
+  position: relative;
+  height: 30px !important;
+  width: 38px !important;
+}
+.second-step-x-mas .field .control .options-list .field.choice.admin__field.admin__field-option .option-qty-wrapper {
+  margin-left: 15px;
+}
+.second-step-x-mas .field .control .options-list .field.choice.admin__field.admin__field-option {
+  display: flex;
+  align-items: center;
+}
+.step-location .control .options-list {
+  flex-direction: row;
+}
+/* .step-addons .control .options-list {
+  flex-direction: row;
+}
+.step-addons .control .options-list .field.choice.admin__field.admin__field-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+/* .step-addons .control .options-list .field.choice.admin__field.admin__field-option .admin__control-checkbox {
+  visibility: hidden;
+} */
+/* .step-addons .control .options-list .field.choice.admin__field.admin__field-option label {
+  order: 1;
+  text-align: center;
+}
+.step-addons .control .options-list .field.choice.admin__field.admin__field-option .option-qty-wrapper {
+  order: 2;
+} */
+
+.itoris-dynamicoptions-list-images > div.dpo_swatch > input:checked ~ img, .itoris-dynamicoptions-list-images > div.dpo_swatch > input:checked ~ .itoris-dynamicoptions-thumbnail-color, .itoris-dynamicoptions-list-images > div.dpo_swatch > input:checked ~ .itoris-dynamicoptions-swatch_html{
+      border: 2px solid #00635E !important;
+}
+.field.choice.admin__field.admin__field-option.field-disabled label {
+  color: #DC2A36 !important;
+}
+:focus-visible {
+ outline: none;
+  box-shadow: none;
+}
+.product-option dt {
+  font-weight: bold;
+}
+.product-id-7060338835655 .bcpo {
+  display: none !important;
+}
+.has_dpo td.cart-item__quantity {
+  visibility: hidden;
+}
+
+@media (max-width: 750px) {
+   .first-step-select .control .options-list, .step-location .control .options-list{
+    flex-direction: column;
+  
+}
+  /* .step-addons .control .options-list {
+    flex-flow: wrap !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .step-addons .control .options-list .field {
+    width: 46% !important;
+} */
+  .step-location .control .options-list {
+    flex-flow: wrap !important;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+  .step-location .control .options-list .field {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45% !important;
+      justify-content: flex-start !important;
+  }
+}

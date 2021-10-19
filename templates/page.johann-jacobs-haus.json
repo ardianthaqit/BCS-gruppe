@@ -5,10 +5,18 @@
       "disabled": true,
       "settings": {}
     },
+    "1628960048c9743845": {
+      "type": "mini-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Rectangle_1_1.png",
+        "show-button": false,
+        "button_text": "",
+        "button_url": ""
+      }
+    },
     "16289580493f6f655c": {
       "type": "minibanner-with-text",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/image_5_2.png",
         "minitext": "<p>Eine einzigartige Eventlocation<\/p>",
         "heading": "<p>Johann Jacobs Haus<\/p>",
         "desc": "<p>Das Johann-Jacobs-Haus ist eine komplett neue und einzigartige Eventlocation im Herzen der Bremer Innenstadt. Erleben Sie auf vier möglichen Ebenen Ihr Event. Ganz gleich ob Sie eine Tagung, eine Hochzeit oder eine Firmenfeier ausrichten wollen, die<br\/>neu errichteten Flächen bieten viel Platz, den Sie ganz nach Ihren Vorstellungen<br\/>nutzen können.<\/p>",
@@ -16,20 +24,14 @@
         "button_url": "shopify:\/\/pages\/contact"
       }
     },
-    "1628960048c9743845": {
-      "type": "mini-image",
-      "settings": {
-        "background_image": "shopify:\/\/shop_images\/Rectangle_1_1.png"
-      }
-    },
     "16289600673d292fe6": {
       "type": "img-right-text-left",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/samuel-pereira-uf2nnANWa8Q-unsplash_1_2_9d11b718-d57c-4687-91f1-38688c3486d3.png",
         "layout": "image_first",
-        "miniheading": "<p>Locations in Bremen und Niedersachsen<\/p>",
-        "heading": "<p>Räumlichkeiten – vielfältige<\/p><p>Veranstaltungsflächen<\/p>",
-        "desc": "<p>Wenn Sie eine geeignete Location für Ihre Veranstaltung suchen, die sie mit dem Thema Kaffee verbinden können, sind Sie im Johann Jacobs Haus genau richtig! Ganz gleich ob Tagung, Konferenz, Seminar oder sonstige Feier– ergänzen Sie Ihr Event z.B. mit einer Kaffeeschulung oder Verköstigung.<br\/><br\/>Im Johann Jacobs finden Sie Veranstaltungsräume, die ein bedeutendes Stück Bremer Geschichte erzählen und mit viel Liebe zum Detail einen originalgetreuen Eindruck wiedergeben. Antike Möbel, verschiedene Holzarten aus den Kaffeeursprungsländern oder die Kaffeewerkstatt in der Jacobs Kaffeerösterei verleihen den Räumlichkeiten im Johann Jacobs Haus ein einzigartiges, historisches Flair. Abgerundet wird das Erlebnis spätestens auf der Dachterrasse, mit Blick auf den Bremer Dom und einer besonderen Atmosphäre über den Dächern Bremens.<br\/><br\/>Mit unserem Full-Service-Angebot unterstützen wir Sie außerdem mit der notwendigen Technik, Arbeitsmaterialien und versorgen Sie mit erstklassigen Speisen & Getränken. Gerne runden wir Ihre Tagesveranstaltung auch mit einem Abendprogramm ab – ob unter freiem Himmel auf der Dachterrasse oder in den vielseitig nutzbaren Kaffeehausräumlichkeiten.<\/p>",
+        "miniheading": "",
+        "heading": "<p>Die perfekte Location mitten in der City!<\/p>",
+        "desc": "<p>Wenn Sie eine geeignete Location für Ihre Veranstaltung suchen, die sie mit dem Thema Kaffee verbinden können, sind Sie im Johann Jacobs Haus genau richtig! Ganz gleich ob Tagung, Konferenz, Seminar oder sonstige Feier– ergänzen Sie Ihr Event z.B. mit einer Kaffeeschulung oder Verköstigung.<br\/><br\/>Im Johann Jacobs finden Sie Veranstaltungsräume, die ein bedeutendes Stück Bremer Geschichte erzählen und mit viel Liebe zum Detail einen originalgetreuen Eindruck wiedergeben. Antike Möbel, verschiedene Holzarten aus den Kaffeeursprungsländern oder die Kaffeewerkstatt in der Jacobs Kaffeerösterei verleihen den Räumlichkeiten im Johann Jacobs Haus ein einzigartiges, historisches Flair. Abgerundet wird das Erlebnis spätestens auf der Dachterrasse, mit Blick auf den Bremer Dom und einer besonderen Atmosphäre über den Dächern Bremens.<\/p>",
         "button_text": "Weiterlesen",
         "button_url": "shopify:\/\/blogs\/news"
       }
@@ -103,17 +105,18 @@
       "settings": {
         "heading": "<p>Die Räumlichkeiten im Überblick<\/p>",
         "show-side-image": true,
-        "image-full": "shopify:\/\/shop_images\/samuel-pereira-uf2nnANWa8Q-unsplash_1_2.png"
+        "image-full": "shopify:\/\/shop_images\/Optimized-Picture_02Johann_Jacobs_Haus_09.jpg",
+        "change-position": false
       }
     },
     "16300693429acfec4a": {
       "type": "img-right-text-left",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/05_Johann_Jacobs_Haus.png",
+        "background_image": "shopify:\/\/shop_images\/Optimized-Picture_03Johann_Jacobs_Haus_01.jpg",
         "layout": "text_first",
         "miniheading": "",
-        "heading": "<p>TEXT<\/p>",
-        "desc": "",
+        "heading": "<p>Tradition & moderne<\/p>",
+        "desc": "<p>Ob mit Kollegen, Mitarbeitern, Kunden oder den Liebsten. In dieser Eventlocation im Bremer Balgequatier bieten Sie Ihren Gästen ein exklusives Ambiente. Das offen gestaltete Raumkonzept mit großzügigen Proportionen eignet sich hervorragend für Tagungen, Seminare oder auch private Anlässe wie Hochzeiten. <\/p>",
         "button_text": "",
         "button_url": ""
       }
@@ -121,8 +124,8 @@
   },
   "order": [
     "main",
-    "16289580493f6f655c",
     "1628960048c9743845",
+    "16289580493f6f655c",
     "16289600673d292fe6",
     "1628960096ed49debd",
     "16300693429acfec4a"

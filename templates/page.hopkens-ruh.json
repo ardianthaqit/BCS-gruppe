@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1630566892305eea57": {
+      "type": "mini-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/hopkens-header.png",
+        "show-button": false,
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "1630565576a09b9c05": {
+      "type": "minibanner-with-text",
+      "settings": {
+        "minitext": "",
+        "heading": "<p>HÖPKENS RUH<\/p>",
+        "desc": "<p>Das Höpkens Ruh liegt inmitten einer traumhaften Parkanlage in Oberneuland. Der Park Höpkens Ruh ist ein sieben Hektar großes Areal mit Wald, Wiesen und Wasser. Ein lauschiger Ruheplatz, der zum Verweilen einlädt und Ihnen Abstand vom städtischen Lärm beschert.<\/p>",
+        "button_text": "Jetzt buchen",
+        "button_url": "shopify:\/\/pages\/contact"
+      }
+    },
+    "16289600673d292fe6": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Optimized-01Hopkens_Ruh_09_1.jpg",
+        "layout": "image_first",
+        "miniheading": "",
+        "heading": "<p>Die grüne Oase<\/p>",
+        "desc": "<p>In unserer besonderen Location bieten wir neben kulinarischen Highlights ein einzigartiges Ambiente für Ihr Event. Ob in unserem Efeuzimmer, im großen Saal oder direkt auf unserer sonnigen Terrasse, wir machen Ihre Feier zu einem exklusiven Erlebnis. Lassen Sie sich von uns verwöhnen und nutzen Sie die Zeit im Höpkens Ruh für einmalige Erinnerungen. <\/p>",
+        "button_text": "",
+        "button_url": "shopify:\/\/blogs\/news"
+      }
+    },
+    "1628960096ed49debd": {
+      "type": "accordion",
+      "blocks": {
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Räumlichkeiten<\/strong><\/p>",
+            "default_content": "<p><em>Großer Saal: feiern Sie ausgelassen mit bis zu 100 Personen<\/em><br\/><em>Efeuzimmer: kleinerer Raum für bis zu 20 Personen<\/em><br\/><em>Wir richten Ihr Event für 40 bis 100 Personen aus.<\/em><\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "3bed5119-6bcd-4db9-ab1a-b9140371c532": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Events<\/strong><\/p>",
+            "default_content": "<p><em>Lassen Sie sich doch beispielsweise im Lür Kropp Hof standesamtlich trauen und kommen danach zu uns und lassen Sie es mit Ihren Gästen bei uns krachen. Die Parkanlage lädt zu Grünkohltouren ein und auch zu schönen Radtouren entlang der Wümme – für Ihr nächstes Sommerfest mit der Firma können wir mit Ihnen individuelle Touren und Programmpunkte abstimmen.<\/em><\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "93932dd2-6c01-4783-9275-78da8c002e5b": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Übernachten<\/strong><\/p>",
+            "default_content": "<p><em>Neben unserem Eventservice bieten wir im Höpkens Ruh außerdem Übernachtungsmöglichkeiten an. Mit unseren 9 individuell gestalteten Zimmern bescheren wir für Pendler und Übernachtungsgästen Ihrer Veranstaltung eine wundervolle Nacht.<\/em><\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "06816bd8-3842-4b53-8f0e-d1221f05c689": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Anreise<\/strong><\/p>",
+            "default_content": "<p><em>Mit den öffentlichen Verkehrsmitteln: <\/em><br\/><em>Sie können die Straßenbahn 4 in Richtung Lilienthal nehmen und bei der Haltestelle Horner Mühle umsteigen in den Bus 33 in Richtung Sebaldsbrück. Steigen Sie dann bei der Haltestelle Höpkens Ruh aus.<\/em><\/p><p><br\/><em>Mit dem Auto: <\/em><br\/><em>Wenn Sie über die A27 anreisen, fahren Sie bei der Ausfahrt 20-Bremen-Vahr Richtung Bremen-Oberneuland ab. Das Höpkens Ruh liegt direkt beim Muhles Park. Es stehen Ihnen vor Ort 16 Parkplätze zur Verfügung.<\/em><br\/><em>Ebenso lädt der Wümme-Radweg für eine entspannte Anreise durch die Natur per Fahrrad an.<\/em><\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d",
+        "3bed5119-6bcd-4db9-ab1a-b9140371c532",
+        "93932dd2-6c01-4783-9275-78da8c002e5b",
+        "06816bd8-3842-4b53-8f0e-d1221f05c689"
+      ],
+      "settings": {
+        "heading": "<p>Das Höpkens Ruh<\/p>",
+        "show-side-image": true,
+        "image-full": "shopify:\/\/shop_images\/Optimized-02Hopkens_Ruh_03.jpg",
+        "change-position": false
+      }
+    },
+    "16300693429acfec4a": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Optimized-03Hopkens_Ruh_06.jpg",
+        "layout": "text_first",
+        "miniheading": "",
+        "heading": "<p>Unser Hotel<\/p>",
+        "desc": "<p>Übernachten in unserem gemütlichen Gästehaus. Ob nach einer ausgiebigen Feier im Höpkens Ruh, als Kurzurlaub oder aufgrund einer Geschäftsreise. Alle Zimmer sind komfortabel eingerichtet und verfügen teilweise über einen Balkon.<\/p>",
+        "button_text": "Kontakt",
+        "button_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1630566892305eea57",
+    "1630565576a09b9c05",
+    "16289600673d292fe6",
+    "1628960096ed49debd",
+    "16300693429acfec4a"
+  ]
+}

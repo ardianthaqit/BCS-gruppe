@@ -2,7 +2,9 @@
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
-      "settings": {}
+      "settings": {
+        "show_vendor": false
+      }
     },
     "cart-footer": {
       "type": "main-cart-footer",
@@ -20,7 +22,9 @@
         "subtotal",
         "buttons"
       ],
-      "settings": {}
+      "settings": {
+        "show_cart_note": true
+      }
     }
   },
   "order": [
