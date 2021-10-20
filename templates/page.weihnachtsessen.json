@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1630566892305eea57": {
+      "type": "mini-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Weihnachtsessen_BCS_Catering_GRuppe_Festtage_Menu_Header.jpg",
+        "show-button": false,
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "1630565576a09b9c05": {
+      "type": "minibanner-with-text",
+      "settings": {
+        "minitext": "",
+        "heading": "<p>WEIHNACHTSESSEN<\/p>",
+        "desc": "<p>Bestellt unser Weihnachtsessen warm und servierfertig oder praktisch zum selber zubereiten. Wählt zwischen GANS ENTE, WILD oder HUMMER und stellt euch ein ganz individuelles Weihnachtsmenü für die ganze Familie zusammen.<\/p>",
+        "button_text": "Jetzt buchen",
+        "button_url": "shopify:\/\/pages\/contact"
+      }
+    },
+    "16289600673d292fe6": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Weihnachtsessen_BCS_Catering_GRuppe_Festtage_Menu_02.jpg",
+        "layout": "image_first",
+        "miniheading": "",
+        "heading": "<p>Einfach geniessen<\/p>",
+        "desc": "<p>Abholung in einer unsere drei Location in Oberneuland das Höpkens Ruh in Borgfeld das Borgfelder Landhaus und mitten in der Überseestadt im HUDSON EVENTLOFT. Ganz neu dieses liefern wir am 23.- Dezember auch unsere Essen zum selber zubereiten an euch aus, somit. Damit ihr entspannte Festtage mit der Familie genießen könnt.<\/p>",
+        "button_text": "",
+        "button_url": "shopify:\/\/blogs\/news"
+      }
+    },
+    "1628960096ed49debd": {
+      "type": "accordion",
+      "blocks": {
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Weihnachtsgans<\/strong><\/p>",
+            "default_content": "<p><em>Weihnachtsgans mit Apfel-Rotkraut, gebuttertem Rosenkohl, Salzkartoffeln und Wildgeflügeljus<\/em><\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "3bed5119-6bcd-4db9-ab1a-b9140371c532": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Weihnachtsente<\/strong><\/p>",
+            "default_content": "<p><em>Weihnachtsente mit Apfel-Rotkraut, gebuttertem Rosenkohl, Salzkartoffeln und Wildgeflügeljus<\/em><\/p><p><\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "06816bd8-3842-4b53-8f0e-d1221f05c689": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Gänsekeule<\/strong><\/p>",
+            "default_content": "<p><em>Weihnachtsente mit Apfel-Rotkraut, gebuttertem Rosenkohl, Salzkartoffeln und Wildgeflügeljus<\/em><\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        },
+        "93932dd2-6c01-4783-9275-78da8c002e5b": {
+          "type": "tab",
+          "settings": {
+            "enabled": true,
+            "title": "<p><strong>Wirsing-Roulade<\/strong><\/p>",
+            "default_content": "<p><em>Wirsing-Roulade winterlich gefüllt<br\/>mit Pfifferlingen, Grünkern und Maronen auf Kirschtomatencoulis und Salbei Gnocchi<\/em><br\/><\/p>",
+            "use_metafield": false,
+            "only_if_available": false,
+            "metafield_key": "",
+            "anchor": "",
+            "anchor_text": "",
+            "anchor_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "76eebd5b-a0de-4b93-818d-bf3b62ca916d",
+        "3bed5119-6bcd-4db9-ab1a-b9140371c532",
+        "06816bd8-3842-4b53-8f0e-d1221f05c689",
+        "93932dd2-6c01-4783-9275-78da8c002e5b"
+      ],
+      "settings": {
+        "heading": "<p>Unser Weihnachtsmenü<\/p>",
+        "show-side-image": true,
+        "image-full": "shopify:\/\/shop_images\/Weihnachtsessen_BCS_Catering_GRuppe_Festtage_Menu_01.jpg",
+        "change-position": false
+      }
+    },
+    "16300693429acfec4a": {
+      "type": "img-right-text-left",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Weihnachtsessen_BCS_Catering_GRuppe_Festtage_Menu_02.jpg",
+        "layout": "text_first",
+        "miniheading": "",
+        "heading": "<p>Einfache Zubereitung<\/p>",
+        "desc": "<p>hier findet ihr das komplette Menü, und die Zubereitung auf einen Blick.<\/p>",
+        "button_text": "Kontakt",
+        "button_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1630566892305eea57",
+    "1630565576a09b9c05",
+    "16289600673d292fe6",
+    "1628960096ed49debd",
+    "16300693429acfec4a"
+  ]
+}

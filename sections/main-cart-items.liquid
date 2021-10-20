@@ -6,6 +6,7 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<style>.price, .totals {visibility:hidden}</style>
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link">
@@ -232,3 +233,24 @@
   ]
 }
 {% endschema %}
+
+<script>
+//cart speed improvements
+var rows = jQuery('.cart-item');
+if (rows[0]) jQuery.ajax({url: '/cart/update.json', method: 'GET', async: false, dataType: 'json', success: function(cart) {
+    var needs_update = false;
+    jQuery.each(cart.items, function(i){
+        if (this.title.indexOf('D#') == -1 && this.title.indexOf('T#') == -1 /*|| rows.eq(i).html().indexOf('href=""') == -1*/) return; else needs_update = true;
+        var p=this.title.indexOf('- (D#'); if (p>-1) this.title = this.title.substr(0, p);
+        var p=this.title.indexOf('(D#'); if (p>-1) this.title = this.title.substr(0, p)+this.title.substr(p+11);
+        rows.eq(i).find('.cart-item__name').eq(0).attr('href', this.url).text(this.title);
+        if (!rows.eq(i).find('.cart-item__media img')[0]) rows.eq(i).find('.cart-item__media').html('<img class="cart__image" />');
+        if (this.image) rows.eq(i).find('.cart-item__media svg, .cart-item__media img, img[src*="no-image"]').replaceWith('<img class="cart__image" />');
+        if (this.image) rows.eq(i).find('img.cart__image').first().attr('src', this.image).css({position:'static', opacity:1, 'max-width':'100%'});
+        rows.eq(i).find('.price').html('€'+(this.final_price/100).toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'');
+        rows.eq(i).find('.price').last().html('€'+(this.final_price/100*this.quantity).toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'');
+    });
+   if (needs_update) jQuery('.totals__subtotal-value').last().html('€'+(cart.total_price/100).toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")+' EUR');
+}});
+</script>
+<style>.price, .totals {visibility:visible}</style>
