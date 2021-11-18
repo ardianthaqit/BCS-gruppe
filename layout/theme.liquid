@@ -132,6 +132,7 @@
     {% include 'breadcrumbs' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <h1 class="hidden">{{page.title}}</h1>
       {{ content_for_layout }}
     </main>
     <div id="insta-feed" class="{% if template contains 'page' and page.url == '/pages/hopkens-ruh' or template contains 'page' and page.url == '/pages/johann-jacobs-haus-1' or template contains 'page' and page.url == '/pages/borgfelder-landhaus-1' or template contains 'page' and page.url == '/pages/bremenhalle-1' or template contains 'page' and page.url == '/pages/hudson-eventloft-1' or template contains 'page' and page.url == '/pages/catering-1' %}hidden{% endif %}"></div>

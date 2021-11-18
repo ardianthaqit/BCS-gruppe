@@ -30,7 +30,8 @@
         {% if block.settings.background_image != blank %}
         <div class="block pt-10">
              <a href="{{ block.settings.card_url }}"><div class="w-full img-cards-w-full">
-                {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt }}
+                {% comment %} {{ block.settings.background_image | img_url: 'master'| img_tag: block.settings.icon.alt | img_alt: 'pic' }} {% endcomment %}
+                <img src="{{ block.settings.background_image | img_url: 'master' }}" alt="location-image">
              </div>
             </a>
             {% if block.settings.title != blank %}
